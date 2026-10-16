@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Regelwerk-Quiz Klettern</title>
+  <meta name="description" content="Lern- und Prüfungsquiz zum Nationalen Regelwerk Klettern für Schiedsrichterinnen und Schiedsrichter: Lead, Boulder, Speed, Team Speed und Allgemeine Regeln.">
+  <meta name="theme-color" content="#0f766e">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230f766e'/%3E%3Cpath d='M9 23l5-12 4 7 2-3 3 8z' fill='white'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="topbar">
+    <button class="brand" id="homeBtn" type="button" aria-label="Zur Startseite">
+      <span class="logo" aria-hidden="true">
+        <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7"/><path d="M9 23l5-12 4 7 2-3 3 8z"/></svg>
+      </span>
+      <span class="brand-text">
+        <strong>Regelwerk-Quiz</strong>
+        <small>Nationales Regelwerk Klettern 2027</small>
+      </span>
+    </button>
+    <button class="ghost small" id="themeBtn" type="button" aria-label="Farbschema wechseln">◐</button>
+  </header>
+
+  <main id="app" tabindex="-1"></main>
+
+  <footer class="footer">
+    <p>Inoffizielles Lernquiz für Schiedsrichterinnen und Schiedsrichter. Verbindlich ist allein das veröffentlichte Nationale Regelwerk Klettern.</p>
+    <p class="abbr"><b>AR</b> Allgemeine Regeln · <b>WB</b> Wettkampfbestimmungen · <b>TO</b> Technical Officials · <b>Anhang A–D</b> Lead, Speed, Boulder, Team Speed</p>
+  </footer>
+
+  <script src="data/lead.js"></script>
+  <script src="data/boulder.js"></script>
+  <script src="data/speed.js"></script>
+  <script src="data/teamspeed.js"></script>
+  <script src="data/allgemein.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
