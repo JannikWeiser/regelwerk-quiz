@@ -136,9 +136,9 @@
     o: ["Die Angaben im Einspruchsformular", "Offizielle Videoaufzeichnungen, also aus einem vom Veranstalter zugelassenen System oder aus einem autorisierten Broadcast-Stream", "Aussagen der Offiziellen auf dem Field of Play", "Handyvideos des Trainers von der Tribüne"],
     a: [0, 1, 2], e: "Zulässig sind die Angaben im Formular, offizielle Videoaufzeichnungen und Aussagen der Offiziellen auf dem Field of Play. Private Handyvideos gehören nicht dazu.", r: "WB §10.2" });
 
-  add({ id: "G34", lvl: 2, c: true, q: "Die Einspruchsjury sieht im Video keinen eindeutigen Beleg und kommt zu keinem einstimmigen Ergebnis. Was gilt?",
+  add({ id: "G34", lvl: 2, c: true, q: "Die Mitglieder der Einspruchsjury kommen nach Sichtung des Videos zu keinem einstimmigen Ergebnis. Was gilt?",
     o: ["Die On-field-Entscheidung bleibt bestehen, der Einspruch wird als „nicht entschieden“ gekennzeichnet", "Der Einspruch ist automatisch erfolgreich", "Der Event Delegate entscheidet allein", "Der Athlet darf noch einmal klettern"],
-    a: [0], e: "Lassen die Beweise keine Überprüfung zu oder ist die Jury nicht einstimmig, bleibt die On-field-Entscheidung bestehen und der Einspruch gilt als nicht entschieden.", r: "AR §12.5" });
+    a: [0], e: "Ist die Jury nicht einstimmig oder lassen die Beweise keine Überprüfung zu, bleibt die On-field-Entscheidung bestehen und der Einspruch wird als nicht entschieden gekennzeichnet. Sind die Beweise dagegen nur nicht schlüssig, ist der Einspruch nicht erfolgreich (§12.4 B).", r: "AR §12.5" });
 
   add({ id: "G35", lvl: 2, q: "Welche Prinzipien soll die Einspruchsjury bei ihrer Entscheidung abwägen?",
     o: ["Konsistenz mit früheren Entscheidungen", "Korrektheit in der Anwendung der Regeln und ihres Geistes", "Fairness, statt starr an Präzedenzfällen festzuhalten", "Möglichst schnelle Entscheidung zugunsten des Veranstalters"],

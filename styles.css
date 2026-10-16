@@ -289,3 +289,13 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 
 .toast { position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%); background: var(--text); color: var(--bg); padding: 10px 16px; border-radius: 10px; font-size: .9rem; box-shadow: var(--shadow); z-index: 10; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+/* Rechtsseiten */
+.footer a { color: var(--muted); }
+.footer a:hover { color: var(--text); }
+.footer-links { font-weight: 600; }
+.legal { padding-top: 20px; }
+.legal .back { display: inline-block; margin-bottom: 10px; font-weight: 600; color: var(--accent); text-decoration: none; }
+.legal h2 { font-size: 1rem; margin: 22px 0 6px; }
+.legal .card h2:first-child { margin-top: 0; }
+.legal a { color: var(--accent); }

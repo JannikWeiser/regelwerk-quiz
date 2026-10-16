@@ -188,8 +188,8 @@
     o: ["Bevor der nächste Wettkämpfer seine Versuche gestartet hat", "Vor Ende des nächstfolgenden Intervalls", "Innerhalb von 2 Minuten nach den offiziellen Ergebnissen", "Bis zur Siegerehrung"],
     a: [0], e: "In der Medaillenphase im World-Series- oder Classic-Format gilt: bevor der nächste Wettkämpfer seine Versuche beginnt. Im Intervallformat und in allen anderen Runden gilt: vor Ende des nächstfolgenden Intervalls.", r: "Anhang C §9.2" });
 
-  add({ id: "B47", lvl: 3, c: true, q: "Ein Trainer meint, seiner Athletin sei im Halbfinale fälschlich ein Fehlstart gegeben worden, obwohl sie noch Zeit für weitere Versuche gehabt hätte. Bis wann muss er Einspruch einlegen?",
-    o: ["Vor Ende des nächstfolgenden Intervalls. Mündlich anmelden geht, schriftlich dann innerhalb von bis zu 5 Minuten", "Innerhalb von 5 Minuten nach den offiziellen Ergebnissen", "Bevor die nächste Athletin startet", "Gar nicht, Fehlstarts sind nicht anfechtbar"],
+  add({ id: "B47", lvl: 3, c: true, q: "Im Halbfinale (Intervallformat) zeigt der Boulderschiedsrichter einer Athletin einen Top an und beendet damit ihre Versuche, obwohl noch Zeit übrig war. Ein Einspruch bestreitet den Top. Hat er Erfolg, bekäme sie zusätzliche Zeit. Bis wann muss der Einspruch eingelegt werden?",
+    o: ["Vor Ende des nächstfolgenden Intervalls. Mündlich anmelden geht, schriftlich dann innerhalb von bis zu 5 Minuten", "Innerhalb von 5 Minuten nach den offiziellen Ergebnissen", "Bevor die nächste Athletin startet", "Gar nicht, ein angezeigter Top ist nicht anfechtbar"],
     a: [0], e: "Der Einspruch kann zu zusätzlicher Zeit oder zusätzlichen Versuchen führen, also gilt §9.2. Außerhalb von Finals im World-Series-/Classic-Format heißt das: vor Ende des nächstfolgenden Intervalls. Die Absicht kann mündlich angemeldet werden, schriftlich folgt innerhalb von bis zu 5 Minuten.", r: "Anhang C §9.2, §9.3" });
 
   add({ id: "B48", lvl: 2, c: true, q: "Ein Athlet reißt sich am Boulder die Fingerkuppe auf und blutet. Was gilt?",
