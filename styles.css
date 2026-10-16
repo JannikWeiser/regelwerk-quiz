@@ -299,3 +299,25 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .legal h2 { font-size: 1rem; margin: 22px 0 6px; }
 .legal .card h2:first-child { margin-top: 0; }
 .legal a { color: var(--accent); }
+
+/* Regelwerk-Auswahl */
+.rb-list { display: grid; gap: 10px; grid-template-columns: 1fr; }
+@media (min-width: 640px) { .rb-list { grid-template-columns: repeat(3, 1fr); } }
+.rb-card {
+  position: relative; display: flex; align-items: flex-start; gap: 10px; cursor: pointer;
+  background: var(--surface); border: 1.5px solid var(--border); border-radius: var(--radius);
+  padding: 14px; box-shadow: var(--shadow); transition: border-color .15s, background .15s;
+}
+.rb-card input { position: absolute; opacity: 0; pointer-events: none; }
+.rb-card:hover { border-color: var(--accent); }
+.rb-card:has(input:checked) { border-color: var(--accent); background: var(--accent-soft); }
+.rb-card:has(input:focus-visible) { outline: 3px solid var(--accent); outline-offset: 2px; }
+.rb-check { flex: none; width: 22px; height: 22px; border-radius: 6px; border: 2px solid var(--border); margin-top: 1px; display: grid; place-items: center; background: var(--surface); }
+.rb-card:has(input:checked) .rb-check { background: var(--accent); border-color: var(--accent); }
+.rb-card:has(input:checked) .rb-check::after { content: "✓"; color: var(--on-accent); font-size: .8rem; font-weight: 900; }
+.rb-text { flex: 1; display: flex; flex-direction: column; gap: 2px; }
+.rb-text small { color: var(--muted); font-size: .8rem; line-height: 1.35; }
+.rb-card .cnt { color: var(--muted); font-size: .8rem; font-variant-numeric: tabular-nums; }
+.rb-head { margin: 6px 0 -2px; font-size: .9rem; color: var(--muted); }
+.rb-head:first-child { margin-top: 0; }
+.rb-tag { background: var(--text); color: var(--bg); }

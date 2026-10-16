@@ -2,7 +2,15 @@
   "use strict";
 
   const QUESTIONS = window.QUESTIONS || [];
+  QUESTIONS.forEach((q) => { if (!q.rb) q.rb = "dav"; });
   const BY_ID = Object.fromEntries(QUESTIONS.map((q) => [q.id, q]));
+
+  const RULEBOOKS = [
+    { key: "dav", label: "Nationales Regelwerk Klettern", sub: "DAV · 2027 · Deutsch", short: "DAV", lang: "de" },
+    { key: "wc", label: "World Climbing Rules", sub: "Competition Rules & Event Regulations 2026 · English", short: "World Climbing", lang: "en" },
+    { key: "wce", label: "World Climbing Europe", sub: "Youth Series & Youth Championship 2026 · English", short: "WC Europe", lang: "en" },
+  ];
+  const RB = Object.fromEntries(RULEBOOKS.map((r) => [r.key, r]));
 
   const DISCIPLINES = [
     { key: "lead", label: "Lead" },
@@ -13,6 +21,24 @@
   ];
   const DLABEL = Object.fromEntries(DISCIPLINES.map((d) => [d.key, d.label]));
   const LEVELS = { 1: "Grundlagen", 2: "Fortgeschritten", 3: "Experte" };
+
+  // Texte im Fragebildschirm folgen der Sprache des Regelwerks
+  const T = {
+    de: {
+      disc: DLABEL, levels: LEVELS, case: "Fallbeispiel", multi: "Mehrere Antworten richtig – wähle alle zutreffenden.",
+      right: "Richtig!", partly: "Nicht ganz.", wrong: "Leider falsch.", ref: "Regelverweis",
+      check: "Antwort prüfen", next: "Nächste Frage", results: "Auswertung", prev: "Zurück", fwd: "Weiter", submit: "Abgeben",
+      keys: (n, exam) => `Tasten 1–${n} wählen · Enter ${exam ? "weiter" : "prüfen / weiter"}`,
+    },
+    en: {
+      disc: { lead: "Lead", boulder: "Boulder", speed: "Speed", teamspeed: "Team Speed", allgemein: "General Rules" },
+      levels: { 1: "Basic", 2: "Advanced", 3: "Expert" }, case: "Case study", multi: "More than one answer is correct – select all that apply.",
+      right: "Correct!", partly: "Not quite.", wrong: "Incorrect.", ref: "Rule reference",
+      check: "Check answer", next: "Next question", results: "Results", prev: "Back", fwd: "Next", submit: "Submit",
+      keys: (n, exam) => `Keys 1–${n} to select · Enter to ${exam ? "continue" : "check / continue"}`,
+    },
+  };
+  const langOf = (q) => RB[q.rb].lang;
 
   const app = document.getElementById("app");
 
@@ -34,6 +60,11 @@
   if (!stats.q) stats.q = {};
   if (!stats.history) stats.history = [];
   let prefs = load(PREF_KEY, {});
+  function selRbs() {
+    const v = (prefs.rbs || ["dav"]).filter((k) => RB[k]);
+    return v.length ? v : ["dav"];
+  }
+  const inSel = (q) => selRbs().includes(q.rb);
 
   function record(id, correct) {
     const s = stats.q[id] || { c: 0, w: 0, last: null };
@@ -43,7 +74,7 @@
     save(STORE_KEY, stats);
   }
   const isWeak = (id) => stats.q[id] && stats.q[id].last === 0;
-  const weakIds = () => QUESTIONS.filter((q) => isWeak(q.id)).map((q) => q.id);
+  const weakIds = () => QUESTIONS.filter((q) => inSel(q) && isWeak(q.id)).map((q) => q.id);
 
   // ---------- Theme ----------
   const themeBtn = document.getElementById("themeBtn");
@@ -77,7 +108,7 @@
     }
     return a;
   }
-  const countIn = (d) => QUESTIONS.filter((q) => q.d === d).length;
+  const countIn = (d) => QUESTIONS.filter((q) => inSel(q) && q.d === d).length;
   const pct = (a, b) => (b ? Math.round((a / b) * 100) : 0);
   function fmtTime(sec) {
     const m = Math.floor(sec / 60), s = sec % 60;
@@ -140,12 +171,22 @@
   // ---------- Home ----------
   function renderHome() {
     stopTimer();
-    const total = QUESTIONS.length;
+    const rbs = selRbs();
+    const total = QUESTIONS.filter(inSel).length;
     const weak = weakIds().length;
     const answered = Object.keys(stats.q).filter((id) => BY_ID[id]).length;
 
-    const rows = DISCIPLINES.map((d) => {
-      const qs = QUESTIONS.filter((q) => q.d === d.key);
+    const rbChips = RULEBOOKS.map((r) => `
+      <label class="rb-card">
+        <input type="checkbox" name="rb" value="${r.key}" ${rbs.includes(r.key) ? "checked" : ""}>
+        <span class="rb-check" aria-hidden="true"></span>
+        <span class="rb-text"><strong>${r.label}</strong><small>${r.sub}</small></span>
+        <span class="cnt">${QUESTIONS.filter((q) => q.rb === r.key).length}</span>
+      </label>`).join("");
+
+    const rows = rbs.map((rk) => `${rbs.length > 1 ? `<h3 class="rb-head">${RB[rk].label}</h3>` : ""}` + DISCIPLINES.map((d) => {
+      const qs = QUESTIONS.filter((q) => q.rb === rk && q.d === d.key);
+      if (!qs.length) return "";
       const ok = qs.filter((q) => stats.q[q.id] && stats.q[q.id].last === 1).length;
       const bad = qs.filter((q) => isWeak(q.id)).length;
       return `
@@ -156,7 +197,7 @@
             <i class="ok" style="width:${(ok / qs.length) * 100}%"></i><i class="bad" style="width:${(bad / qs.length) * 100}%"></i>
           </div>
         </div>`;
-    }).join("");
+    }).join("")).join("");
 
     const last = stats.history.slice(-5).reverse().map((h) => `
       <li>${new Date(h.t).toLocaleDateString("de-DE")} · ${h.mode === "exam" ? "Prüfung" : h.mode === "review" ? "Wiederholung" : "Lernen"} · <b>${h.score}%</b> (${h.ok}/${h.n})${h.mode === "exam" ? (h.pass ? " ✓" : " ✗") : ""}</li>`).join("");
@@ -164,9 +205,13 @@
     app.innerHTML = `
       <section class="hero">
         <h1>Wie sattelfest bist du im Regelwerk?</h1>
-        <p>${total} Fragen und Fallbeispiele zu Lead, Boulder, Speed, Team Speed und den Allgemeinen Regeln. Jede Antwort mit Erklärung und Regelverweis.</p>
+        <p>Fragen und Fallbeispiele zu Lead, Boulder, Speed, Team Speed und den allgemeinen Regeln. Jede Antwort mit Erklärung und Regelverweis.</p>
       </section>
 
+      <div class="section-title" style="margin-top:8px"><h2>1. Regelwerke wählen</h2><span class="small muted" aria-live="polite">${total} Fragen ausgewählt</span></div>
+      <div class="rb-list" role="group" aria-label="Regelwerke">${rbChips}</div>
+
+      <div class="section-title"><h2>2. Modus wählen</h2></div>
       <div class="modes">
         <button class="mode" data-mode="learn" type="button">
           <span class="icon" aria-hidden="true">✎</span>
@@ -196,6 +241,17 @@
       </div>
     `;
 
+    app.querySelectorAll('input[name="rb"]').forEach((cb) => cb.addEventListener("change", () => {
+      const chosen = [...app.querySelectorAll('input[name="rb"]:checked')].map((x) => x.value);
+      if (!chosen.length) { cb.checked = true; toast("Mindestens ein Regelwerk auswählen"); return; }
+      prefs.rbs = chosen;
+      save(PREF_KEY, prefs);
+      const y = window.scrollY;
+      renderHome();
+      window.scrollTo({ top: y });
+      const again = app.querySelector(`input[name="rb"][value="${cb.value}"]`);
+      if (again) again.focus({ preventScroll: true });
+    }));
     app.querySelectorAll(".mode").forEach((b) => b.addEventListener("click", () => {
       const m = b.dataset.mode;
       if (m === "review") startReview();
@@ -223,7 +279,7 @@
       examPass: 80,
     }, prefs.setup || {});
 
-    const chips = DISCIPLINES.map((d) => `
+    const chips = DISCIPLINES.filter((d) => countIn(d.key)).map((d) => `
       <label class="chip d-${d.key}">
         <input type="checkbox" name="disc" value="${d.key}" ${p.discs.includes(d.key) ? "checked" : ""}>
         <span class="dot"></span>${d.label}<span class="cnt">${countIn(d.key)}</span>
@@ -235,6 +291,7 @@
 
     app.innerHTML = `
       <div class="section-title" style="margin-top:12px"><h1 style="margin:0">${exam ? "Prüfung einstellen" : "Lernmodus"}</h1></div>
+      <p class="muted small" style="margin:-4px 0 12px">Regelwerk${selRbs().length > 1 ? "e" : ""}: ${selRbs().map((k) => RB[k].label).join(", ")} · <button class="linkbtn" type="button" id="changeRb">ändern</button></p>
       <form class="card stack" id="setupForm">
         <div class="field">
           <span class="flabel">Bereiche</span>
@@ -286,7 +343,7 @@
         examPass: exam ? Number(form.querySelector("#examPass").value) : p.examPass,
       };
     };
-    const pool = (s) => QUESTIONS.filter((q) => s.discs.includes(q.d) && s.levels.includes(String(q.lvl)));
+    const pool = (s) => QUESTIONS.filter((q) => inSel(q) && s.discs.includes(q.d) && s.levels.includes(String(q.lvl)));
     const update = () => {
       const s = read();
       const n = pool(s).length;
@@ -303,6 +360,7 @@
     form.addEventListener("input", update);
     update();
     document.getElementById("backBtn").addEventListener("click", renderHome);
+    document.getElementById("changeRb").addEventListener("click", renderHome);
     form.addEventListener("submit", (ev) => {
       ev.preventDefault();
       const s = read();
@@ -334,6 +392,7 @@
     const exam = s.mode === "exam";
     const multi = isMulti(q);
     const n = s.items.length;
+    const L = T[langOf(q)];
     const answeredCount = s.items.filter((it) => (exam ? it.sel.length : it.checked)).length;
 
     const opts = item.order.map((oi, pos) => {
@@ -357,9 +416,9 @@
     if (item.checked && !exam) {
       feedback = `
         <div class="feedback ${item.correct ? "ok" : "bad"}" role="status">
-          <div class="verdict">${item.correct ? "Richtig!" : multi ? "Nicht ganz." : "Leider falsch."}</div>
+          <div class="verdict">${item.correct ? L.right : multi ? L.partly : L.wrong}</div>
           <p>${esc(q.e)}</p>
-          <span class="ref">Regelverweis: <b>${esc(q.r)}</b></span>
+          <span class="ref">${L.ref}: <b>${esc(q.r)}</b></span>
         </div>`;
     }
 
@@ -368,14 +427,14 @@
     let actions;
     if (exam) {
       actions = `
-        <button class="btn secondary" type="button" id="prevBtn" ${s.idx === 0 ? "disabled" : ""}>Zurück</button>
-        ${last ? `<button class="btn" type="button" id="finishBtn">Abgeben</button>` : `<button class="btn" type="button" id="nextBtn">Weiter</button>`}`;
+        <button class="btn secondary" type="button" id="prevBtn" ${s.idx === 0 ? "disabled" : ""}>${L.prev}</button>
+        ${last ? `<button class="btn" type="button" id="finishBtn">${L.submit}</button>` : `<button class="btn" type="button" id="nextBtn">${L.fwd}</button>`}`;
     } else if (!item.checked) {
-      actions = `<button class="btn" type="button" id="checkBtn" ${item.sel.length ? "" : "disabled"}>Antwort prüfen</button>`;
+      actions = `<button class="btn" type="button" id="checkBtn" ${item.sel.length ? "" : "disabled"}>${L.check}</button>`;
     } else {
       actions = last
-        ? `<button class="btn" type="button" id="finishBtn">Auswertung</button>`
-        : `<button class="btn" type="button" id="nextBtn">Nächste Frage</button>`;
+        ? `<button class="btn" type="button" id="finishBtn">${L.results}</button>`
+        : `<button class="btn" type="button" id="nextBtn">${L.next}</button>`;
     }
 
     const dots = exam ? `<nav class="navdots" aria-label="Fragenübersicht">${s.items.map((it, i) =>
@@ -390,17 +449,18 @@
       </div>
       <article class="card">
         <div class="tags">
-          <span class="tag disc d-${q.d}"><span class="dot"></span>${DLABEL[q.d]}</span>
-          ${q.c ? `<span class="tag case">Fallbeispiel</span>` : ""}
-          <span class="tag" title="${LEVELS[q.lvl]}"><span class="lvl">${"●".repeat(q.lvl)}${"○".repeat(3 - q.lvl)}</span> ${LEVELS[q.lvl]}</span>
+          <span class="tag rb-tag">${RB[q.rb].short}</span>
+          <span class="tag disc d-${q.d}"><span class="dot"></span>${L.disc[q.d]}</span>
+          ${q.c ? `<span class="tag case">${L.case}</span>` : ""}
+          <span class="tag" title="${L.levels[q.lvl]}"><span class="lvl">${"●".repeat(q.lvl)}${"○".repeat(3 - q.lvl)}</span> ${L.levels[q.lvl]}</span>
         </div>
-        <h2 class="question" id="qtext">${esc(q.q)}</h2>
-        ${multi ? `<div class="multi-hint">Mehrere Antworten richtig – wähle alle zutreffenden.</div>` : ""}
-        <div class="options" role="${multi ? "group" : "radiogroup"}" aria-labelledby="qtext">${opts}</div>
+        <h2 class="question" id="qtext" lang="${langOf(q)}">${esc(q.q)}</h2>
+        ${multi ? `<div class="multi-hint">${L.multi}</div>` : ""}
+        <div class="options" role="${multi ? "group" : "radiogroup"}" aria-labelledby="qtext" lang="${langOf(q)}">${opts}</div>
         ${feedback}
         <div class="actions">${actions}</div>
         ${dots}
-        <div class="kbd-hint">Tasten 1–${q.o.length} wählen · Enter ${exam ? "weiter" : "prüfen / weiter"}</div>
+        <div class="kbd-hint">${L.keys(q.o.length, exam)}</div>
       </article>
     `;
 
@@ -486,17 +546,18 @@
     const s = session;
     if (!scored.length) { renderHome(); return; }
     const wrong = scored.filter((it) => !it.correct);
-    const byD = DISCIPLINES.map((d) => {
-      const its = scored.filter((it) => BY_ID[it.id].d === d.key);
+    const usedRbs = RULEBOOKS.filter((r) => scored.some((it) => BY_ID[it.id].rb === r.key));
+    const byD = usedRbs.map((r) => DISCIPLINES.map((d) => {
+      const its = scored.filter((it) => BY_ID[it.id].d === d.key && BY_ID[it.id].rb === r.key);
       if (!its.length) return "";
       const k = its.filter((it) => it.correct).length;
       return `
         <div class="prog-row d-${d.key}">
-          <div class="label"><span class="dot"></span>${d.label}</div>
+          <div class="label"><span class="dot"></span>${usedRbs.length > 1 ? r.short + " · " : ""}${d.label}</div>
           <div class="nums">${k}/${its.length} · ${pct(k, its.length)}%</div>
           <div class="bar"><i class="ok" style="width:${pct(k, its.length)}%"></i><i class="bad" style="width:${100 - pct(k, its.length)}%"></i></div>
         </div>`;
-    }).join("");
+    }).join("")).join("");
 
     const reviewList = wrong.map((it) => {
       const q = BY_ID[it.id];
@@ -506,11 +567,11 @@
       }).join("");
       return `
         <details>
-          <summary><span class="x" aria-hidden="true">✕</span><span>${esc(q.q)}</span></summary>
-          <ul class="ans">${ans}</ul>
+          <summary><span class="x" aria-hidden="true">✕</span><span lang="${langOf(q)}">${esc(q.q)}</span></summary>
+          <ul class="ans" lang="${langOf(q)}">${ans}</ul>
           ${it.sel.length ? "" : `<p class="small muted">Nicht beantwortet.</p>`}
-          <p class="small">${esc(q.e)}</p>
-          <span class="ref">Regelverweis: <b>${esc(q.r)}</b></span>
+          <p class="small" lang="${langOf(q)}">${esc(q.e)}</p>
+          <span class="ref">${T[langOf(q)].ref}: <b>${esc(q.r)}</b></span>
         </details>`;
     }).join("");
 
