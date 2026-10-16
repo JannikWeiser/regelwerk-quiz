@@ -1,6 +1,6 @@
 # Regelwerk-Quiz Klettern
 
-Lern- und Prüfungsquiz für Schiedsrichterinnen und Schiedsrichter. Vor dem Start wählt man, aus welchen Regelwerken Fragen kommen:
+Lern- und Prüfungsquiz für Schiedsrichterinnen und Schiedsrichter. Oberfläche zweisprachig (DE/EN, Voreinstellung nach Browsersprache); die Fragen bleiben in der Sprache ihres Regelwerks. Vor dem Start wählt man, aus welchen Regelwerken Fragen kommen:
 
 - **Nationales Regelwerk Klettern 2027 (DAV)** – Fragen auf Deutsch (`data/lead.js`, `boulder.js`, `speed.js`, `teamspeed.js`, `allgemein.js`)
 - **World Climbing Rules 2026** (Competition Rules, Event Regulations v3, Errata 1 April 2026) – Fragen auf Englisch (`data/wc_*.js`)

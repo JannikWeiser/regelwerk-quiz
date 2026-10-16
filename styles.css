@@ -321,3 +321,11 @@ input[type="range"] { width: 100%; accent-color: var(--accent); }
 .rb-head { margin: 6px 0 -2px; font-size: .9rem; color: var(--muted); }
 .rb-head:first-child { margin-top: 0; }
 .rb-tag { background: var(--text); color: var(--bg); }
+
+/* Sprachumschalter */
+.top-actions { display: flex; align-items: center; gap: 8px; }
+.lang-switch { display: inline-flex; border: 1px solid var(--border); border-radius: 10px; overflow: hidden; }
+.lang-switch button { background: none; border: 0; min-width: 40px; min-height: 40px; padding: 0 10px; font-size: .85rem; font-weight: 700; color: var(--muted); }
+.lang-switch button + button { border-left: 1px solid var(--border); }
+.lang-switch button[aria-pressed="true"] { background: var(--accent); color: var(--on-accent); }
+.lang-switch button:hover:not([aria-pressed="true"]) { color: var(--text); background: var(--surface); }

@@ -16,19 +16,25 @@
         <svg viewBox="0 0 32 32"><rect width="32" height="32" rx="7"/><path d="M9 23l5-12 4 7 2-3 3 8z"/></svg>
       </span>
       <span class="brand-text">
-        <strong>Regelwerk-Quiz</strong>
+        <strong data-i18n="brand">Regelwerk-Quiz</strong>
         <small>DAV &amp; World Climbing</small>
       </span>
     </button>
-    <button class="ghost small" id="themeBtn" type="button" aria-label="Farbschema wechseln">◐</button>
+    <div class="top-actions">
+      <div class="lang-switch" role="group" aria-label="Sprache / Language">
+        <button type="button" data-lang="de" lang="de">DE</button>
+        <button type="button" data-lang="en" lang="en">EN</button>
+      </div>
+      <button class="ghost small" id="themeBtn" type="button" aria-label="Farbschema wechseln">◐</button>
+    </div>
   </header>
 
   <main id="app" tabindex="-1"></main>
 
   <footer class="footer">
-    <p>Inoffizielles Lernquiz für Schiedsrichterinnen und Schiedsrichter. Verbindlich sind allein die jeweils veröffentlichten Regelwerke (DAV bzw. World Climbing).</p>
-    <p class="footer-links"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
-    <p class="abbr">DAV: <b>AR</b> Allgemeine Regeln · <b>WB</b> Wettkampfbestimmungen · <b>TO</b> Technical Officials · <b>Anhang A–D</b> Lead, Speed, Boulder, Team Speed</p>
+    <p data-i18n="footerNote">Inoffizielles Lernquiz für Schiedsrichterinnen und Schiedsrichter. Verbindlich sind allein die jeweils veröffentlichten Regelwerke (DAV bzw. World Climbing).</p>
+    <p class="footer-links" data-i18n="footerLinks"><a href="impressum.html">Impressum</a> · <a href="datenschutz.html">Datenschutz</a></p>
+    <p class="abbr" data-i18n="footerAbbrDav">DAV: <b>AR</b> Allgemeine Regeln · <b>WB</b> Wettkampfbestimmungen · <b>TO</b> Technical Officials · <b>Anhang A–D</b> Lead, Speed, Boulder, Team Speed</p>
     <p class="abbr">World Climbing: <b>CR</b> Competition Rules 2026 · <b>ER</b> Event Regulations (v3, Annex A–D) · <b>EYS</b> Europe Youth Series Regulations 2026 · <b>EYCh</b> Europe Youth Championship Regulations 2026</p>
   </footer>
 
