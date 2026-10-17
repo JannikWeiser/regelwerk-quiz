@@ -17,3 +17,13 @@ Die Fragen liegen in `data/*.js`. Jede Frage hat Antwortoptionen (`o`), die Indi
 Jede Frage hat zusätzlich das Regelwerk (`rb`: `dav`, `wc`, `wce`; Standard `dav`).
 
 Inoffizielles Lernangebot. Verbindlich sind allein die jeweils veröffentlichten Regelwerke.
+
+## Schwierigkeit
+
+Jede Frage hat `k: [Fundstelle, Denkschritt, Seltenheit]` mit Werten 0–2:
+
+- **Fundstelle:** 0 Haupttext · 1 Anmerkung/Tabelle/Formatdetail · 2 mehrere Stellen, Errata oder Judge Guide
+- **Denkschritt:** 0 Regel wiedergeben · 1 auf einen Fall anwenden · 2 Regeln verknüpfen, rechnen oder Ausnahme erkennen
+- **Seltenheit in der Praxis:** 0 bei jedem Wettkampf · 1 gelegentlich · 2 selten
+
+Punkte = Fundstelle + Denkschritt + 2 × Seltenheit (0–8). Stufen: 0–2 Grundlagen, 3–5 Fortgeschritten, 6–8 Experte (`LEVEL_LIMITS` in `app.js`). Mehrfachauswahl zählt nicht.

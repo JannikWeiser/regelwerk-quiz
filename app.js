@@ -2,7 +2,15 @@
   "use strict";
 
   const QUESTIONS = window.QUESTIONS || [];
-  QUESTIONS.forEach((q) => { if (!q.rb) q.rb = "dav"; });
+  // Schwierigkeit: k = [Fundstelle 0–2, Denkschritt 0–2, Seltenheit in der Praxis 0–2]; Seltenheit zählt doppelt.
+  // Punkte 0–8 → Stufe nach LEVEL_LIMITS (bis einschließlich Grenze).
+  const LEVEL_LIMITS = [2, 5]; // 0–2 Grundlagen · 3–5 Fortgeschritten · 6–8 Experte
+  const points = (q) => q.k[0] + q.k[1] + 2 * q.k[2];
+  QUESTIONS.forEach((q) => {
+    if (!q.rb) q.rb = "dav";
+    const p = points(q);
+    q.lvl = p <= LEVEL_LIMITS[0] ? 1 : p <= LEVEL_LIMITS[1] ? 2 : 3;
+  });
   const BY_ID = Object.fromEntries(QUESTIONS.map((q) => [q.id, q]));
 
   // ---------- Oberflächentexte (DE/EN) – die Fragen bleiben in der Sprache ihres Regelwerks ----------
@@ -59,6 +67,7 @@
       wrongList: "Falsch beantwortet", tapHint: "zum Aufklappen tippen", yourChoice: "deine Wahl", notAnswered: "Nicht beantwortet.",
       allRight: "Alles richtig, stark!",
       locale: "de-DE",
+      lvlWhy: (k, p) => `${p} Punkte: Fundstelle ${k[0]} + Denkschritt ${k[1]} + Seltenheit in der Praxis ${k[2]} × 2`,
       minutes: (n) => `${n} ${n === 1 ? "Minute" : "Minuten"}`,
       dur: (m, s) => (m ? `${m} ${m === 1 ? "Minute" : "Minuten"}${s ? ` und ${s} ${s === 1 ? "Sekunde" : "Sekunden"}` : ""}` : `${s} ${s === 1 ? "Sekunde" : "Sekunden"}`),
     },
@@ -114,6 +123,7 @@
       wrongList: "Answered incorrectly", tapHint: "tap to expand", yourChoice: "your choice", notAnswered: "Not answered.",
       allRight: "All correct – great job!",
       locale: "en-GB",
+      lvlWhy: (k, p) => `${p} points: source ${k[0]} + reasoning ${k[1]} + rarity in practice ${k[2]} × 2`,
       minutes: (n) => `${n} ${n === 1 ? "minute" : "minutes"}`,
       dur: (m, s) => (m ? `${m} ${m === 1 ? "minute" : "minutes"}${s ? ` and ${s} ${s === 1 ? "second" : "seconds"}` : ""}` : `${s} ${s === 1 ? "second" : "seconds"}`),
     },
@@ -576,7 +586,7 @@
           <span class="tag rb-tag">${RB[q.rb].short}</span>
           <span class="tag disc d-${q.d}"><span class="dot"></span>${t.disc[q.d]}</span>
           ${q.c ? `<span class="tag case">${t.caseStudy}</span>` : ""}
-          <span class="tag" title="${t.levels[q.lvl]}">${lvlDots(q.lvl)} ${t.levels[q.lvl]}</span>
+          <span class="tag" title="${t.lvlWhy(q.k, points(q))}">${lvlDots(q.lvl)} ${t.levels[q.lvl]}</span>
         </div>
         <h2 class="question" id="qtext" lang="${ql}">${esc(q.q)}</h2>
         ${multi ? `<div class="multi-hint">${t.multi}</div>` : ""}
