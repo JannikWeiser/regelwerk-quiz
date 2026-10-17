@@ -10,8 +10,8 @@
     a: [0], e: "A speed attempt starts with the Starting Signal or when the force on the start pad drops below the threshold, whichever comes first.", r: "CR §7.2" });
 
   add({ id: "WS02", lvl: 1, q: "Which recorded Reaction Time is a False Start?",
-    o: ["0.099 s", "0.100 s", "0.101 s", "0.130 s"],
-    a: [0], e: "A start is invalid if the Reaction Time is less than 0.100 s. Exactly 0.100 s is valid.", r: "CR §7.3" });
+    o: ["0.099 seconds", "0.100 seconds", "0.101 seconds", "0.130 seconds"],
+    a: [0], e: "A start is invalid if the Reaction Time is less than 0.100 seconds. Exactly 0.100 seconds is valid.", r: "CR §7.3" });
 
   add({ id: "WS03", lvl: 2, q: "How is “Reaction Time” defined?",
     o: ["The difference between the Starting Signal and the time at which the force on the starting pad falls below the trigger threshold", "The time from “Ready” to the first hand movement", "The time from “At your marks” to the Starting Signal", "The time from the Starting Signal to the first hold"],
@@ -57,9 +57,9 @@
     o: ["Additional races are held; they are not scoring attempts and no official times or records are recorded", "All tied competitors advance", "Lots are drawn", "Reaction time decides"],
     a: [0], e: "Ties at the quota are separated by extra races. Times from these races are not official results, and no records can be set.", r: "ER Annex B §2.4, Notes 32–33" });
 
-  add({ id: "WS14", lvl: 3, c: true, q: "Five competitors are tied at the quota boundary in a Speed 4 event. How is it resolved?",
-    o: ["Each makes one run on lane C; the best advance", "Head-to-head races of four", "Lots", "Best qualification reaction time"],
-    a: [0], e: "Up to four tied competitors (Speed 4) race head-to-head with random lanes. More than four each make one run on lane C (Speed 4) or lane A (Speed 2).", r: "ER Annex B Note 32" });
+  add({ id: "WS14", lvl: 3, c: true, q: "5 competitors are tied at the quota boundary in a Speed 4 event. How is it resolved?",
+    o: ["Each makes 1 run on lane C; the best advance", "Head-to-head races of 4", "Lots", "Best qualification reaction time"],
+    a: [0], e: "Up to 4 tied competitors (Speed 4) race head-to-head with random lanes. More than 4 each make 1 run on lane C (Speed 4) or lane A (Speed 2).", r: "ER Annex B Note 32" });
 
   add({ id: "WS15", lvl: 2, q: "In a Speed 2 tournament bracket with 16 starters, who races in heat 1 of the preliminary stage?",
     o: ["Qualifier #1 vs qualifier #16", "Qualifier #1 vs qualifier #2", "Qualifier #1 vs qualifier #8", "Qualifier #1 vs qualifier #9"],
@@ -86,18 +86,18 @@
     a: [0], e: "If both false start, both fall or both record the same time, the race is re-run. If that is inconclusive, best results under §8.2 decide.", r: "ER Annex B §6.3" });
 
   add({ id: "WS21", lvl: 2, q: "How are speed times measured and published?",
-    o: ["Measured to 1/1000 s; official times rounded down to 1/100 s", "Measured and published to 1/1000 s", "Measured to 1/100 s, published to 1/10 s", "Measured to 1/1000 s, published rounded to nearest 1/100 s"],
-    a: [0], e: "Times are measured to 1/1000 s. Official times, including records, are rounded down to 1/100 s. High-precision timing may show a tie-break but does not replace the official time.", r: "ER Annex B §7.1–7.3" });
+    o: ["Measured to 1/1000 second; official times rounded down to 1/100 second", "Measured and published to 1/1000 second", "Measured to 1/100 second, published to 1/10 second", "Measured to 1/1000 second, published rounded to nearest 1/100 second"],
+    a: [0], e: "Times are measured to 1/1000 second. Official times, including records, are rounded down to 1/100 second. High-precision timing may show a tie-break but does not replace the official time.", r: "ER Annex B §7.1–7.3" });
 
-  add({ id: "WS22", lvl: 3, c: true, q: "The world record is 4.79 s (measured 4798 ms). A climber records 4795 ms. What is the result?",
-    o: ["They equal the record but do not break it", "New record because 4795 < 4798", "New record of 4.80 s", "The time is not eligible for records"],
-    a: [0], e: "4795 ms rounds down to 4.79 s, which equals the record. Breaking it requires 4789 ms or better.", r: "ER Annex B Note 48" });
+  add({ id: "WS22", lvl: 3, c: true, q: "The world record is 4.79 seconds (measured 4.798 seconds). A climber records 4.795 seconds. What is the result?",
+    o: ["They equal the record but do not break it", "New record because 4795 < 4798", "New record of 4.80 seconds", "The time is not eligible for records"],
+    a: [0], e: "4.795 seconds rounds down to 4.79 seconds, which equals the record. Breaking it requires 4.789 seconds or better.", r: "ER Annex B Note 48" });
 
   add({ id: "WS23", lvl: 2, q: "In what order are results compared in the speed ranking?",
     o: ["Valid Time (ascending), Fall, False Start, Not Started", "Valid Time, False Start, Fall, Not Started", "Fall, Valid Time, False Start, Not Started", "Valid Time, Not Started, Fall, False Start"],
     a: [0], e: "The order is valid time (ascending), then Fall, then False Start, then Not Started.", r: "ER Annex B §8.2" });
 
-  add({ id: "WS24", lvl: 3, c: true, q: "Qualification: A has 6.12 and a Fall; B has 6.12 and 7.01. Who ranks higher?",
+  add({ id: "WS24", lvl: 3, c: true, q: "Qualification: A has 6.12 seconds and a Fall; B has 6.12 seconds and 7.01 seconds. Who ranks higher?",
     o: ["B – the next best result is a valid time vs a fall", "A", "Tied", "Better reaction time"],
     a: [0], e: "With equal best results, the next best result decides, and a valid time beats a fall.", r: "ER Annex B §8.2(A)" });
 
@@ -154,23 +154,23 @@
     a: [0], e: "The errata replaced “following the quarter-final races” with “before the final stage races”.", r: "ER Annex B §4.5; Errata 1 April 2026 No. 2" });
 
   add({ id: "WS38", lvl: 3, c: true, q: "Speed 4 non-medal race: false starts on lanes B, C and D. What happens?",
-    o: ["Lane A advances; lanes B/C/D re-run", "Lane A advances alone; no re-run", "Re-run all four", "Lanes A and B advance"],
+    o: ["Lane A advances; lanes B/C/D re-run", "Lane A advances alone; no re-run", "Re-run all 4", "Lanes A and B advance"],
     a: [0], e: "Per the protocol in Note 44, lane A advances and lanes B, C and D re-run to decide the second place.", r: "ER Annex B §6.5, Note 44" });
 
-  add({ id: "WS39", lvl: 3, c: true, q: "Speed 4 non-medal race: A 5.031, B 4.99, C 5.05, D 5.031. What happens?",
-    o: ["Lanes A and D re-run", "A and D both advance", "B and C advance", "Re-run all four"],
+  add({ id: "WS39", lvl: 3, c: true, q: "Speed 4 non-medal race: A 5.031 seconds, B 4.99 seconds, C 5.05 seconds, D 5.031 seconds. What happens?",
+    o: ["Lanes A and D re-run", "A and D both advance", "B and C advance", "Re-run all 4"],
     a: [0], e: "B advances. A and D are tied for the second spot and re-run.", r: "ER Annex B Note 45" });
 
-  add({ id: "WS40", lvl: 3, c: true, q: "Speed 4 non-medal race: A Fall, B Fall, C Fall, D 4.99. What happens?",
-    o: ["D advances; lanes A, B and C re-run to determine who advances", "D advances alone", "Re-run all four", "A and D advance"],
+  add({ id: "WS40", lvl: 3, c: true, q: "Speed 4 non-medal race: A Fall, B Fall, C Fall, D 4.99 seconds. What happens?",
+    o: ["D advances; lanes A, B and C re-run to determine who advances", "D advances alone", "Re-run all 4", "A and D advance"],
     a: [0], e: "D advances. The second place cannot be determined, so A, B and C re-run.", r: "ER Annex B Note 45" });
 
-  add({ id: "WS41", lvl: 3, c: true, q: "Speed 4 medal race: A 5.02, B 4.97, C 4.97, D Fall. What happens?",
-    o: ["Lanes B and C re-run to determine 1st/2nd", "B and C both 1st", "Re-run all four", "Countback decides 1st"],
-    a: [0], e: "When two or more competitors are tied for 1st, only they re-run.", r: "ER Annex B §6.6(B), Note 47" });
+  add({ id: "WS41", lvl: 3, c: true, q: "Speed 4 medal race: A 5.02 seconds, B 4.97 seconds, C 4.97 seconds, D Fall. What happens?",
+    o: ["Lanes B and C re-run to determine 1st/2nd", "B and C both 1st", "Re-run all 4", "Countback decides 1st"],
+    a: [0], e: "When 2 or more competitors are tied for 1st, only they re-run.", r: "ER Annex B §6.6(B), Note 47" });
 
   add({ id: "WS42", lvl: 3, c: true, q: "Speed 4 medal race: false starts on lanes A and B. What happens?",
-    o: ["Lanes C and D re-run", "C and D are 1st and 2nd without re-run", "Re-run all four", "Lane C wins"],
+    o: ["Lanes C and D re-run", "C and D are 1st and 2nd without re-run", "Re-run all 4", "Lane C wins"],
     a: [0], e: "Per the medal-race protocol in Note 46: FS on A and B leads to a re-run for lanes C and D.", r: "ER Annex B §6.6, Note 46" });
 
   add({ id: "WS43", lvl: 2, q: "By when must speed competitors report under World Climbing regulations?",
@@ -219,16 +219,16 @@
     a: [0], e: "An anchor-leg false start never stops the race. The result is recorded.", r: "ER Annex D §5.2" });
 
   addT({ id: "WT10", lvl: 3, q: "After the April 2026 errata, in which cases is a Team Speed bracket race re-run?",
-    o: ["Both teams record the same valid time", "Both teams fail to record a valid time", "Both teams record a False Start on either leg", "One team is faster by less than 0.5 s"],
+    o: ["Both teams record the same valid time", "Both teams fail to record a valid time", "Both teams record a False Start on either leg", "One team is faster by less than 0.5 seconds"],
     a: [0, 1, 2], e: "The errata deleted the exclusion in (B) and changed (C) from “the anchor” to “either”. If the re-run is still tied, best results under §8.2 decide.", r: "ER Annex D §6.3; Errata 1 April 2026 No. 5" });
 
-  addT({ id: "WT11", lvl: 2, c: true, q: "Bracket race: team 1 records a valid 12.40; team 2’s anchor makes a False Start. Winner?",
+  addT({ id: "WT11", lvl: 2, c: true, q: "Bracket race: team 1 records a valid 12.40 seconds; team 2’s anchor makes a False Start. Winner?",
     o: ["Team 1", "Team 2 if faster", "Re-run", "No winner"],
     a: [0], e: "If one team records a False Start or does not start, the other team wins.", r: "ER Annex D §6.2(A), §5.2" });
 
   addT({ id: "WT12", lvl: 2, q: "How are ties at the Team Speed final quota resolved?",
-    o: ["Two tied teams race head-to-head with random lanes; more than two each make one run on lanes A+B; these runs produce no official times", "Lots", "Fastest anchor leg", "All advance"],
-    a: [0], e: "Two tied teams race head-to-head. With more, each team makes one run on lanes A+B. No official times or records come from these runs.", r: "ER Annex D §2.4, Notes 68–69" });
+    o: ["2 tied teams race head-to-head with random lanes; more than 2 each make 1 run on lanes A+B; these runs produce no official times", "Lots", "Fastest anchor leg", "All advance"],
+    a: [0], e: "2 tied teams race head-to-head. With more, each team makes 1 run on lanes A+B. No official times or records come from these runs.", r: "ER Annex D §2.4, Notes 68–69" });
 
   addT({ id: "WT13", lvl: 2, c: true, q: "A National Federation enters athletes A, B, C. A/B race in qualification, B/C in the final, and the team finishes 3rd. Who gets medals?",
     o: ["A, B and C", "B and C only", "B only", "A and B only"],
@@ -239,7 +239,7 @@
     a: [0], e: "Claims go to the Jury President, up to “At your marks” of the next race. Only directly affected competitors re-run.", r: "ER Annex D §9.1, §9.3" });
 
   addT({ id: "WT15", lvl: 1, q: "How is the Team Speed final organised?",
-    o: ["Single elimination with small final (3rd/4th) and big final (1st/2nd), brackets as for Speed 2", "Speed 4 style – best two advance", "Time trial", "Round robin"],
+    o: ["Single elimination with small final (3rd/4th) and big final (1st/2nd), brackets as for Speed 2", "Speed 4 style – best 2 advance", "Time trial", "Round robin"],
     a: [0], e: "The final is a single elimination tournament. Losers of the semi-final stage race the small final, winners the big final.", r: "ER Annex D §2.5, Note 70" });
 
   addT({ id: "WT16", lvl: 3, q: "When does the presentation of finalists take place in Team Speed (per the April 2026 errata)?",

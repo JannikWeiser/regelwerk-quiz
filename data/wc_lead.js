@@ -11,7 +11,7 @@
     o: ["When the climber clips the final anchor on the route", "When the climber controls the top hold with both hands", "When the climber touches the anchor", "When the climber reaches the highest numbered hold on the scoring topo"],
     a: [0], e: "A lead attempt is successful when the climber clips the final anchor.", r: "CR §8.3" });
 
-  add({ id: "WL03", lvl: 2, c: true, q: "A climber clips the final anchor from a hold two moves below the last numbered hold. What is the result in a lead event?",
+  add({ id: "WL03", lvl: 2, c: true, q: "A climber clips the final anchor from a hold 2 moves below the last numbered hold. What is the result in a lead event?",
     o: ["Top", "The hold used to clip, without “+”", "The hold used to clip, with “+”", "The attempt is invalid"],
     a: [0], e: "In the lead discipline, the result is Top regardless of the hold used to clip the final anchor. Only in the lead stage of boulder&lead must the anchor be clipped from the marked finishing hold.", r: "CR §8.3, Note 20" });
 
@@ -32,15 +32,15 @@
     a: [0], e: "A z-clipped quickdraw is treated as unclipped. Scoring stops at its Last Clipping Position and restarts from the same hold once the z-clip is corrected.", r: "CR Note 18" });
 
   add({ id: "WL08", lvl: 1, q: "How may a competitor correct a z-clip?",
-    o: ["By un-clipping and re-clipping either of the two relevant quickdraws", "It cannot be corrected; the attempt ends", "Only by down-climbing below the lower quickdraw", "Only with the permission of the route judge"],
-    a: [0], e: "A z-clip may be corrected by un-clipping and re-clipping either of the two relevant quickdraws. If it is not corrected, §8.2(C) governs when the attempt ends.", r: "CR §8.2(B), Note 18" });
+    o: ["By un-clipping and re-clipping either of the 2 relevant quickdraws", "It cannot be corrected; the attempt ends", "Only by down-climbing below the lower quickdraw", "Only with the permission of the route judge"],
+    a: [0], e: "A z-clip may be corrected by un-clipping and re-clipping either of the 2 relevant quickdraws. If it is not corrected, §8.2(C) governs when the attempt ends.", r: "CR §8.2(B), Note 18" });
 
   add({ id: "WL09", lvl: 3, q: "Which statements about the Last Clipping Position and the Last Safe Position are correct?",
     o: ["They may not be the same position", "Reaching the Last Clipping Position without clipping stops scoring, but the attempt continues", "At the Last Safe Position, any move to pass beyond it without clipping ends the attempt", "Passing the Last Clipping Position without clipping always ends the attempt immediately"],
     a: [0, 1, 2], e: "The Last Clipping Position is the last hold from which clipping is possible. The Last Safe Position is the point beyond which progress without clipping would be unsafe. Passing the former only pauses scoring, passing the latter without clipping ends the attempt.", r: "CR Note 19; Glossary" });
 
-  add({ id: "WL10", lvl: 3, c: true, q: "A climber passes the Last Clipping Position of quickdraw 7 by two holds without clipping, then clips before reaching the Last Safe Position. What happens?",
-    o: ["The attempt continues; scoring resumes from the hold designated as the Last Clipping Position", "The attempt is unsuccessful for late clipping", "The two holds above are credited retroactively", "The climber must down-climb to the Last Clipping Position"],
+  add({ id: "WL10", lvl: 3, c: true, q: "A climber passes the Last Clipping Position of quickdraw 7 by 2 holds without clipping, then clips before reaching the Last Safe Position. What happens?",
+    o: ["The attempt continues; scoring resumes from the hold designated as the Last Clipping Position", "The attempt is unsuccessful for late clipping", "The 2 holds above are credited retroactively", "The climber must down-climb to the Last Clipping Position"],
     a: [0], e: "If the competitor clips before passing the Last Safe Position, scoring resumes from the hold designated as the Last Clipping Position.", r: "CR Note 19" });
 
   add({ id: "WL11", lvl: 1, q: "How is a Safety Hold marked?",
@@ -91,19 +91,19 @@
     o: ["Competitors are ordered in groups of 10 by seeding; within each seed group the order on the first route is drawn at random", "Fully random order", "Best seeded competitor starts last", "Competitors are ordered by nation"],
     a: [0], e: "Seed Group Order is a modified Rank Ascending Order: seeds 1–10 form the first group, 11–20 the second, and so on. The order within each group is drawn at random. Route 2 uses an offset of half the starters, rounded down.", r: "ER Annex A §2.1, Note 12" });
 
-  add({ id: "WL23", lvl: 3, q: "When the lead qualification is split into two starting groups, how are seeds 1–6 assigned?",
+  add({ id: "WL23", lvl: 3, q: "When the lead qualification is split into 2 starting groups, how are seeds 1–6 assigned?",
     o: ["Group A: 1, 4, 5 – Group B: 2, 3, 6", "Group A: 1, 3, 5 – Group B: 2, 4, 6", "Group A: 1, 2, 3 – Group B: 4, 5, 6", "Randomly"],
     a: [0], e: "Groups are filled in a snake pattern: 1→A, 2→B, 3→B, 4→A, 5→A, 6→B. Unseeded competitors are assigned randomly.", r: "ER Annex A §2.2 Table 2" });
 
-  add({ id: "WL24", lvl: 3, c: true, q: "The lead qualification ran in two starting groups and the semi-final quota is 24. Who qualifies?",
+  add({ id: "WL24", lvl: 3, c: true, q: "The lead qualification ran in 2 starting groups and the semi-final quota is 24. Who qualifies?",
     o: ["All athletes ranked 12th or better within their own group", "The 24 best athletes across both groups combined", "The 12 best of group A and the 12 best of group B, ties excluded", "Always exactly 12 from each group"],
     a: [0], e: "The quota is split equally and applied independently within each group (sub-quota 12). Everyone ranked 12th or better in their group qualifies, so the numbers from each group may differ.", r: "ER Annex A §2.2, Note 15" });
 
-  add({ id: "WL25", lvl: 3, q: "The semi-final ends in a tie. The qualification was run in two starting groups. Can the tie be broken by count-back to the qualification?",
+  add({ id: "WL25", lvl: 3, q: "The semi-final ends in a tie. The qualification was run in 2 starting groups. Can the tie be broken by count-back to the qualification?",
     o: ["No – count-back does not apply if the preceding round used multiple starting groups", "Yes, always", "Yes, but only for the podium", "Only if the Jury President agrees"],
     a: [0], e: "Count-back to the General Ranking of the preceding round does not apply if that round used multiple starting groups.", r: "ER Annex A §7.3(A); CR Glossary “General Ranking”" });
 
-  add({ id: "WL26", lvl: 2, q: "How long is the minimum gap between two lead rounds on the same day?",
+  add({ id: "WL26", lvl: 2, q: "How long is the minimum gap between 2 lead rounds on the same day?",
     o: ["2 hours between publication of the Official Results and the Start of Play of the next round", "1 hour", "50 minutes", "90 minutes"],
     a: [0], e: "The minimum gap between the Official Results of one round and the Start of Play of the next round on the same day is 2 hours.", r: "ER Annex A §4.5" });
 
@@ -131,7 +131,7 @@
     o: ["The Jury President, the International Judge and the Head Routesetter", "The Event Delegate alone", "The route judges", "The Head Routesetter alone"],
     a: [0], e: "The Jury President, the International Judge and the Head Routesetter inspect each route before each round.", r: "ER Annex A §3.1" });
 
-  add({ id: "WL33", lvl: 2, q: "The Jury President wants the rope pre-clipped into the first two quickdraws. What applies?",
+  add({ id: "WL33", lvl: 2, q: "The Jury President wants the rope pre-clipped into the first 2 quickdraws. What applies?",
     o: ["This is possible but must be implemented for all competitors or none", "It may only be done at the request of individual competitors", "It is always prohibited", "Each competitor decides individually"],
     a: [0], e: "The Jury President may require pre-clipping or a spotter. Such precautions apply to all competitors or none. Requests by or for individual competitors are not considered.", r: "ER Annex A §3.2, Note 16; CR §4.3" });
 
@@ -147,7 +147,7 @@
     o: ["If there are more than 22 starters, at evenly distributed intervals that should not exceed 20 and must not exceed 22 competitors", "After every 10 competitors", "Only between rounds", "Only at the request of a team official"],
     a: [0], e: "With more than 22 starters, the route is cleaned at even intervals: should not exceed 20, must not exceed 22. Intervals are marked on the Official Start List.", r: "ER Annex A §4.3" });
 
-  add({ id: "WL37", lvl: 2, q: "What is the minimum gap between a competitor’s two qualification routes?",
+  add({ id: "WL37", lvl: 2, q: "What is the minimum gap between a competitor’s 2 qualification routes?",
     o: ["50 minutes", "30 minutes", "60 minutes", "2 hours"],
     a: [0], e: "Where a round includes more than one route, each competitor is entitled to at least 50 minutes between the end of one attempt and the start of the next.", r: "ER Annex A §4.4" });
 
@@ -159,16 +159,16 @@
     o: ["The n-th root of the product of the fractional rankings on the n routes (geometric mean), rounded to 3 decimals; lower is better", "The sum of rankings", "The average number of holds", "Only the better route counts"],
     a: [0], e: "QP is the geometric mean of the fractional rankings, rounded to 3 decimal places. Lower is better.", r: "ER Annex A §7.2" });
 
-  add({ id: "WL40", lvl: 3, c: true, q: "A competitor is tied 1st with two others on route 1 and is alone in 8th on route 2. What are their Qualification Points?",
+  add({ id: "WL40", lvl: 3, c: true, q: "A competitor is tied 1st with 2 others on route 1 and is alone in 8th on route 2. What are their Qualification Points?",
     o: ["4.000", "2.828", "5.000", "3.000"],
-    a: [0], e: "Three tied competitors share places 1–3, so their fractional ranking is 2. √(2 × 8) = 4.000.", r: "ER Annex A §7.2" });
+    a: [0], e: "3 tied competitors share places 1–3, so their fractional ranking is 2. √(2 × 8) = 4.000.", r: "ER Annex A §7.2" });
 
   add({ id: "WL41", lvl: 2, q: "How are ties in a lead semi-final or final broken?",
     o: ["First by count-back to the General Ranking of the preceding round; in the scheduled medal phase, remaining podium ties by actual climbing time (lower is better)", "First by climbing time, then by count-back", "By a super-final", "By drawing lots"],
     a: [0], e: "Count-back to the preceding round comes first, unless that round used multiple starting groups. In the scheduled medal phase only, remaining podium ties are broken by actual climbing time.", r: "ER Annex A §7.3" });
 
   add({ id: "WL42", lvl: 3, q: "How is the climbing time measured when it is used as a podium tie-break?",
-    o: ["Rounded down to the nearest second; for a Top, it ends when the final anchor gate closes; otherwise, when the climber falls or the attempt is ruled unsuccessful", "To 1/100 s, ending when the top hold is touched", "Rounded up to the nearest second, ending when lowered", "It is not measured"],
+    o: ["Rounded down to the nearest second; for a Top, it ends when the final anchor gate closes; otherwise, when the climber falls or the attempt is ruled unsuccessful", "To 1/100 second, ending when the top hold is touched", "Rounded up to the nearest second, ending when lowered", "It is not measured"],
     a: [0], e: "The time is rounded down to the nearest second. For a Top it ends when the final anchor gate closes, otherwise at the fall or when the attempt is ruled unsuccessful.", r: "ER Annex A Note 24" });
 
   add({ id: "WL43", lvl: 2, q: "To whom must a potential Technical Incident in lead be reported, and until when?",
@@ -199,7 +199,7 @@
     o: ["As a Technical Incident (tight rope caused by the belayer)", "As a breach by the climber leading to disqualification", "As normal climbing", "As a fall"],
     a: [0], e: "A tight rope caused by the action or inaction of the belayer, which either assists or hinders a competitor, is a Technical Incident.", r: "CR Glossary “Technical Incident” (C)" });
 
-  add({ id: "WL50", lvl: 2, c: true, q: "A climber uses an unused, unplugged T-nut hole with two fingers to hold on. Result?",
+  add({ id: "WL50", lvl: 2, c: true, q: "A climber uses an unused, unplugged T-nut hole with 2 fingers to hold on. Result?",
     o: ["The attempt is unsuccessful for gaining an advantage using an unplugged T-nut emplacement with the hands", "Allowed, T-nuts are part of the wall", "Allowed, but the hole does not score", "A Yellow Card"],
     a: [0], e: "Gaining an advantage by using unused or unplugged T-nut emplacements with the hands ends the attempt.", r: "CR §8.1(E)" });
 
@@ -219,7 +219,7 @@
     o: ["By the closing time stated on the Official Start List; otherwise they are marked DNS", "By the Start of Play", "By 10 minutes before their attempt", "There is no deadline"],
     a: [0], e: "Competitors not present in the warm-up area by the stated closing time are not eligible to start and are marked DNS.", r: "ER Annex A §4.1" });
 
-  add({ id: "WL55", lvl: 2, c: true, q: "A competitor clips the final anchor after 6:02 minutes. The allowed climbing time is 6 minutes. Result?",
+  add({ id: "WL55", lvl: 2, c: true, q: "A competitor clips the final anchor after 6 minutes and 2 seconds. The allowed climbing time is 6 minutes. Result?",
     o: ["Unsuccessful – the result is the best progress before the time expired", "Top, because they kept climbing", "Top with a time penalty", "The attempt is annulled"],
     a: [0], e: "An attempt is unsuccessful when the allowed climbing time expires. Only the progress made before expiry counts.", r: "CR §8.1; ER Annex A Table 1" });
 })();

@@ -9,12 +9,12 @@
     a: [0], e: "Der Versuch startet mit dem Startsignal oder mit dem Entlasten des Start-Pads unter den Schwellenwert, je nachdem, was zuerst passiert.", r: "AR §7.2" });
 
   add({ id: "S02", lvl: 1, q: "Ab welcher Reaktionszeit ist ein Start ein Fehlstart?",
-    o: ["Bei weniger als 0,100 s", "Bei weniger als 0,150 s", "Bei 0,100 s oder weniger", "Bei weniger als 0,050 s"],
-    a: [0], e: "Ein Start ist ungültig, wenn die gemessene Reaktionszeit unter 0,100 s liegt. Genau 0,100 s ist also noch gültig.", r: "AR §7.3" });
+    o: ["Bei weniger als 0,100 Sekunden", "Bei weniger als 0,150 Sekunden", "Bei 0,100 Sekunden oder weniger", "Bei weniger als 0,050 Sekunden"],
+    a: [0], e: "Ein Start ist ungültig, wenn die gemessene Reaktionszeit unter 0,100 Sekunden liegt. Genau 0,100 Sekunden ist also noch gültig.", r: "AR §7.3" });
 
   add({ id: "S03", lvl: 2, c: true, q: "Welche der folgenden Reaktionszeiten ergibt einen Fehlstart?",
-    o: ["0,099 s", "0,100 s", "0,101 s", "0,130 s"],
-    a: [0], e: "Nur Reaktionszeiten unter 0,100 s sind Fehlstarts. 0,100 s ist gültig.", r: "AR §7.3" });
+    o: ["0,099 Sekunden", "0,100 Sekunden", "0,101 Sekunden", "0,130 Sekunden"],
+    a: [0], e: "Nur Reaktionszeiten unter 0,100 Sekunden sind Fehlstarts. 0,100 Sekunden ist gültig.", r: "AR §7.3" });
 
   add({ id: "S04", lvl: 1, q: "Wann ist ein Speed-Versuch erfolgreich?",
     o: ["Wenn der Wettkämpfer die Zeitmessung durch Anschlagen mit der Hand auf das Ziel-Pad anhält", "Wenn der Wettkämpfer den obersten Griff berührt", "Wenn der Wettkämpfer mit einem beliebigen Körperteil das Ziel-Pad berührt", "Wenn der Wettkämpfer die Wand-Oberkante erreicht"],
@@ -45,8 +45,8 @@
     a: [0], e: "Nur bei Speed 4 gilt: Ab 32 Wettkämpfern beträgt die Quote 32.", r: "Anhang B §2.3(D)" });
 
   add({ id: "S11", lvl: 1, q: "Wie viele Versuche hat ein Wettkämpfer in der Speed-Qualifikation?",
-    o: ["Je einen Versuch auf jeder Lane", "Nur einen Versuch insgesamt", "Drei Versuche, der beste zählt", "Unbegrenzt innerhalb von 5 Minuten"],
-    a: [0], e: "In der Qualifikation hat jeder Wettkämpfer je einen Versuch auf jeder Lane, in zufällig-versetzter Reihenfolge.", r: "Anhang B §2.2" });
+    o: ["Je 1 Versuch auf jeder Lane", "Nur 1 Versuch insgesamt", "3 Versuche, der beste zählt", "Unbegrenzt innerhalb von 5 Minuten"],
+    a: [0], e: "In der Qualifikation hat jeder Wettkämpfer je 1 Versuch auf jeder Lane, in zufällig-versetzter Reihenfolge.", r: "Anhang B §2.2" });
 
   add({ id: "S12", lvl: 2, c: true, q: "Speed-2-Qualifikation mit 16 Startern: Die Reihenfolge auf Bahn A ist ausgelost. Wer startet auf Bahn B als Erster?",
     o: ["Der Wettkämpfer, der auf Bahn A als 9. startet", "Der Wettkämpfer, der auf Bahn A als 8. startet", "Der Wettkämpfer, der auf Bahn A als 16. startet", "Der Wettkämpfer, der auf Bahn A als 2. startet"],
@@ -60,16 +60,16 @@
     o: ["Ein zusätzliches Race oder mehrere entscheiden. Diese zählen nicht als Wertungsversuche und es gibt keine offiziellen Rekorde", "Alle Gleichplatzierten kommen ins Finale", "Es wird gelost", "Die Reaktionszeit entscheidet"],
     a: [0], e: "Gleichstände an der Quotengrenze werden durch zusätzliche Races aufgelöst. Diese gelten nicht als Wertungsversuche, die Zeiten fließen nicht in die Official Results ein, und Rekorde sind nicht möglich.", r: "Anhang B §2.4 mit Anmerkungen" });
 
-  add({ id: "S15", lvl: 3, c: true, q: "Fünf Athleten liegen bei einem Speed-2-Wettkampf an der Grenze zur Finalquote gleichauf. Wie wird entschieden?",
+  add({ id: "S15", lvl: 3, c: true, q: "5 Athleten liegen bei einem Speed-2-Wettkampf an der Grenze zur Finalquote gleichauf. Wie wird entschieden?",
     o: ["Jeder klettert einen Lauf auf Bahn A, die Besten rücken ins Finale nach", "Kopf-an-Kopf-Rennen jeweils zu zweit", "Los", "Die beste Reaktionszeit aus der Qualifikation"],
-    a: [0], e: "Bei zwei Gleichplatzierten (Speed 2) gibt es ein Kopf-an-Kopf-Rennen mit ausgelosten Bahnen. Bei mehr Gleichplatzierten klettert jeder einen Lauf auf Bahn A (bei Speed 4 auf Bahn C).", r: "Anhang B §2.4 (Anmerkung)" });
+    a: [0], e: "Bei 2 Gleichplatzierten (Speed 2) gibt es ein Kopf-an-Kopf-Rennen mit ausgelosten Bahnen. Bei mehr Gleichplatzierten klettert jeder 1 Lauf auf Bahn A (bei Speed 4 auf Bahn C).", r: "Anhang B §2.4 (Anmerkung)" });
 
   add({ id: "S16", lvl: 1, q: "Wie geht es im Speed-2-Finale nach der Halbfinal-Phase weiter?",
-    o: ["Die Verlierer der Halbfinals klettern um die Plätze 3 und 4 (kleines Finale), die Sieger um die Plätze 1 und 2 (großes Finale)", "Die Verlierer der Halbfinals werden beide Dritte", "Alle vier klettern ein gemeinsames Finale", "Die Qualifikationszeit entscheidet über Platz 3"],
+    o: ["Die Verlierer der Halbfinals klettern um die Plätze 3 und 4 (kleines Finale), die Sieger um die Plätze 1 und 2 (großes Finale)", "Die Verlierer der Halbfinals werden beide Dritte", "Alle 4 klettern ein gemeinsames Finale", "Die Qualifikationszeit entscheidet über Platz 3"],
     a: [0], e: "Nach der Halbfinal-Phase gibt es ein kleines Finale (Plätze 3/4) und ein großes Finale (Plätze 1/2).", r: "Anhang B §2.5" });
 
   add({ id: "S17", lvl: 1, q: "Wer kommt bei Speed 4 in einem Ausscheidungsrace weiter?",
-    o: ["Die beiden Wettkämpfer mit den niedrigsten (oder einzigen) Kletterzeiten", "Nur der Schnellste", "Die drei Schnellsten", "Die beiden mit der besten Reaktionszeit"],
+    o: ["Die beiden Wettkämpfer mit den niedrigsten (oder einzigen) Kletterzeiten", "Nur der Schnellste", "Die 3 Schnellsten", "Die beiden mit der besten Reaktionszeit"],
     a: [0], e: "Speed 4 ist ein modifizierter K.-o.-Modus: In jedem Race kommen die beiden Besten weiter.", r: "Anhang B §2.6, §6.4" });
 
   add({ id: "S18", lvl: 2, q: "Was passiert bei einem Fehlstart in der Speed-Qualifikation?",
@@ -101,24 +101,24 @@
     a: [0], e: "Startet keiner der beiden, gibt es in diesem Race keinen Sieger.", r: "Anhang B §6.2 (Anmerkung)" });
 
   add({ id: "S25", lvl: 2, q: "Wie genau werden Speed-Zeiten gemessen, und wie werden die offiziellen Zeiten angegeben?",
-    o: ["Gemessen auf 1/1000 s, offiziell auf 1/100 s abgerundet", "Gemessen und offiziell auf 1/1000 s", "Gemessen auf 1/100 s, offiziell auf 1/10 s gerundet", "Gemessen auf 1/1000 s, offiziell auf 1/100 s kaufmännisch gerundet"],
-    a: [0], e: "Alle Zeiten werden auf 1/1000 s gemessen. Offizielle Zeiten, auch Rekorde, werden auf 1/100 s abgerundet. Die Tausendstel dürfen einen Gleichstand anzeigen, ersetzen aber nicht die offizielle Zeit.", r: "Anhang B §7.1–7.3" });
+    o: ["Gemessen auf 1/1000 Sekunde, offiziell auf 1/100 Sekunde abgerundet", "Gemessen und offiziell auf 1/1000 Sekunde", "Gemessen auf 1/100 Sekunde, offiziell auf 1/10 Sekunde gerundet", "Gemessen auf 1/1000 Sekunde, offiziell auf 1/100 Sekunde kaufmännisch gerundet"],
+    a: [0], e: "Alle Zeiten werden auf 1/1000 Sekunde gemessen. Offizielle Zeiten, auch Rekorde, werden auf 1/100 Sekunde abgerundet. Die Tausendstel dürfen einen Gleichstand anzeigen, ersetzen aber nicht die offizielle Zeit.", r: "Anhang B §7.1–7.3" });
 
-  add({ id: "S26", lvl: 2, c: true, q: "Gemessen werden 5,238 s. Wie lautet die offizielle Zeit?",
-    o: ["5,23 s", "5,24 s", "5,238 s", "5,2 s"],
-    a: [0], e: "Offizielle Zeiten werden auf die Hundertstel abgerundet: 5,238 wird zu 5,23.", r: "Anhang B §7.2" });
+  add({ id: "S26", lvl: 2, c: true, q: "Gemessen werden 5,238 Sekunden. Wie lautet die offizielle Zeit?",
+    o: ["5,23 Sekunden", "5,24 Sekunden", "5,238 Sekunden", "5,2 Sekunden"],
+    a: [0], e: "Offizielle Zeiten werden auf die Hundertstel abgerundet: 5,238 Sekunden werden zu 5,23 Sekunden.", r: "Anhang B §7.2" });
 
-  add({ id: "S27", lvl: 3, c: true, q: "Der Deutsche Rekord steht bei 4,79 s (gemessen 4798 ms). Eine Athletin klettert gemessene 4795 ms. Was gilt?",
-    o: ["Sie stellt den Rekord ein, bricht ihn aber nicht", "Neuer Rekord, weil 4795 < 4798", "Neuer Rekord mit 4,80 s", "Die Zeit zählt nicht für Rekorde"],
-    a: [0], e: "4795 ms ergibt abgerundet 4,79 s und entspricht damit dem Rekord. Brechen würde ihn erst eine Zeit von 4789 ms oder besser.", r: "Anhang B §7.3 (Anmerkung)" });
+  add({ id: "S27", lvl: 3, c: true, q: "Der Deutsche Rekord steht bei 4,79 Sekunden (gemessen 4,798 Sekunden). Eine Athletin klettert gemessene 4,795 Sekunden. Was gilt?",
+    o: ["Sie stellt den Rekord ein, bricht ihn aber nicht", "Neuer Rekord, weil 4795 < 4798", "Neuer Rekord mit 4,80 Sekunden", "Die Zeit zählt nicht für Rekorde"],
+    a: [0], e: "4,795 Sekunden ergibt abgerundet 4,79 Sekunden und entspricht damit dem Rekord. Brechen würde ihn erst eine Zeit von 4,789 Sekunden oder besser.", r: "Anhang B §7.3 (Anmerkung)" });
 
   add({ id: "S28", lvl: 2, q: "Nach welcher Hierarchie werden Ergebnisse im Speed-Ranking verglichen?",
     o: ["Gültige Zeit (aufsteigend), Sturz, Fehlstart, Nicht gestartet", "Gültige Zeit, Fehlstart, Sturz, Nicht gestartet", "Sturz, gültige Zeit, Fehlstart, Nicht gestartet", "Gültige Zeit, Nicht gestartet, Sturz, Fehlstart"],
     a: [0], e: "Die Reihenfolge ist: gültige Zeit (aufsteigend), dann Sturz, dann Fehlstart, dann Nicht gestartet.", r: "Anhang B §8.2" });
 
-  add({ id: "S29", lvl: 3, c: true, q: "Qualifikation: Athlet A hat 6,12 s und einen Sturz, Athlet B hat 6,12 s und 7,01 s. Wer ist besser platziert?",
+  add({ id: "S29", lvl: 3, c: true, q: "Qualifikation: Athlet A hat 6,12 Sekunden und einen Sturz, Athlet B hat 6,12 Sekunden und 7,01 Sekunden. Wer ist besser platziert?",
     o: ["Athlet B, weil beim nächstbesten Ergebnis eine gültige Zeit vor einem Sturz liegt", "Athlet A", "Beide sind gleichplatziert", "Wer die bessere Reaktionszeit hatte"],
-    a: [0], e: "Bei gleichem Bestergebnis entscheidet das nächstbeste. 7,01 s ist eine gültige Zeit und damit besser als ein Sturz.", r: "Anhang B §8.2(A)" });
+    a: [0], e: "Bei gleichem Bestergebnis entscheidet das nächstbeste. 7,01 Sekunden ist eine gültige Zeit und damit besser als ein Sturz.", r: "Anhang B §8.2(A)" });
 
   add({ id: "S30", lvl: 3, c: true, q: "Qualifikation: Athletin C hat zweimal Sturz, Athletin D einmal Sturz und einmal Fehlstart. Wer ist besser platziert?",
     o: ["Athletin C, weil ein Sturz besser ist als ein Fehlstart", "Athletin D", "Beide gleich", "Beide werden nicht gewertet"],
@@ -132,7 +132,7 @@
     o: ["Er wird nicht gerankt (DNS). Das Race findet nicht statt, der Gegner erhält eine Wildcard für die nächste Phase", "Er wird Letzter des Finales, der Gegner klettert allein", "Er darf später nachstarten", "Das Race wird mit einem Ersatzathleten durchgeführt"],
     a: [0], e: "Wer zu seinem ersten Race nicht antritt, ist DNS und wird nicht gerankt. Im K.-o.-System entfällt das Race und der Gegner kommt per Wildcard weiter.", r: "Anhang B §8.3; §4.6 (Anmerkung)" });
 
-  add({ id: "S33", lvl: 1, q: "Welche Mindestpause steht einem Wettkämpfer zwischen zwei Races zu?",
+  add({ id: "S33", lvl: 1, q: "Welche Mindestpause steht einem Wettkämpfer zwischen 2 Races zu?",
     o: ["5 Minuten, außer bei einem wiederholten Race", "2 Minuten", "10 Minuten", "Keine"],
     a: [0], e: "Zwischen dem Ende eines Race und dem Start des nächsten liegen mindestens 5 Minuten. Bei einem Re-Run gilt das nicht.", r: "Anhang B §4.2(C)" });
 
@@ -173,31 +173,31 @@
     a: [0], e: "Bei Speed 4 wird für Trainings bewusst nicht das Qualifikationsformat verwendet. Bei Speed 2 ist das dagegen der Regelfall.", r: "Anhang B §4.1 (Anmerkung)" });
 
   add({ id: "S43", lvl: 3, c: true, q: "Speed-4-Ausscheidungsrace (kein Medal-Race): Nur auf Lane A gibt es einen Fehlstart. Was passiert?",
-    o: ["Re-Run der Lanes B, C und D", "Kein Re-Run, die zwei Schnellsten von B, C, D kommen weiter", "Re-Run aller vier Lanes", "Lane A wird disqualifiziert, B, C, D kommen weiter"],
+    o: ["Re-Run der Lanes B, C und D", "Kein Re-Run, die 2 Schnellsten von B, C, D kommen weiter", "Re-Run aller 4 Lanes", "Lane A wird disqualifiziert, B, C, D kommen weiter"],
     a: [0], e: "Laut Protokoll: Fehlstart nur auf A heißt Re-Run der Lanes B/C/D.", r: "Anhang B §6.5 (Anmerkung, Tabelle Fehlstart)" });
 
   add({ id: "S44", lvl: 3, c: true, q: "Speed-4-Ausscheidungsrace (kein Medal-Race): Fehlstart auf Lane A und Lane B. Was passiert?",
-    o: ["Die Wettkämpfer ohne Fehlstart (C und D) sind weiter, kein Re-Run", "Re-Run aller vier Lanes", "Re-Run der Lanes C und D", "Re-Run der Lanes A und B"],
-    a: [0], e: "Haben genau zwei Wettkämpfer einen Fehlstart, kommen die beiden anderen ohne Re-Run weiter.", r: "Anhang B §6.5 (Anmerkung, Tabelle Fehlstart)" });
+    o: ["Die Wettkämpfer ohne Fehlstart (C und D) sind weiter, kein Re-Run", "Re-Run aller 4 Lanes", "Re-Run der Lanes C und D", "Re-Run der Lanes A und B"],
+    a: [0], e: "Haben genau 2 Wettkämpfer einen Fehlstart, kommen die beiden anderen ohne Re-Run weiter.", r: "Anhang B §6.5 (Anmerkung, Tabelle Fehlstart)" });
 
-  add({ id: "S45", lvl: 3, c: true, q: "Speed-4-Ausscheidungsrace: A 5,031 s, B 4,99 s, C 5,05 s, D 5,031 s. Was passiert?",
-    o: ["Re-Run der Lanes A und D", "A und D kommen beide weiter", "B und C kommen weiter", "Re-Run aller vier Lanes"],
+  add({ id: "S45", lvl: 3, c: true, q: "Speed-4-Ausscheidungsrace: A 5,031 Sekunden, B 4,99 Sekunden, C 5,05 Sekunden, D 5,031 Sekunden. Was passiert?",
+    o: ["Re-Run der Lanes A und D", "A und D kommen beide weiter", "B und C kommen weiter", "Re-Run aller 4 Lanes"],
     a: [0], e: "B kommt als Schnellster sicher weiter. Um den zweiten Platz liegen A und D zeitgleich, also gibt es einen Re-Run nur für A und D.", r: "Anhang B §6.5 (Anmerkung, Tabelle Sturz/Zeit)" });
 
-  add({ id: "S46", lvl: 3, c: true, q: "Speed-4-Ausscheidungsrace: A 5,061 s, B 5,061 s, C 5,07 s, D Sturz. Was passiert?",
+  add({ id: "S46", lvl: 3, c: true, q: "Speed-4-Ausscheidungsrace: A 5,061 Sekunden, B 5,061 Sekunden, C 5,07 Sekunden, D Sturz. Was passiert?",
     o: ["A und B sind weiter, kein Re-Run", "Re-Run der Lanes A und B", "Re-Run der Lanes A, B und C", "A, B und C sind weiter"],
-    a: [0], e: "A und B sind gleich schnell, aber beide sind die zwei Schnellsten. Damit stehen die zwei Weiterkommenden fest, ein Re-Run ist nicht nötig.", r: "Anhang B §6.4, §6.5 (Tabelle)" });
+    a: [0], e: "A und B sind gleich schnell, aber beide sind die 2 Schnellsten. Damit stehen die 2 Weiterkommenden fest, ein Re-Run ist nicht nötig.", r: "Anhang B §6.4, §6.5 (Tabelle)" });
 
-  add({ id: "S47", lvl: 3, c: true, q: "Speed-4-Medal-Race: A 4,99 s, B 5,01 s, C 5,01 s, D Sturz. Was passiert?",
-    o: ["Kein Re-Run: A ist Erster, die Plätze 2 und 3 entscheidet der Countback", "Re-Run von B und C", "Re-Run aller vier", "B und C werden beide Zweite"],
+  add({ id: "S47", lvl: 3, c: true, q: "Speed-4-Medal-Race: A 4,99 Sekunden, B 5,01 Sekunden, C 5,01 Sekunden, D Sturz. Was passiert?",
+    o: ["Kein Re-Run: A ist Erster, die Plätze 2 und 3 entscheidet der Countback", "Re-Run von B und C", "Re-Run aller 4", "B und C werden beide Zweite"],
     a: [0], e: "Ist der erste Platz klar, werden die übrigen Podiumsplätze über die Medal-Race-Ergebnisse bzw. die besten Ergebnisse nach §8.2 (Countback) ermittelt, ohne Re-Run.", r: "Anhang B §6.6(A) mit Anmerkung" });
 
-  add({ id: "S48", lvl: 3, c: true, q: "Speed-4-Medal-Race: A 5,02 s, B 4,97 s, C 4,97 s, D Sturz. Was passiert?",
-    o: ["Re-Run nur für B und C", "B und C werden beide Erste", "Re-Run aller vier", "Der Countback entscheidet über Platz 1"],
-    a: [0], e: "Sind zwei oder mehr gleichauf auf Platz 1, gibt es einen Re-Run nur für diese Wettkämpfer.", r: "Anhang B §6.6(B) mit Anmerkung" });
+  add({ id: "S48", lvl: 3, c: true, q: "Speed-4-Medal-Race: A 5,02 Sekunden, B 4,97 Sekunden, C 4,97 Sekunden, D Sturz. Was passiert?",
+    o: ["Re-Run nur für B und C", "B und C werden beide Erste", "Re-Run aller 4", "Der Countback entscheidet über Platz 1"],
+    a: [0], e: "Sind 2 oder mehr gleichauf auf Platz 1, gibt es einen Re-Run nur für diese Wettkämpfer.", r: "Anhang B §6.6(B) mit Anmerkung" });
 
   add({ id: "S49", lvl: 3, c: true, q: "Speed-4-Medal-Race: Fehlstart auf den Lanes B, C und D, Lane A klettert sauber. Was passiert?",
-    o: ["Lane A ist auf Rang 1, kein Re-Run", "Re-Run der Lanes B, C und D", "Re-Run aller vier", "A ist Erster, B, C und D werden gemeinsam Zweite"],
+    o: ["Lane A ist auf Rang 1, kein Re-Run", "Re-Run der Lanes B, C und D", "Re-Run aller 4", "A ist Erster, B, C und D werden gemeinsam Zweite"],
     a: [0], e: "Laut Protokoll für Medal-Races ist A auf Rang 1, ein Re-Run findet nicht statt. Die weiteren Podiumsplätze ergeben sich aus dem Vergleich nach §8.2.", r: "Anhang B §6.6 (Anmerkung, Tabelle Fehlstart)" });
 
   add({ id: "S50", lvl: 2, q: "Unter welchen Bedingungen kann ein Deutscher Speed-Rekord aufgestellt werden?",
@@ -224,7 +224,7 @@
     o: ["Eine Startlampe links der Route leuchtet auf, zusammen mit einem eindeutigen akustischen Signal der Zeitmessanlage", "Ein Pfiff des Starters", "Das Kommando „Ready“", "Ein rein akustisches Signal"],
     a: [0], e: "Das Startsignal ist das Aufleuchten der Startlampe links der Route plus ein akustisches Signal des Zeitmesssystems.", r: "Glossar „Startsignal“ (A); Anhang B §4.11" });
 
-  add({ id: "S56", lvl: 2, c: true, q: "Ein Trainer will Einspruch einlegen, weil die Reaktionszeit seines Athleten (0,098 s, Fehlstart) „unmöglich“ sei. Das Zeitmesssystem ist vom DAV anerkannt. Was gilt?",
+  add({ id: "S56", lvl: 2, c: true, q: "Ein Trainer will Einspruch einlegen, weil die Reaktionszeit seines Athleten (0,098 Sekunden, Fehlstart) „unmöglich“ sei. Das Zeitmesssystem ist vom DAV anerkannt. Was gilt?",
     o: ["Gegen die Gültigkeit einer Reaktionszeit ist kein Einspruch möglich; nur ein Antrag auf technischen Zwischenfall wegen der Systemfunktion", "Einspruch innerhalb von 5 Minuten möglich", "Einspruch nur mündlich vor dem nächsten Race", "Der Starter kann den Fehlstart zurücknehmen"],
     a: [0], e: "Bei einem anerkannten Zeitmesssystem ist gegen die Gültigkeit einer Reaktionszeit kein Einspruch möglich. Beschwerden zur Funktion des Systems laufen nur als TI-Antrag.", r: "Anhang B §10.1 mit Anmerkung" });
 })();

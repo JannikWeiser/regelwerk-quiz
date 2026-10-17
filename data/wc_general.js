@@ -9,7 +9,7 @@
 
   add({ id: "WG02", lvl: 2, q: "How often does World Climbing plan to publish the Competition Rules and the Event Regulations in stable form?",
     o: ["Competition Rules quadrennially, Event Regulations biennially", "Both annually", "Both every 4 years", "Rules biennially, regulations annually"],
-    a: [0], e: "The rules are planned on a four-year cycle and the regulations on a two-year cycle. The notes and guidance may be updated more often.", r: "CR Changes to the Rules; ER Changes to these Regulations" });
+    a: [0], e: "The rules are planned on a 4-year cycle and the regulations on a 2-year cycle. The notes and guidance may be updated more often.", r: "CR Changes to the Rules; ER Changes to these Regulations" });
 
   add({ id: "WG03", lvl: 2, q: "What may World Climbing Continental Councils do with the Event Regulations?",
     o: ["Use them without modification for events under their jurisdiction", "Adapt elements such as rounds, quotas, number of routes/boulders and flash/on-sight formats", "Make substantive changes only with prior approval from World Climbing", "Change the scoring system freely"],
@@ -107,7 +107,7 @@
     o: ["Observing other competitors’ attempts", "Watching or recording the routesetters’ work", "Seeking or accepting information beyond what is officially provided", "Viewing routes from public areas while they are open"],
     a: [0, 1, 2], e: "Observing other attempts, watching the routesetters and seeking extra information are prohibited. Viewing from areas open to the public is allowed, but drones and similar devices are not.", r: "CR §5.3, Note 11" });
 
-  add({ id: "WG27", lvl: 2, c: true, q: "Two competitors discuss a route after collective observation. Neither has attempted it yet. Allowed?",
+  add({ id: "WG27", lvl: 2, c: true, q: "2 competitors discuss a route after collective observation. Neither has attempted it yet. Allowed?",
     o: ["Yes, as long as neither has attempted the route", "No, never", "Only with a judge present", "Yes, even if one has climbed"],
     a: [0], e: "Information from the collective observation may be shared only where neither competitor has attempted the route or boulder.", r: "CR §5.4(B)" });
 
@@ -123,7 +123,7 @@
     o: ["A broken or loose hold", "An improperly positioned quickdraw or karabiner", "A tight rope caused by the belayer", "A slip due to the climber’s own sweaty hands"],
     a: [0, 1, 2], e: "TIs also include a critical timing failure and any unusual circumstance placing the climber in a different situation from their peers. In every case there must be a material (dis)advantage that is not the climber’s own doing.", r: "CR Glossary “Technical Incident”" });
 
-  add({ id: "WG31", lvl: 2, c: true, q: "A hold spins and gets harder, but the climber continues and falls three moves later. Can they still claim a TI?",
+  add({ id: "WG31", lvl: 2, c: true, q: "A hold spins and gets harder, but the climber continues and falls 3 moves later. Can they still claim a TI?",
     o: ["No – continuing after a potential TI that adversely affected them waives and closes it", "Yes, until Official Results", "Yes, the hold was loose", "Only if the coach protests immediately"],
     a: [0], e: "A competitor who continues after a potential or confirmed TI that adversely affected them waives it.", r: "CR §11.3" });
 
@@ -132,7 +132,7 @@
     a: [0], e: "An incident that provided an advantage cannot be waived.", r: "CR §11.3" });
 
   add({ id: "WG33", lvl: 2, q: "Who decides an appeal at a World Climbing event?",
-    o: ["The Jury President – or an International Judge if the appeal relates to a Field of Play judgement made by the Jury President", "The Jury President and Event Delegate together", "Three team managers", "The Event Delegate alone"],
+    o: ["The Jury President – or an International Judge if the appeal relates to a Field of Play judgement made by the Jury President", "The Jury President and Event Delegate together", "3 team managers", "The Event Delegate alone"],
     a: [0], e: "The Appeal Jury is the Jury President. If the appeal concerns the JP’s own Field of Play judgement, an International Judge decides.", r: "ER §10.1" });
 
   add({ id: "WG34", lvl: 2, q: "Who has Appeal Eligibility?",
@@ -145,7 +145,7 @@
 
   add({ id: "WG36", lvl: 2, q: "Which outcomes can an appeal have?",
     o: ["Successful (conclusive evidence supports it)", "Unsuccessful (evidence inconclusive or not supportive)", "Undetermined (evidence does not allow review)", "Postponed to the next competition"],
-    a: [0, 1, 2], e: "Appeals are successful, unsuccessful or undetermined. In the last two cases the Field of Play decision stands.", r: "CR §12.4, §12.5" });
+    a: [0, 1, 2], e: "Appeals are successful, unsuccessful or undetermined. In the last 2 cases the Field of Play decision stands.", r: "CR §12.4, §12.5" });
 
   add({ id: "WG37", lvl: 2, q: "When may an appeal fee be charged?",
     o: ["Only if the appeal is unsuccessful (including a verbal notice not followed by a timely written appeal)", "Always", "Only if inadmissible", "Never"],
@@ -155,9 +155,9 @@
     o: ["Medal phase: immediately on publication; other rounds: within 5 minutes", "Always 10 minutes", "Medal phase 2 minutes, others 5 minutes", "End of the day"],
     a: [0], e: "For the medal phase the appeal is due immediately on publication, for other rounds within 5 minutes.", r: "ER §10.4" });
 
-  add({ id: "WG39", lvl: 1, q: "What follows two cautions in one event?",
+  add({ id: "WG39", lvl: 1, q: "What follows 2 cautions in one event?",
     o: ["Disqualification", "A third caution", "A time penalty", "Nothing"],
-    a: [0], e: "Receiving two cautions in an event leads to disqualification.", r: "CR §13.1" });
+    a: [0], e: "Receiving 2 cautions in an event leads to disqualification.", r: "CR §13.1" });
 
   add({ id: "WG40", lvl: 2, c: true, q: "A competitor gathers information about an on-sight route by watching a livestream in the warm-up area. Sanction?",
     o: ["Disqualification", "Caution", "Verbal warning", "Penalty attempt"],
@@ -217,7 +217,7 @@
 
   add({ id: "WG54", lvl: 2, q: "How often are the World Climbing Championships held, and which youth age groups have a World Youth Championship?",
     o: ["Adult championships “bi-annually”; youth championships annually for U17 and U19", "Adults annually; youth U15–U21", "Adults every 4 years; youth U17 only", "Adults and youth both bi-annually, youth for U15–U19"],
-    a: [0], e: "ER §1.1 provides for adult championships “bi-annually” in boulder, lead and speed (in practice every two years) and youth championships for U17 and U19 annually.", r: "ER §1.1(B), (C)" });
+    a: [0], e: "ER §1.1 provides for adult championships “bi-annually” in boulder, lead and speed (in practice every 2 years) and youth championships for U17 and U19 annually.", r: "ER §1.1(B), (C)" });
 
   add({ id: "WG55", lvl: 2, q: "Which disciplines may the World Climbing Series include, and how many competitions per discipline?",
     o: ["Boulder, lead, speed and team speed – up to 8 competitions each per year", "Boulder, lead and speed only – up to 6 each", "Only combined events", "Up to 12 per discipline"],

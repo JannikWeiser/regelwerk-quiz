@@ -4,7 +4,7 @@
   window.QUESTIONS = window.QUESTIONS || [];
 
   add({ id: "WB01", lvl: 1, q: "When is a boulder attempt considered to have started?",
-    o: ["When the climber leaves the ground", "When the climber controls all four start markings", "With the rotation start signal", "When the climber touches the first hold"],
+    o: ["When the climber leaves the ground", "When the climber controls all 4 start markings", "With the rotation start signal", "When the climber touches the first hold"],
     a: [0], e: "A boulder attempt starts when the climber leaves the ground.", r: "CR §7.4" });
 
   add({ id: "WB02", lvl: 2, c: true, q: "A climber jumps to brush a hold without touching the climbing surface or any other hold. Does this count as an attempt?",
@@ -32,7 +32,7 @@
     a: [0], e: "The number of handholds on a boulder should not exceed 12, and the average across a round should be between 4 and 8.", r: "CR §1.10" });
 
   add({ id: "WB08", lvl: 1, q: "When is a boulder attempt with a marked finishing hold successful?",
-    o: ["When the climber matches it with both hands, achieves a stable position before time expires and demonstrates clear and intentional Control", "When the climber touches it with one hand", "When the climber slaps it with both hands", "When the judge counts to three"],
+    o: ["When the climber matches it with both hands, achieves a stable position before time expires and demonstrates clear and intentional Control", "When the climber touches it with one hand", "When the climber slaps it with both hands", "When the judge counts to 3"],
     a: [0], e: "Success requires a match with both hands, a stable position before the allowed time expires, and clear, intentional Control of the finishing hold.", r: "CR §8.5(B)" });
 
   add({ id: "WB09", lvl: 2, c: true, q: "A climber places the second hand on top of the first, which is on the finishing hold. The second hand does not touch the hold itself. Is the hold matched?",
@@ -57,7 +57,7 @@
 
   add({ id: "WB14", lvl: 1, q: "How is the score for a boulder calculated?",
     o: ["Zone: 10 points minus 0.1 per attempt before the Zone; Top: 25 points minus 0.1 per unsuccessful attempt; the greater value counts, minimum 0.0", "Top 1, Zone 0.5", "Top 25 plus Zone 10, no deductions", "Top 100 minus 10 per failed attempt"],
-    a: [0], e: "A Zone is worth 10 points minus 0.1 for each attempt before it, a Top 25 points minus 0.1 for each unsuccessful attempt. The greater of the two counts, and the score cannot be negative.", r: "ER Annex C §5.1" });
+    a: [0], e: "A Zone is worth 10 points minus 0.1 for each attempt before it, a Top 25 points minus 0.1 for each unsuccessful attempt. The greater of the 2 counts, and the score cannot be negative.", r: "ER Annex C §5.1" });
 
   add({ id: "WB15", lvl: 2, c: true, q: "A climber tops a boulder on their 3rd attempt. Score?",
     o: ["24.8", "24.7", "25.0", "34.8"],
@@ -80,20 +80,20 @@
     a: [0], e: "Competitors who do not attempt the first boulder in a round are unranked and marked DNS.", r: "ER Annex C §7.1" });
 
   add({ id: "WB20", lvl: 1, q: "What is the standard format of a World Climbing boulder event?",
-    o: ["Qualification 5 boulders (5 min fixed, quota 60 per group), semi-final 4 boulders (5 min fixed, 24), final 4 boulders (4 min max, 8), all on-sight", "Qualification 4, final 4, no semi-final", "Qualification 5 (4 min), semi-final 4 (4 min), final 4 (5 min)", "Qualification 6 flash, final 4 on-sight"],
-    a: [0], e: "Annex C Table 1: qualification with 5 boulders, on-sight, 5 min fixed, Rank Ascending, quota 60 per group. Semi-final with 4 boulders, 5 min fixed, Rank Descending, quota 24. Final with 4 boulders, 4 min max, Rank Descending, quota 8.", r: "ER Annex C §2.1 Table 1" });
+    o: ["Qualification 5 boulders (5 minutes fixed, quota 60 per group), semi-final 4 boulders (5 minutes fixed, 24), final 4 boulders (4 minutes max, 8), all on-sight", "Qualification 4, final 4, no semi-final", "Qualification 5 (4 minutes), semi-final 4 (4 minutes), final 4 (5 minutes)", "Qualification 6 flash, final 4 on-sight"],
+    a: [0], e: "Annex C Table 1: qualification with 5 boulders, on-sight, 5 minutes fixed, Rank Ascending, quota 60 per group. Semi-final with 4 boulders, 5 minutes fixed, Rank Descending, quota 24. Final with 4 boulders, 4 minutes max, Rank Descending, quota 8.", r: "ER Annex C §2.1 Table 1" });
 
   add({ id: "WB21", lvl: 2, q: "What is the starting order in a World Climbing boulder qualification?",
     o: ["Rank Ascending (best seeded starts first; unseeded start after all seeded, in random order)", "Rank Descending", "Fully random", "Alphabetical by nation"],
     a: [0], e: "The boulder qualification uses Rank Ascending Order. The best seeded competitor starts first, and unseeded competitors start after all seeded ones in random order.", r: "ER Annex C §2.1 Table 1; CR Glossary" });
 
   add({ id: "WB22", lvl: 2, q: "Which alternative qualification formats may international youth boulder competitions adopt?",
-    o: ["Format A: 4–8 boulders, flash, limited attempts, round duration fixed but no individual rotation periods", "Format B: 4–6 boulders, flash, 4/5 min fixed rotations, ascending offset order", "Format C: head-to-head knockout", "Format D: on-sight with unlimited time"],
+    o: ["Format A: 4–8 boulders, flash, limited attempts, round duration fixed but no individual rotation periods", "Format B: 4–6 boulders, flash, 4 or 5 minutes fixed rotations, ascending offset order", "Format C: head-to-head knockout", "Format D: on-sight with unlimited time"],
     a: [0, 1], e: "Table 3 lists Format A (limited attempts, overall round duration only) and Format B (flash variation of the standard format). Without Event Seeding, Format B reverts to random, offset.", r: "ER Annex C §2.3, Notes 55–56" });
 
   add({ id: "WB23", lvl: 2, q: "How many boulders may the Jury President cancel in a round?",
-    o: ["Up to one boulder in any round, in exceptional circumstances", "Any number", "None", "Up to two"],
-    a: [0], e: "In exceptional circumstances, the Jury President may cancel up to one boulder per round.", r: "ER Annex C Note 53" });
+    o: ["Up to one boulder in any round, in exceptional circumstances", "Any number", "None", "Up to 2"],
+    a: [0], e: "In exceptional circumstances, the Jury President may cancel up to 1 boulder per round.", r: "ER Annex C Note 53" });
 
   add({ id: "WB24", lvl: 1, q: "How long is the interval after each rotation to clear the Field of Play?",
     o: ["15 seconds", "5 seconds", "30 seconds", "1 minute"],
@@ -101,7 +101,7 @@
 
   add({ id: "WB25", lvl: 2, q: "When does a rotation end in the boulder final?",
     o: ["When all competitors on the Field of Play have completed their attempts, or when the maximum rotation time has elapsed", "Always after exactly 4 minutes", "When the first competitor tops", "When the Jury President decides"],
-    a: [0], e: "In the final, a rotation ends when everyone on the Field of Play is finished or the maximum time (4 min) has elapsed.", r: "ER Annex C §4.4" });
+    a: [0], e: "In the final, a rotation ends when everyone on the Field of Play is finished or the maximum time (4 minutes) has elapsed.", r: "ER Annex C §4.4" });
 
   add({ id: "WB26", lvl: 2, q: "What collective observation is held before a World Climbing boulder final?",
     o: ["2 minutes per boulder; recording equipment prohibited", "8 minutes for all boulders simultaneously", "6 minutes for all boulders", "None"],
@@ -128,14 +128,14 @@
     a: [0, 1, 2], e: "A small bag, liquid chalk, an unpressurised water spray and a non-greasing hydrating agent are allowed. Other liquids are only allowed for drinking or with JP permission.", r: "ER Annex C §4.14, Note 62" });
 
   add({ id: "WB32", lvl: 1, q: "What applies to multiple attempts within a rotation?",
-    o: ["Multiple attempts are allowed; each boulder must be attempted in its entirety; no part may be practised", "Only one attempt per rotation", "Sections may be practised from the ground", "After a fall, climbing may resume from the fall point"],
+    o: ["Multiple attempts are allowed; each boulder must be attempted in its entirety; no part may be practised", "Only 1 attempt per rotation", "Sections may be practised from the ground", "After a fall, climbing may resume from the fall point"],
     a: [0], e: "Multiple attempts are allowed, but each must be from the start. Practising parts of a boulder is prohibited.", r: "ER Annex C §4.12" });
 
   add({ id: "WB33", lvl: 2, q: "How long should competitors stay in the Call Zone after completing their attempts on the course?",
     o: ["At least 1 full rotation", "Until the end of the round", "They may leave immediately", "At least 2 rotations"],
     a: [0], e: "The Jury President should ensure competitors stay in the Call Zone for at least one full rotation after finishing their attempts on the course.", r: "ER Annex C Note 58" });
 
-  add({ id: "WB34", lvl: 2, q: "What is the minimum gap between two boulder rounds on the same day?",
+  add({ id: "WB34", lvl: 2, q: "What is the minimum gap between 2 boulder rounds on the same day?",
     o: ["2 hours between publication of the Official Results and the next Start of Play", "1 hour", "90 minutes", "30 minutes"],
     a: [0], e: "As in lead, there must be at least 2 hours between the Official Results and the next Start of Play on the same day.", r: "ER Annex C §4.7" });
 
@@ -155,8 +155,8 @@
     o: ["The round is suspended for the affected competitor and all who have not yet tried that boulder; they resume as directed by the Jury President once fixed or the boulder is cancelled", "The whole round restarts", "Only the affected competitor waits; everyone else climbs the boulder", "Everyone receives a Top"],
     a: [0], e: "The round is suspended for the affected competitor and everyone still to try the boulder. They continue as directed by the JP once it is fixed or cancelled.", r: "ER Annex C §8.3" });
 
-  add({ id: "WB39", lvl: 3, c: true, q: "A competitor started an attempt with 2:10 remaining in the rotation when a TI occurred. What is the maximum extra time?",
-    o: ["2:10", "A full new rotation", "1 minute", "Until the end of the round"],
+  add({ id: "WB39", lvl: 3, c: true, q: "A competitor started an attempt with 2 minutes and 10 seconds remaining in the rotation when a TI occurred. What is the maximum extra time?",
+    o: ["2 minutes and 10 seconds", "A full new rotation", "1 minute", "Until the end of the round"],
     a: [0], e: "Extra time compensates only for time lost or not used, and must not exceed the time remaining in the rotation when the attempt started.", r: "ER Annex C §8.5" });
 
   add({ id: "WB40", lvl: 2, c: true, q: "After a TI, a competitor leaves the transit area before the matter is resolved. Consequence?",
@@ -184,7 +184,7 @@
     a: [0], e: "In boulder, a timing failure is critical only if the start or end of the allowed climbing time cannot be measured.", r: "CR Note 33" });
 
   add({ id: "WB46", lvl: 1, q: "What minimum width per boulder should a boulder wall have?",
-    o: ["3 m (e.g., 12 m for 4 simultaneous boulders, or two walls of 6 m)", "2 m", "5 m", "No requirement"],
+    o: ["3 m (e.g., 12 m for 4 simultaneous boulders, or 2 walls of 6 m)", "2 m", "5 m", "No requirement"],
     a: [0], e: "Each boulder needs at least 3 m width.", r: "ER Annex C §1.1, Note 52" });
 
   add({ id: "WB47", lvl: 2, q: "Who inspects the boulders and safety matting before each round?",

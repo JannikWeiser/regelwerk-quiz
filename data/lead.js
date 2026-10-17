@@ -16,7 +16,7 @@
     o: ["Wenn der Wettkämpfer die letzte Expressschlinge der Route eingehängt hat", "Wenn der Wettkämpfer den Topgriff mit beiden Händen kontrolliert", "Wenn der Wettkämpfer den Umlenker berührt", "Wenn der Wettkämpfer den höchsten nummerierten Griff des Wertungstopos erreicht"],
     a: [0], e: "Ein Lead-Versuch ist erfolgreich, wenn die letzte Expressschlinge der Route eingehängt wurde.", r: "AR §8.3" });
 
-  add({ id: "L04", lvl: 2, c: true, q: "Eine Athletin hängt die letzte Expressschlinge von einem Griff ein, der zwei Griffe unterhalb des letzten nummerierten Griffs liegt. Wie lautet ihr Ergebnis?",
+  add({ id: "L04", lvl: 2, c: true, q: "Eine Athletin hängt die letzte Expressschlinge von einem Griff ein, der 2 Griffe unterhalb des letzten nummerierten Griffs liegt. Wie lautet ihr Ergebnis?",
     o: ["TOP", "Der Griff, von dem aus sie eingehängt hat", "Der Griff, von dem aus sie eingehängt hat, mit „+“", "Der Versuch ist ungültig, weil sie nicht von der vorgesehenen Position eingehängt hat"],
     a: [0], e: "Das Ergebnis lautet TOP, egal von welchem Griff aus die letzte Expressschlinge eingehängt wurde.", r: "AR §8.3 (Anmerkung)" });
 
@@ -44,7 +44,7 @@
     o: ["Die beiden Positionen müssen nicht identisch sein", "Erreicht ein Wettkämpfer die letzte Einhängeposition ohne einzuhängen, wird die Wertung unterbrochen, der Versuch läuft aber weiter", "An der letzten sicheren Position muss die nächste Handlung das Einhängen sein", "Wer die letzte Einhängeposition ohne Einhängen passiert, ist sofort raus"],
     a: [0, 1, 2], e: "Die letzte Einhängeposition ist der letzte Griff, von dem aus Einhängen möglich ist. Die letzte sichere Position ist die Stelle, über die hinaus ein Weiterklettern ohne Einhängen unsicher wäre. Passiert man die Einhängeposition, ruht nur die Wertung. Erst ein Weiterklettern über die sichere Position beendet den Versuch.", r: "AR §8.2 (Anmerkung zu C)" });
 
-  add({ id: "L11", lvl: 3, c: true, q: "Eine Athletin klettert zwei Griffe über die letzte Einhängeposition von Expressschlinge 7 hinaus, ohne einzuhängen. Dann hängt sie ein, noch bevor sie die letzte sichere Position passiert hat. Was gilt?",
+  add({ id: "L11", lvl: 3, c: true, q: "Eine Athletin klettert 2 Griffe über die letzte Einhängeposition von Expressschlinge 7 hinaus, ohne einzuhängen. Dann hängt sie ein, noch bevor sie die letzte sichere Position passiert hat. Was gilt?",
     o: ["Der Versuch läuft weiter, die Wertung wird ab dem Griff der letzten Einhängeposition fortgesetzt", "Der Versuch ist nicht erfolgreich, weil sie zu spät eingehängt hat", "Die beiden Griffe über der Einhängeposition werden rückwirkend mitgewertet", "Sie muss zur letzten Einhängeposition zurückklettern, sonst ist der Versuch beendet"],
     a: [0], e: "Wer einhängt, bevor die letzte sichere Position passiert ist, klettert weiter. Die Wertung läuft ab dem Griff weiter, der als letzte Einhängeposition festgelegt ist.", r: "AR §8.2 (Anmerkung zu C)" });
 
@@ -128,7 +128,7 @@
     o: ["6", "8", "10", "9"],
     a: [0], e: "Die Finalquote im DJC beträgt 10. Bei weniger als 20 Startern zum Registrationsschluss sinkt sie auf 6.", r: "Anhang A §2.2" });
 
-  add({ id: "L32", lvl: 3, c: true, q: "In der Lead-Qualifikation mit zwei Routen starten 21 Wettkämpfer (Startreihenfolge „zufällig, versetzt“). Wer startet auf Route 2 als Erster?",
+  add({ id: "L32", lvl: 3, c: true, q: "In der Lead-Qualifikation mit 2 Routen starten 21 Wettkämpfer (Startreihenfolge „zufällig, versetzt“). Wer startet auf Route 2 als Erster?",
     o: ["Der Wettkämpfer, der auf Route 1 als 11. startet", "Der Wettkämpfer, der auf Route 1 als 10. startet", "Der Wettkämpfer, der auf Route 1 als 12. startet", "Der Wettkämpfer, der auf Route 1 als Letzter startet"],
     a: [0], e: "Die Reihenfolge auf Route 2 ist um die halbe Starterzahl versetzt, abgerundet. Bei 21 Startern sind das 10 Plätze, also startet der 11. von Route 1 auf Route 2 als Erster.", r: "Anhang A §2.1 mit Anmerkung" });
 
@@ -136,7 +136,7 @@
     o: ["Der bestplatzierte Wettkämpfer der Vorrunde startet als Letzter", "Der bestplatzierte Wettkämpfer der Vorrunde startet als Erster", "Die Reihenfolge wird ausgelost", "Es starten abwechselnd Damen und Herren"],
     a: [0], e: "Bei absteigender Reihenfolge startet der Bestplatzierte zuletzt. Bei gleicher Platzierung wird gelost.", r: "Glossar „Absteigende Reihenfolge“" });
 
-  add({ id: "L34", lvl: 2, c: true, q: "Finalquote 8: Nach dem Halbfinale liegen drei Athleten gemeinsam auf Platz 7, auch nach Count-back. Wie viele Athleten kommen ins Finale?",
+  add({ id: "L34", lvl: 2, c: true, q: "Finalquote 8: Nach dem Halbfinale liegen 3 Athleten gemeinsam auf Platz 7, auch nach Count-back. Wie viele Athleten kommen ins Finale?",
     o: ["9", "8", "7", "Es wird ein Stechen geklettert"],
     a: [0], e: "Die Quote wird mit den Bestplatzierten aufgefüllt, inklusive aller, die auf der letzten Qualifikationsposition gleichplatziert sind. Plätze 1–6 plus dreimal Platz 7 ergibt 9 Finalisten.", r: "Anhang A §2.3" });
 
@@ -180,9 +180,9 @@
     o: ["4,000", "5,000", "10,000", "16,000"],
     a: [0], e: "√(2 × 8) = √16 = 4,000.", r: "Anhang A §7.2" });
 
-  add({ id: "L45", lvl: 3, c: true, q: "Ein Athlet toppt Route 1 gemeinsam mit zwei anderen (drei Wettkämpfer gleichauf auf Platz 1). Auf Route 2 ist er alleiniger Achter. Wie viele Qualifikationspunkte hat er?",
+  add({ id: "L45", lvl: 3, c: true, q: "Ein Athlet toppt Route 1 gemeinsam mit 2 anderen (3 Wettkämpfer gleichauf auf Platz 1). Auf Route 2 ist er alleiniger Achter. Wie viele Qualifikationspunkte hat er?",
     o: ["4,000", "2,828", "5,000", "3,000"],
-    a: [0], e: "Drei Gleichplatzierte teilen sich die Plätze 1–3, ihr Fractional Ranking ist (1+2+3)/3 = 2. √(2 × 8) = 4,000.", r: "Anhang A §7.2; Glossar „Ranking“" });
+    a: [0], e: "3 Gleichplatzierte teilen sich die Plätze 1–3, ihr Fractional Ranking ist (1+2+3)/3 = 2. √(2 × 8) = 4,000.", r: "Anhang A §7.2; Glossar „Ranking“" });
 
   add({ id: "L46", lvl: 2, c: true, q: "Ein Wettkämpfer klettert in der Qualifikation nur Route 1 und tritt auf Route 2 nicht an. Wie wird er gewertet?",
     o: ["Er wird gewertet und auf Route 2 gleichrangig als Letzter eingestuft", "Er wird für die gesamte Runde als DNS markiert", "Es zählt nur Route 1, Route 2 wird ignoriert", "Er wird disqualifiziert"],
@@ -248,7 +248,7 @@
     o: ["Manuelle Sicherungsgeräte", "Halbautomaten mit Panikfunktion", "Autobelay-Systeme", "Das ist nicht geregelt"],
     a: [0], e: "Das Seil wird von einem Sichernden pro Seil bedient. Manuelle Sicherungsgeräte sind zu bevorzugen.", r: "Anhang A §3.3 mit Anmerkung" });
 
-  add({ id: "L62", lvl: 2, c: true, q: "Ein Athlet greift mit zwei Fingern in ein unbenutztes, offenes T-Nut-Loch, um sich zu halten. Was gilt?",
+  add({ id: "L62", lvl: 2, c: true, q: "Ein Athlet greift mit 2 Fingern in ein unbenutztes, offenes T-Nut-Loch, um sich zu halten. Was gilt?",
     o: ["Der Versuch ist nicht erfolgreich, weil er sich durch ein unbenutztes T-Nut-Loch einen Vorteil verschafft hat", "Erlaubt, T-Nut-Löcher sind Teil der Wand", "Erlaubt, aber das Loch zählt nicht für die Wertung", "Er bekommt eine Verwarnung"],
     a: [0], e: "Unbenutzte, offene T-Nut-Löcher dürfen nicht mit den Händen benutzt werden. Wer sich so einen Vorteil verschafft, beendet den Versuch erfolglos.", r: "AR §8.1(E)" });
 
@@ -268,19 +268,19 @@
     o: ["Mindestens 3 m Breite pro Route; die Höhe soll mindestens 15 m betragen", "Mindestens 2 m Breite pro Route und 12 m Höhe", "Mindestens 4 m Breite pro Route und 18 m Höhe", "Es gibt keine Vorgaben"],
     a: [0], e: "Laut Anhang A gelten mindestens 3 m Breite pro Route und eine Wandhöhe von mindestens 15 m (Soll-Vorgabe).", r: "Anhang A §1.1" });
 
-  add({ id: "L67", lvl: 2, c: true, q: "Ein Athlet hängt nach 6:02 Minuten die letzte Expressschlinge ein. Die Kletterzeit beträgt 6 Minuten. Ergebnis?",
+  add({ id: "L67", lvl: 2, c: true, q: "Ein Athlet hängt nach 6 Minuten und 2 Sekunden die letzte Expressschlinge ein. Die Kletterzeit beträgt 6 Minuten. Ergebnis?",
     o: ["Nicht erfolgreich: Gewertet wird das höchste Ergebnis, das vor Ablauf der Kletterzeit erreicht wurde", "TOP, solange er ohne Unterbrechung weitergeklettert ist", "TOP, aber mit Zeitstrafe", "Der Versuch wird komplett annulliert"],
     a: [0], e: "Mit Ablauf der Kletterzeit endet der Versuch erfolglos. Laut Judge Guide prüft der DAV-Schiedsrichter im Zweifel per Video, welches Ergebnis vor Zeitablauf erreicht war.", r: "AR §8.1; Judge Guide" });
 
   add({ id: "L68", lvl: 1, q: "Wie viele gewertete Versuche hat ein Wettkämpfer im Lead pro Route und Runde?",
-    o: ["Einen", "Zwei", "Unbegrenzt innerhalb der Kletterzeit", "Drei"],
+    o: ["1", "2", "Unbegrenzt innerhalb der Kletterzeit", "3"],
     a: [0], e: "Pro Route und Runde gibt es einen separaten, gewerteten Versuch. Ein Neustart ist nur nach einem technischen Zwischenfall möglich.", r: "AR §6.1, §6.2" });
 
   add({ id: "L69", lvl: 2, q: "Wann sollte das Wertungstopo den einspruchsberechtigten Teamoffiziellen zur Verfügung stehen?",
     o: ["Nach dem Ende einer gemeinsamen Besichtigung bzw. vor dem Start of Play", "Erst mit den offiziellen Ergebnissen", "Am Vortag des Wettkampfs", "Nur auf Nachfrage nach einem Einspruch"],
     a: [0], e: "Das Wertungstopo sollte den einspruchsberechtigten Teamoffiziellen nach der gemeinsamen Besichtigung bzw. vor dem Start of Play vorliegen.", r: "Anhang A §5.1(B)" });
 
-  add({ id: "L70", lvl: 3, c: true, q: "Zwei Finalistinnen sind nach dem Finale gleichauf auf Platz 2, auch nach Count-back auf das Halbfinale. Beide sind an Griff 38+ gestürzt, eine nach 4:31, die andere nach 4:47. Wie wird entschieden?",
-    o: ["Die Athletin mit 4:31 wird Zweite, weil die kürzere Kletterzeit in der Medaillenphase den Podiumsgleichstand auflöst", "Beide werden Zweite", "Die Athletin mit 4:47 wird Zweite, weil sie länger durchgehalten hat", "Es gibt ein Superfinale"],
+  add({ id: "L70", lvl: 3, c: true, q: "2 Finalistinnen sind nach dem Finale gleichauf auf Platz 2, auch nach Count-back auf das Halbfinale. Beide sind an Griff 38+ gestürzt, eine nach 4 Minuten und 31 Sekunden, die andere nach 4 Minuten und 47 Sekunden. Wie wird entschieden?",
+    o: ["Die Athletin mit 4 Minuten und 31 Sekunden wird Zweite, weil die kürzere Kletterzeit in der Medaillenphase den Podiumsgleichstand auflöst", "Beide werden Zweite", "Die Athletin mit 4 Minuten und 47 Sekunden wird Zweite, weil sie länger durchgehalten hat", "Es gibt ein Superfinale"],
     a: [0], e: "In der geplanten Medaillenphase werden Podiumsgleichstände nach dem Count-back über die tatsächliche Kletterzeit aufgelöst. Die kürzere Zeit ist besser.", r: "Anhang A §7.3(B)" });
 })();

@@ -59,6 +59,8 @@
       wrongList: "Falsch beantwortet", tapHint: "zum Aufklappen tippen", yourChoice: "deine Wahl", notAnswered: "Nicht beantwortet.",
       allRight: "Alles richtig, stark!",
       locale: "de-DE",
+      minutes: (n) => `${n} ${n === 1 ? "Minute" : "Minuten"}`,
+      dur: (m, s) => (m ? `${m} ${m === 1 ? "Minute" : "Minuten"}${s ? ` und ${s} ${s === 1 ? "Sekunde" : "Sekunden"}` : ""}` : `${s} ${s === 1 ? "Sekunde" : "Sekunden"}`),
     },
     en: {
       htmlTitle: "Climbing Rules Quiz", brand: "Rules Quiz",
@@ -112,6 +114,8 @@
       wrongList: "Answered incorrectly", tapHint: "tap to expand", yourChoice: "your choice", notAnswered: "Not answered.",
       allRight: "All correct – great job!",
       locale: "en-GB",
+      minutes: (n) => `${n} ${n === 1 ? "minute" : "minutes"}`,
+      dur: (m, s) => (m ? `${m} ${m === 1 ? "minute" : "minutes"}${s ? ` and ${s} ${s === 1 ? "second" : "seconds"}` : ""}` : `${s} ${s === 1 ? "second" : "seconds"}`),
     },
   };
 
@@ -428,7 +432,7 @@
           </div>
           <div class="field">
             <span class="flabel">${t.timeLimit}</span>
-            ${seg("examTime", ["0", "10", "20", "30", "45", "60"], p.examTime, (v) => (v === "0" ? t.noLimit : v + " min"))}
+            ${seg("examTime", ["0", "10", "20", "30", "45", "60"], p.examTime, (v) => (v === "0" ? t.noLimit : t.minutes(Number(v))))}
           </div>
           <div class="field">
             <label for="examPass">${t.passMark}</label>
@@ -711,7 +715,7 @@
           <div>
             ${pass !== null ? `<span class="verdict-badge ${pass ? "pass" : "fail"}">${msg}</span>` : `<h2 style="margin-bottom:4px">${msg}</h2>`}
             <p style="margin:0">${t.scoreLine(ok, scored.length)}${pass !== null ? t.limit(s.pass) : ""}.</p>
-            <p class="small muted" style="margin:0">${t.duration} ${fmtTime(elapsed)}${aborted ? " · " + t.aborted : ""}${unanswered ? " · " + t.unanswered(unanswered) : ""}</p>
+            <p class="small muted" style="margin:0">${t.duration}: ${t.dur(Math.floor(elapsed / 60), elapsed % 60)}${aborted ? " · " + t.aborted : ""}${unanswered ? " · " + t.unanswered(unanswered) : ""}</p>
           </div>
         </div>
         <div>

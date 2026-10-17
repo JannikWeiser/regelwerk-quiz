@@ -15,7 +15,7 @@
     o: ["Not longer than 2 days; whenever possible completed in one and a half days and ending before 16:00 on Sunday", "3 days, ending Sunday evening", "1 day only", "No limit"],
     a: [0], e: "A Youth Series competition lasts no longer than 2 days. Where possible it should finish in one and a half days, before 16:00 on Sunday. A later finish must be declared on the information sheet.", r: "EYS §1.2, §1.4(A), (B)" });
 
-  add("allgemein", { id: "E04", lvl: 2, q: "Under which condition may a Europe Youth Series boulder competition be held over three days?",
+  add("allgemein", { id: "E04", lvl: 2, q: "Under which condition may a Europe Youth Series boulder competition be held over 3 days?",
     o: ["If the organiser expects more than 250 competitors – Friday afternoon to Sunday afternoon, clearly announced", "If more than 100 competitors", "If the weather is bad", "Never"],
     a: [0], e: "With more than 250 expected boulder competitors, the event may run from Friday afternoon to Sunday afternoon. This must be announced on the website and the Event Information Sheet.", r: "EYS §1.5" });
 
@@ -24,19 +24,19 @@
     a: [0], e: "The season runs from the first weekend of March to mid-October, preferably at weekends or during holidays. Qualifications are on Saturday and finals on Sunday.", r: "EYS §1.3, §1.4(C)" });
 
   add("allgemein", { id: "E06", lvl: 3, q: "World Climbing wants to test a new rule format at a Europe Youth Series competition. What applies?",
-    o: ["One competition may be nominated as a test event, before the season starts and at least three months in advance", "Any competition may test rules spontaneously", "Tests are not allowed", "The organiser decides on the day"],
-    a: [0], e: "World Climbing may nominate one Europe Youth Series competition per year as a test event. The nomination must be made before the season and at least three months ahead.", r: "EYS §1.6" });
+    o: ["One competition may be nominated as a test event, before the season starts and at least 3 months in advance", "Any competition may test rules spontaneously", "Tests are not allowed", "The organiser decides on the day"],
+    a: [0], e: "World Climbing may nominate one Europe Youth Series competition per year as a test event. The nomination must be made before the season and at least 3 months ahead.", r: "EYS §1.6" });
 
   add("allgemein", { id: "E07", lvl: 2, q: "Which team officials may a federation register for a Europe Youth Series competition or the Youth Championship?",
-    o: ["One Team Manager", "Coaches: 4 for boulder, 3 for lead, 2 for speed", "Up to three qualified medicals", "Unlimited coaches per discipline"],
+    o: ["1 Team Manager", "Coaches: 4 for boulder, 3 for lead, 2 for speed", "Up to 3 qualified medicals", "Unlimited coaches per discipline"],
     a: [0, 1, 2], e: "Federations may register 1 Team Manager, coaches per discipline (boulder 4, lead 3, speed 2) and up to 3 qualified medicals.", r: "EYS §2.2; EYCh §2.2" });
 
   add("allgemein", { id: "E08", lvl: 2, q: "How many additional competitors may the host federation register at a Europe Youth Series competition?",
-    o: ["Two per category for each relevant discipline", "One per category", "Unlimited", "None"],
-    a: [0], e: "The host federation may register an additional two competitors in each category and discipline.", r: "EYS §2.3(b)" });
+    o: ["2 per category for each relevant discipline", "1 per category", "Unlimited", "None"],
+    a: [0], e: "The host federation may register an additional 2 competitors in each category and discipline.", r: "EYS §2.3(b)" });
 
   add("allgemein", { id: "E09", lvl: 3, q: "Athletes from other Continental Councils start at a Europe Youth Series competition. Which statements are correct?",
-    o: ["Maximum two athletes per gender and discipline, subject to Executive Board validation", "They may reach the podium and take part in the day victory", "They do not receive ranking points for any World Climbing rankings", "They receive European ranking points"],
+    o: ["Maximum 2 athletes per gender and discipline, subject to Executive Board validation", "They may reach the podium and take part in the day victory", "They do not receive ranking points for any World Climbing rankings", "They receive European ranking points"],
     a: [0, 1, 2], e: "Exceptional spots are capped at 2 per gender and discipline. These athletes may reach the podium but get no World Climbing ranking points.", r: "EYS §2.3(c)" });
 
   add("allgemein", { id: "E10", lvl: 2, q: "Is a podium ceremony held for the European Youth National Team Ranking at a Youth Series competition?",
@@ -44,23 +44,23 @@
     a: [0], e: "The European Youth National Team Ranking is calculated for each discipline, but no podium ceremony is organised for it.", r: "EYS §3.1(b)" });
 
   add("allgemein", { id: "E11", lvl: 3, q: "When are European Youth Series Rankings calculated for a discipline and category?",
-    o: ["When at least three competitions have been held that year, or two Youth Series competitions plus a Youth European Championship in that discipline", "Always, even after one competition", "Only if five competitions were held", "Only after the Youth Championship"],
+    o: ["When at least 3 competitions have been held that year, or 2 Youth Series competitions plus a Youth European Championship in that discipline", "Always, even after 1 competition", "Only if 5 competitions were held", "Only after the Youth Championship"],
     a: [0], e: "Series rankings require at least 3 competitions, or 2 Youth Series events plus the Youth European Championship in that discipline.", r: "EYS §3.2" });
 
-  add("allgemein", { id: "E12", lvl: 3, c: true, q: "Four Europe Youth Series lead competitions are held in a season. How many results count for the series ranking?",
-    o: ["The best three; the lowest is disregarded", "All four", "The best two", "Only the last three"],
-    a: [0], e: "A maximum of three results count. With more than three events, only the three best count.", r: "EYS §3.3(c), (d)" });
+  add("allgemein", { id: "E12", lvl: 3, c: true, q: "4 Europe Youth Series lead competitions are held in a season. How many results count for the series ranking?",
+    o: ["The best 3; the lowest is disregarded", "All 4", "The best 2", "Only the last 3"],
+    a: [0], e: "A maximum of 3 results count. With more than 3 events, only the 3 best count.", r: "EYS §3.3(c), (d)" });
 
-  add("allgemein", { id: "E13", lvl: 2, q: "What do the top three of the Europe Youth Series overall season ranking receive?",
-    o: ["1st: trophy and gold medal; 2nd: silver medal; 3rd: bronze medal", "Trophies for all three", "Plates for 2nd and 3rd", "Prize money only"],
+  add("allgemein", { id: "E13", lvl: 2, q: "What do the top 3 of the Europe Youth Series overall season ranking receive?",
+    o: ["1st: trophy and gold medal; 2nd: silver medal; 3rd: bronze medal", "Trophies for all 3", "Plates for 2nd and 3rd", "Prize money only"],
     a: [0], e: "At season end, 1st gets a trophy and gold medal, 2nd silver and 3rd bronze, in each category and discipline.", r: "EYS §3.4" });
 
   add("lead", { id: "E14", lvl: 2, q: "How is lead organised at a Europe Youth Series competition?",
-    o: ["Two rounds (qualification and final) with a fixed final quota of 10", "Three rounds with semi-final quota 24", "One round only", "Two rounds with final quota 8"],
-    a: [0], e: "Europe Youth Series lead uses two rounds, with a fixed final quota of ten.", r: "EYS §4.1, §4.2" });
+    o: ["2 rounds (qualification and final) with a fixed final quota of 10", "3 rounds with semi-final quota 24", "1 round only", "2 rounds with final quota 8"],
+    a: [0], e: "Europe Youth Series lead uses 2 rounds, with a fixed final quota of 10.", r: "EYS §4.1, §4.2" });
 
   add("lead", { id: "E15", lvl: 3, c: true, q: "At the Europe Youth Championship, only 30 athletes are registered in a lead category after the registration deadline. Format?",
-    o: ["Only two rounds (qualification and final) with a final quota of 8", "Three rounds as usual", "Final quota of 10", "Single round"],
+    o: ["Only 2 rounds (qualification and final) with a final quota of 8", "3 rounds as usual", "Final quota of 10", "Single round"],
     a: [0], e: "With fewer than 36 registered athletes in a category, the category runs only qualification and final, with a final quota of 8.", r: "EYCh §3.2" });
 
   add("lead", { id: "E16", lvl: 2, q: "Is there a route cleaning break during the lead semi-final at the Europe Youth Championship?",
@@ -75,11 +75,11 @@
     o: ["World Climbing Series finals format, one course of 4 boulders, fixed quota of 10, preceded by an 8-minute collective observation for all boulders", "4 boulders with 2 minutes observation per boulder, quota 8", "Rotation format with 5-minute fixed rotations", "6 boulders, quota 12"],
     a: [0], e: "The final uses the World Climbing Series finals format with 4 boulders and a quota of 10. It starts with an 8-minute collective observation in which athletes choose their own order and timing.", r: "EYS §4.4(b), (d)" });
 
-  add("boulder", { id: "E19", lvl: 2, q: "How is the starting order set for the two qualification courses in Europe Youth boulder events?",
+  add("boulder", { id: "E19", lvl: 2, q: "How is the starting order set for the 2 qualification courses in Europe Youth boulder events?",
     o: ["Course A random; course B the same order staggered by 50%", "Both random", "Both by ranking", "Course B reverse of course A"],
     a: [0], e: "Course A is drawn at random. Course B follows the same order, staggered by 50%.", r: "EYS §4.4(c); EYCh §3.6(d)" });
 
-  add("boulder", { id: "E20", lvl: 2, q: "What minimum gap applies between a competitor’s two qualification courses in Europe Youth boulder events?",
+  add("boulder", { id: "E20", lvl: 2, q: "What minimum gap applies between a competitor’s 2 qualification courses in Europe Youth boulder events?",
     o: ["Not less than 30 minutes between finishing the last boulder of the first course and starting the second course", "50 minutes", "15 minutes", "No gap"],
     a: [0], e: "There must be at least 30 minutes between the end of the first course and the start of the second.", r: "EYS §4.4(c)(v); EYCh §3.6(d)(iii)" });
 
@@ -89,9 +89,9 @@
 
   add("boulder", { id: "E22", lvl: 2, c: true, q: "At the Europe Youth Championship, 34 athletes are registered in a boulder category after the deadline. What format applies?",
     o: ["Only qualification and final, with a final quota of 8", "Qualification, semi-final and final", "Final quota of 10", "Only a final"],
-    a: [0], e: "With fewer than 36 registered athletes in a category, there are only two rounds and a final quota of 8.", r: "EYCh §3.5" });
+    a: [0], e: "With fewer than 36 registered athletes in a category, there are only 2 rounds and a final quota of 8.", r: "EYCh §3.5" });
 
   add("boulder", { id: "E23", lvl: 2, q: "How many qualification starting groups are used in Europe Youth boulder qualifications?",
-    o: ["One starting group, climbing two flash courses (A and B)", "Two starting groups", "Four groups", "No groups, a single course"],
-    a: [0], e: "The qualification is a flash format with two courses (A and B), organised with one starting group.", r: "EYS §4.4(a); EYCh §3.6(a)" });
+    o: ["1 starting group, climbing 2 flash courses (A and B)", "2 starting groups", "4 groups", "No groups, a single course"],
+    a: [0], e: "The qualification is a flash format with 2 courses (A and B), organised with 1 starting group.", r: "EYS §4.4(a); EYCh §3.6(a)" });
 })();

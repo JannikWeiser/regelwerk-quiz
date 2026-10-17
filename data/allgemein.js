@@ -64,11 +64,11 @@
     o: ["Die Versuche anderer Wettkämpfer zu beobachten", "Die Routenbauer beim Setzen oder Testen zu beobachten", "Informationen über die offiziellen hinaus zu suchen oder anzunehmen", "Die Routen von öffentlichen Bereichen aus anzusehen, solange diese geöffnet sind"],
     a: [0, 1, 2], e: "Verboten sind zusätzliche Informationen, das Beobachten anderer Versuche und der Routenbauer. Von öffentlich zugänglichen Bereichen aus dürfen die Routen angesehen werden, solange diese geöffnet sind. Drohnen oder Ähnliches sind tabu.", r: "AR §5.3 mit Anmerkung" });
 
-  add({ id: "G16", lvl: 2, c: true, q: "Zwei Athletinnen sprechen nach der gemeinsamen Besichtigung über die Schlüsselstelle. Keine von beiden hat die Route bisher versucht. Erlaubt?",
+  add({ id: "G16", lvl: 2, c: true, q: "2 Athletinnen sprechen nach der gemeinsamen Besichtigung über die Schlüsselstelle. Keine von beiden hat die Route bisher versucht. Erlaubt?",
     o: ["Ja, solange keine von beiden die Route schon versucht hat", "Nein, Austausch ist in On-Sight-Runden immer verboten", "Nur in Anwesenheit eines Schiedsrichters", "Ja, auch wenn eine schon geklettert ist"],
     a: [0], e: "Informationen aus der gemeinsamen Besichtigung dürfen weitergegeben werden, solange keiner der beiden die Route oder den Boulder versucht hat.", r: "AR §5.4(B)" });
 
-  add({ id: "G17", lvl: 2, c: true, q: "Zwei Athleten, die ihre Versuche in der Runde beide abgeschlossen haben, reden in der „Leader Corner“ über die Route. Erlaubt?",
+  add({ id: "G17", lvl: 2, c: true, q: "2 Athleten, die ihre Versuche in der Runde beide abgeschlossen haben, reden in der „Leader Corner“ über die Route. Erlaubt?",
     o: ["Ja, nach Abschluss ihrer Versuche dürfen sie sich austauschen", "Nein, erst nach der Siegerehrung", "Nur mit Erlaubnis des JP", "Nein, das ist ein schwerer Verstoß"],
     a: [0], e: "Wer seine Versuche in der Runde abgeschlossen hat, darf sich mit anderen, die ebenfalls fertig sind, austauschen.", r: "AR §5.4 (Anmerkung)" });
 
@@ -96,7 +96,7 @@
     o: ["Ein gebrochener oder loser Griff", "Eine falsch positionierte Expressschlinge oder ein falsch positionierter Karabiner", "Ein vom Sichernden verursachtes Straffseil, das den Wettkämpfer unterstützt oder behindert", "Ein Abrutschen wegen der eigenen schwitzigen Hände"],
     a: [0, 1, 2], e: "TIs sind: gebrochener oder loser Griff, falsch positionierte Expressschlinge, Straffseil durch den Sichernden, kritischer Ausfall der Zeitmessung, sowie ungewöhnliche Umstände mit wesentlichem Vor- oder Nachteil, die nicht vom Wettkämpfer selbst verursacht wurden.", r: "Glossar „Technischer Zwischenfall“" });
 
-  add({ id: "G24", lvl: 2, c: true, q: "Ein Griff dreht sich unter der Hand einer Athletin leicht und wird dadurch schwerer. Sie klettert trotzdem weiter und stürzt drei Züge später. Kann sie noch einen TI geltend machen?",
+  add({ id: "G24", lvl: 2, c: true, q: "Ein Griff dreht sich unter der Hand einer Athletin leicht und wird dadurch schwerer. Sie klettert trotzdem weiter und stürzt 3 Züge später. Kann sie noch einen TI geltend machen?",
     o: ["Nein, wer nach einem möglichen TI weiterklettert, hat ihn akzeptiert, er ist für sie abgeschlossen", "Ja, bis zur Veröffentlichung der Ergebnisse", "Ja, weil der Griff nachweislich lose war", "Nur wenn ihr Trainer sofort protestiert"],
     a: [0], e: "Wer einen Versuch nach einem möglichen oder bestätigten TI fortsetzt, akzeptiert ihn. Der Zwischenfall ist für diesen Wettkämpfer abgeschlossen.", r: "AR §11.3" });
 
@@ -117,15 +117,15 @@
     a: [0, 1, 2], e: "Ein Einspruch ist möglich bei Schiedsrichterfehlern, Fehlern bei Punkten oder Zeit sowie bei Fragen der Teilnahmeberechtigung oder des Verhaltens.", r: "AR §12.1" });
 
   add({ id: "G29", lvl: 2, q: "Was muss ein zulässiger Einspruch enthalten bzw. erfüllen?",
-    o: ["Schriftliche Einreichung bei der Einspruchsjury", "Einreichung durch den Betroffenen oder einen einspruchsberechtigten Teamoffiziellen, innerhalb der Frist", "Angabe des betroffenen Wettkämpfers, des Inhalts und der Regelgrundlage", "Unterschrift von drei verschiedenen Teams"],
-    a: [0, 1, 2], e: "Der Einspruch geht schriftlich an die Einspruchsjury, kommt von einer berechtigten Person, wird fristgerecht eingereicht und nennt Wettkämpfer, Inhalt und Regelgrundlage. Drei Teams braucht es nur bei der Sicherheitspetition.", r: "AR §12.2" });
+    o: ["Schriftliche Einreichung bei der Einspruchsjury", "Einreichung durch den Betroffenen oder einen einspruchsberechtigten Teamoffiziellen, innerhalb der Frist", "Angabe des betroffenen Wettkämpfers, des Inhalts und der Regelgrundlage", "Unterschrift von 3 verschiedenen Teams"],
+    a: [0, 1, 2], e: "Der Einspruch geht schriftlich an die Einspruchsjury, kommt von einer berechtigten Person, wird fristgerecht eingereicht und nennt Wettkämpfer, Inhalt und Regelgrundlage. 3 Teams braucht es nur bei der Sicherheitspetition.", r: "AR §12.2" });
 
   add({ id: "G30", lvl: 2, q: "Wann darf eine Einspruchsgebühr erhoben werden?",
     o: ["Nur, wenn der Einspruch nicht erfolgreich bleibt", "Immer bei Einreichung", "Nur bei unzulässigen Einsprüchen", "Nie"],
     a: [0], e: "Eine Gebühr fällt nur an, wenn der Einspruch erfolglos bleibt. Bei unzulässigen Einsprüchen wird das Formular zurückgegeben und als ungültig markiert, eine Gebühr ist dann nicht zu zahlen.", r: "AR §12.2, §12.6" });
 
   add({ id: "G31", lvl: 2, q: "Wer bildet bei DAV-Wettkämpfen die Einspruchsjury?",
-    o: ["Jury-Präsident und Event Delegate; ist ein Mitglied an der strittigen Entscheidung beteiligt, ersetzt es ein DAV-Schiedsrichter", "Drei Teamoffizielle", "Der DAV-Schiedsrichter allein", "Chefroutenbauer und Veranstalter"],
+    o: ["Jury-Präsident und Event Delegate; ist ein Mitglied an der strittigen Entscheidung beteiligt, ersetzt es ein DAV-Schiedsrichter", "3 Teamoffizielle", "Der DAV-Schiedsrichter allein", "Chefroutenbauer und Veranstalter"],
     a: [0], e: "Die Einspruchsjury besteht aus Jury-Präsident und Event Delegate. War ein Mitglied an der Ausgangsentscheidung beteiligt, rückt ein DAV-Schiedsrichter nach.", r: "WB §10.1; TO §3.2" });
 
   add({ id: "G32", lvl: 2, q: "Wer ist laut Wettkampfbestimmungen einspruchsberechtigt?",
@@ -148,9 +148,9 @@
     o: ["Medaillenphase: spätestens 2 Minuten, jede andere Runde: spätestens 5 Minuten nach Veröffentlichung", "Immer 10 Minuten", "Bis zum Ende des Wettkampftages", "Medaillenphase: 5 Minuten, sonst 15 Minuten"],
     a: [0], e: "Einsprüche zu Fehlern in den offiziellen Ergebnissen: 2 Minuten in der Medaillenphase, sonst 5 Minuten nach Veröffentlichung.", r: "WB §10.4" });
 
-  add({ id: "G37", lvl: 1, q: "Welche Sanktion folgt auf zwei Verwarnungen bei einer Veranstaltung?",
+  add({ id: "G37", lvl: 1, q: "Welche Sanktion folgt auf 2 Verwarnungen bei einer Veranstaltung?",
     o: ["Disqualifikation", "Eine dritte Verwarnung", "Zeitstrafe", "Keine weitere Sanktion"],
-    a: [0], e: "Wer bei einer Veranstaltung zwei Verwarnungen bekommt, wird disqualifiziert.", r: "AR §13.1" });
+    a: [0], e: "Wer bei einer Veranstaltung 2 Verwarnungen bekommt, wird disqualifiziert.", r: "AR §13.1" });
 
   add({ id: "G38", lvl: 2, c: true, q: "Ein Athlet filmt in einer On-Sight-Runde heimlich aus der Iso heraus den Versuch eines Konkurrenten. Welche Sanktion ist vorgesehen?",
     o: ["Disqualifikation: Informationen über eine On-Sight-Route über das erlaubte Maß hinaus zu sammeln, ist ein schwerer Verstoß", "Eine Verwarnung", "Eine mündliche Ermahnung", "Ein Strafversuch"],
@@ -176,7 +176,7 @@
     o: ["Er darf an den folgenden Runden nicht mehr teilnehmen und wird aus der Wertung genommen", "Bei einem schwerwiegenden Verstoß gilt die Disqualifikation für alle Wettkämpfe der Veranstaltung", "Er wird im General Ranking nicht gerankt", "Er behält seine Platzierung der laufenden Runde"],
     a: [0, 1, 2], e: "Disqualifizierte sind für folgende Runden gesperrt und werden aus der Wertung genommen, auch im General Ranking. Bei schweren Verstößen gilt das für die gesamte Veranstaltung.", r: "AR §13.5, §13.6 mit Anmerkung" });
 
-  add({ id: "G44", lvl: 2, q: "Was passiert, wenn eine Person innerhalb von 12 Monaten drei Verwarnungen erhält?",
+  add({ id: "G44", lvl: 2, q: "Was passiert, wenn eine Person innerhalb von 12 Monaten 3 Verwarnungen erhält?",
     o: ["Ihre DAV-Wettkampflizenz wird nach dem Wettkampf mit der dritten Verwarnung ausgesetzt; die Teamquote ihres Landesverbands sinkt währenddessen um einen Slot", "Sie wird lebenslang gesperrt", "Nichts, Verwarnungen verfallen nach jedem Wettkampf", "Sie muss einen Lehrgang besuchen"],
     a: [0], e: "Nach der dritten Verwarnung in 12 Monaten wird die Lizenz ausgesetzt, die Dauer legt die Disziplinarkommission fest. Die Teamquote des Landesverbands verringert sich in dieser Zeit um einen Slot.", r: "WB §9.3" });
 
@@ -189,12 +189,12 @@
     a: [0, 1, 2], e: "Zu den IRMs gehören DNS (nicht gestartet), DSQ (technischer Regelverstoß) und DQB (unsportliches Verhalten).", r: "Glossar „Invalid Result Mark“" });
 
   add({ id: "G47", lvl: 2, q: "Was bedeuten „muss“, „soll“ und „kann“ im Regelwerk?",
-    o: ["„Muss“ ist zwingend, „soll“ eine Empfehlung, „kann/darf“ eine Ermessensentscheidung", "Alle drei sind gleichbedeutend zwingend", "„Soll“ ist zwingend, „muss“ eine Empfehlung", "„Kann“ ist ein Verbot"],
+    o: ["„Muss“ ist zwingend, „soll“ eine Empfehlung, „kann/darf“ eine Ermessensentscheidung", "Alle 3 sind gleichbedeutend zwingend", "„Soll“ ist zwingend, „muss“ eine Empfehlung", "„Kann“ ist ein Verbot"],
     a: [0], e: "Muss = zwingend, darf nicht = Verbot, soll/soll nicht = Empfehlung (Abweichung nur nach sorgfältiger Abwägung), kann/darf = Ermessen.", r: "Glossar 1" });
 
   add({ id: "G48", lvl: 2, q: "Was bedeutet die Startreihenfolge „versetzt“?",
     o: ["Die Startreihenfolge einer Route bzw. eines Boulder-Sets ist eine zyklische Verschiebung der Reihenfolge einer anderen, typischerweise proportional zur Anzahl der Routen", "Jeder Wettkämpfer startet um eine feste Zeit versetzt", "Damen und Herren starten abwechselnd", "Die Reihenfolge wird für jede Route neu ausgelost"],
-    a: [0], e: "Bei versetzter Reihenfolge wird zyklisch verschoben, z. B. bei zwei Routen um die halbe Starterzahl, abgerundet.", r: "Glossar 3 „Versetzte Reihenfolge“" });
+    a: [0], e: "Bei versetzter Reihenfolge wird zyklisch verschoben, z. B. bei 2 Routen um die halbe Starterzahl, abgerundet.", r: "Glossar 3 „Versetzte Reihenfolge“" });
 
   add({ id: "G49", lvl: 2, q: "Bis wann muss die Teilnahme bestätigt werden (Registration), wenn die Ausschreibung keinen Termin nennt?",
     o: ["30 Minuten vor Beginn des Technical Meetings", "60 Minuten vor Start of Play", "Am Vortag um 20 Uhr", "Bis zum Start der Qualifikation"],
@@ -202,7 +202,7 @@
 
   add({ id: "G50", lvl: 2, c: true, q: "Zum Registrationsschluss sind in einer Kategorie nur 3 Wettkämpferinnen registriert. Was gilt?",
     o: ["Für diese Kategorie findet kein Wettkampf statt, es gibt keine Meisterschaftspunkte", "Der Wettkampf findet normal statt", "Die Kategorie wird mit der nächsthöheren zusammengelegt", "Es wird nur ein Finale geklettert"],
-    a: [0], e: "Bei weniger als vier Registrierten findet für die Kategorie kein Wettkampf statt, und es werden keine Meisterschaftspunkte vergeben.", r: "WB §6.2" });
+    a: [0], e: "Bei weniger als 4 Registrierten findet für die Kategorie kein Wettkampf statt, und es werden keine Meisterschaftspunkte vergeben.", r: "WB §6.2" });
 
   add({ id: "G51", lvl: 2, q: "Ab wann bis wann muss medizinisches Personal anwesend sein?",
     o: ["Von der Öffnung der Isolationszone bzw. der Aufwärmwand bis zum Ende des Versuchs des letzten Wettkämpfers jeder Runde", "Nur während der Finalrunde", "Von Start of Play bis zur Siegerehrung", "Nur auf Anforderung"],
@@ -245,10 +245,10 @@
     a: [0, 1, 2], e: "Der DAV-Schiedsrichter assistiert dem JP, koordiniert die Schiedsrichter, prüft die Routen, gibt Wertungstopos frei, bearbeitet TIs, unterstützt die Einspruchsjury und verwarnt. Disqualifizieren darf nur der JP.", r: "TO §3.2; WB §9.1" });
 
   add({ id: "G61", lvl: 1, q: "In welchem Verhältnis werden Routen- bzw. Boulderschiedsrichter eingeteilt?",
-    o: ["1:1, also ein Schiedsrichter je Route bzw. Boulder einer Runde", "Ein Schiedsrichter für alle Routen", "Zwei Schiedsrichter je Wettkämpfer", "Ein Schiedsrichter je drei Boulder"],
+    o: ["1:1, also ein Schiedsrichter je Route bzw. Boulder einer Runde", "Ein Schiedsrichter für alle Routen", "2 Schiedsrichter je Wettkämpfer", "Ein Schiedsrichter je 3 Boulder"],
     a: [0], e: "Routen- und Boulderschiedsrichter werden im Verhältnis 1:1 je Route oder Boulder eingeteilt. Ein zweiter Offizieller kann Zeiten und Ergebnisse aufzeichnen.", r: "WB §12.2(B)" });
 
-  add({ id: "G62", lvl: 2, c: true, q: "Bei einem DJC-Wettkampf liegen zwei Athleten gemeinsam auf Platz 2. Wie viele Cup-Ranglistenpunkte bekommt jeder (Platz 2 = 80, Platz 3 = 65)?",
+  add({ id: "G62", lvl: 2, c: true, q: "Bei einem DJC-Wettkampf liegen 2 Athleten gemeinsam auf Platz 2. Wie viele Cup-Ranglistenpunkte bekommt jeder (Platz 2 = 80, Platz 3 = 65)?",
     o: ["72", "73", "80", "72,5"],
     a: [0], e: "Gleichplatzierte erhalten den Durchschnitt der betroffenen Plätze, auf ganze Zahlen abgerundet: (80 + 65) / 2 = 72,5, also 72.", r: "WB §7.10" });
 
@@ -261,7 +261,7 @@
     a: [0], e: "Start of Play ist der Moment, in dem der erste Wettkämpfer der Runde das Field of Play für seinen ersten Versuch oder eine individuelle Besichtigung betritt.", r: "Glossar „Start of Play“" });
 
   add({ id: "G65", lvl: 2, q: "Was bedeutet „Kontrolle“ laut Glossar?",
-    o: ["Die willentliche Steuerung von Position und Bewegung durch Nutzung der Kletterfläche/Griffe oder durch Verlagerung des Körperschwerpunkts", "Das Berühren eines Griffs mit mindestens zwei Fingern", "Das Halten eines Griffs für mindestens drei Sekunden", "Das Einhängen einer Expressschlinge"],
+    o: ["Die willentliche Steuerung von Position und Bewegung durch Nutzung der Kletterfläche/Griffe oder durch Verlagerung des Körperschwerpunkts", "Das Berühren eines Griffs mit mindestens 2 Fingern", "Das Halten eines Griffs für mindestens 3 Sekunden", "Das Einhängen einer Expressschlinge"],
     a: [0], e: "Kontrolle ist die willentliche Steuerung von Positionierung und Bewegung, entweder über Kletterfläche und Griffe oder über die Verlagerung des Körperschwerpunkts.", r: "Glossar „Kontrolle“" });
 
   add({ id: "G66", lvl: 2, q: "Welche Personen dürfen den Wettkampfbereich betreten?",

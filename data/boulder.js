@@ -5,7 +5,7 @@
   window.QUESTIONS = window.QUESTIONS || [];
 
   add({ id: "B01", lvl: 1, q: "Wann gilt ein Versuch im Bouldern als begonnen?",
-    o: ["Wenn der Wettkämpfer den Boden verlässt", "Wenn der Wettkämpfer alle vier Startmarkierungen kontrolliert", "Mit dem Startsignal des Intervalls", "Wenn der Wettkämpfer den ersten Griff berührt"],
+    o: ["Wenn der Wettkämpfer den Boden verlässt", "Wenn der Wettkämpfer alle 4 Startmarkierungen kontrolliert", "Mit dem Startsignal des Intervalls", "Wenn der Wettkämpfer den ersten Griff berührt"],
     a: [0], e: "Auch im Bouldern beginnt der Versuch, sobald der Wettkämpfer den Boden verlässt.", r: "AR §7.4" });
 
   add({ id: "B02", lvl: 2, c: true, q: "Ein Athlet springt vom Boden hoch, um mit der Bürste einen Griff zu putzen. Er berührt dabei weder die Kletterfläche noch einen Griff. Zählt das als Versuch?",
@@ -49,11 +49,11 @@
     a: [0], e: "Ein Boulder sollte nicht mehr als 12 Griffe haben. Der Durchschnitt pro Boulder in einer Runde sollte zwischen 4 und 8 liegen.", r: "AR §1.10" });
 
   add({ id: "B12", lvl: 1, q: "Wann ist ein Versuch an einem Boulder mit markiertem Topgriff erfolgreich?",
-    o: ["Wenn der Wettkämpfer den Topgriff mit beiden Händen matcht, eine stabile Position erreicht und eindeutige, bewusste Kontrolle zeigt, und das vor Ablauf der Kletterzeit", "Wenn der Wettkämpfer den Topgriff mit einer Hand berührt", "Wenn der Wettkämpfer den Topgriff mit beiden Händen abklatscht", "Wenn der Wettkämpfer mit einer Hand am Top hängt und der Schiedsrichter bis drei zählt"],
+    o: ["Wenn der Wettkämpfer den Topgriff mit beiden Händen matcht, eine stabile Position erreicht und eindeutige, bewusste Kontrolle zeigt, und das vor Ablauf der Kletterzeit", "Wenn der Wettkämpfer den Topgriff mit einer Hand berührt", "Wenn der Wettkämpfer den Topgriff mit beiden Händen abklatscht", "Wenn der Wettkämpfer mit einer Hand am Top hängt und der Schiedsrichter bis 3 zählt"],
     a: [0], e: "Nötig sind: Match mit beiden Händen, eine stabile Position vor Zeitablauf und eine eindeutige, bewusste Kontrolle des Topgriffs.", r: "AR §8.5(B)" });
 
   add({ id: "B13", lvl: 2, c: true, q: "Eine Athletin legt die zweite Hand auf ihre erste Hand, die den Topgriff hält. Die zweite Hand berührt den Griff selbst nicht. Ist der Top „gematcht“?",
-    o: ["Nein, beide Hände müssen gleichzeitig den Griff selbst berühren", "Ja, Hand auf Hand zählt als Match", "Ja, wenn sie dabei stabil ist", "Nur wenn der Topgriff zu klein für zwei Hände ist"],
+    o: ["Nein, beide Hände müssen gleichzeitig den Griff selbst berühren", "Ja, Hand auf Hand zählt als Match", "Ja, wenn sie dabei stabil ist", "Nur wenn der Topgriff zu klein für 2 Hände ist"],
     a: [0], e: "Matchen heißt, dass beide Hände gleichzeitig Kontakt zum markierten Zielgriff haben. Hand über Hand ohne Kontakt beider Hände zum Griff ist kein Match.", r: "AR §8.5 (Anmerkung zum Matchen)" });
 
   add({ id: "B14", lvl: 2, c: true, q: "Ein Athlet springt dynamisch an den Topgriff, matcht ihn kurz mit beiden Händen und wird vom eigenen Schwung vom Griff weggerissen. Top?",
@@ -86,11 +86,11 @@
 
   add({ id: "B21", lvl: 2, c: true, q: "Ein Athlet toppt einen Boulder im 3. Versuch. Wie viele Punkte bekommt er für diesen Boulder?",
     o: ["24,8", "24,7", "25,0", "34,8"],
-    a: [0], e: "25 − 2 × 0,1 (zwei Fehlversuche) = 24,8. Top und Zone werden nicht addiert, es zählt der höhere Wert.", r: "Anhang C §5.1" });
+    a: [0], e: "25 − 2 × 0,1 (2 Fehlversuche) = 24,8. Top und Zone werden nicht addiert, es zählt der höhere Wert.", r: "Anhang C §5.1" });
 
   add({ id: "B22", lvl: 2, c: true, q: "Eine Athletin erreicht die Zone im 4. Versuch, toppt den Boulder aber nicht. Wie viele Punkte bekommt sie?",
     o: ["9,7", "9,6", "10,0", "6,0"],
-    a: [0], e: "10 − 3 × 0,1 (drei Versuche vor dem Zonenversuch) = 9,7.", r: "Anhang C §5.1(A)" });
+    a: [0], e: "10 − 3 × 0,1 (3 Versuche vor dem Zonenversuch) = 9,7.", r: "Anhang C §5.1(A)" });
 
   add({ id: "B23", lvl: 3, c: true, q: "Ein Athlet erreicht die Zone im 2. Versuch und toppt im 5. Versuch. Wie viele Punkte bekommt er für den Boulder?",
     o: ["24,6", "34,5", "24,5", "9,9"],
@@ -109,16 +109,16 @@
     a: [0], e: "Wer den ersten Boulder einer Runde nicht versucht, wird nicht gewertet und ist DNS. Laut Judge Guide darf er dann auch keine weiteren Boulder versuchen. Wer den ersten Boulder versucht hat, darf andere auslassen und wird trotzdem gewertet.", r: "Anhang C §7.1; Judge Guide" });
 
   add({ id: "B27", lvl: 1, q: "Wie ist die Deutsche Meisterschaft Boulder aufgebaut?",
-    o: ["Qualifikation 5 Boulder (Intervall, 5 min fix), Halbfinale 4 Boulder (5 min fix, Quote 24), Finale 4 Boulder (World Series, 4 min max, Quote 8)", "Qualifikation 4 Boulder, Finale 4 Boulder, ohne Halbfinale", "Qualifikation 5 Boulder (4 min), Halbfinale 4 Boulder (4 min), Finale 4 Boulder (5 min)", "Qualifikation 6 Boulder Flash, Finale 4 Boulder On Sight"],
-    a: [0], e: "Laut Tabelle 1: Qualifikation 5 Boulder, Intervall On Sight, 5 min fix, zufällige Reihenfolge. Halbfinale 4 Boulder, Intervall On Sight, 5 min fix, Quote 24. Finale 4 Boulder, World Series On Sight, 4 min max, Quote 8.", r: "Anhang C §2.1 Tabelle 1" });
+    o: ["Qualifikation 5 Boulder (Intervall, 5 Minuten fix), Halbfinale 4 Boulder (5 Minuten fix, Quote 24), Finale 4 Boulder (World Series, max. 4 Minuten, Quote 8)", "Qualifikation 4 Boulder, Finale 4 Boulder, ohne Halbfinale", "Qualifikation 5 Boulder (4 Minuten), Halbfinale 4 Boulder (4 Minuten), Finale 4 Boulder (5 Minuten)", "Qualifikation 6 Boulder Flash, Finale 4 Boulder On Sight"],
+    a: [0], e: "Laut Tabelle 1: Qualifikation 5 Boulder, Intervall On Sight, 5 Minuten fix, zufällige Reihenfolge. Halbfinale 4 Boulder, Intervall On Sight, 5 Minuten fix, Quote 24. Finale 4 Boulder, World Series On Sight, max. 4 Minuten, Quote 8.", r: "Anhang C §2.1 Tabelle 1" });
 
   add({ id: "B28", lvl: 2, q: "Unter welchen Umständen darf ein Boulder aus einer Runde gestrichen werden?",
-    o: ["In Ausnahmefällen kann der Jury-Präsident maximal einen Boulder je Runde streichen", "Der Chefroutenbauer darf beliebig viele Boulder streichen", "Es darf nie ein Boulder gestrichen werden", "Der Event Delegate darf bis zu zwei Boulder je Runde streichen"],
-    a: [0], e: "In Ausnahmefällen darf der Jury-Präsident höchstens einen Boulder je Runde streichen.", r: "Anhang C §2.1 (Anmerkung)" });
+    o: ["In Ausnahmefällen kann der Jury-Präsident maximal 1 Boulder je Runde streichen", "Der Chefroutenbauer darf beliebig viele Boulder streichen", "Es darf nie ein Boulder gestrichen werden", "Der Event Delegate darf bis zu 2 Boulder je Runde streichen"],
+    a: [0], e: "In Ausnahmefällen darf der Jury-Präsident höchstens 1 Boulder je Runde streichen.", r: "Anhang C §2.1 (Anmerkung)" });
 
   add({ id: "B29", lvl: 2, q: "Wie ist der Deutsche Jugendcup Boulder aufgebaut?",
-    o: ["Qualifikation 2×3 Boulder Flash (4 min fix), Finale 4 Boulder Intervall On Sight (4 min fix) mit 8 Minuten Besichtigung, ohne Halbfinale", "Qualifikation 5 Boulder, Halbfinale, Finale wie bei der DM", "Qualifikation 4 Boulder On Sight, Finale 4 Boulder Flash", "Nur ein Durchgang mit 8 Bouldern im JAM-Format"],
-    a: [0], e: "Im DJC Boulder gibt es kein Halbfinale. Qualifikation 2×3 Boulder im Flash-Format (4 min fix, zufällig/versetzt), Finale 4 Boulder im Intervall-Format On Sight (4 min fix) mit 8 Minuten Besichtigungszeit. Finalquote 10, bei weniger als 20 Startern 6.", r: "Anhang C §2.2 Tabelle 2" });
+    o: ["Qualifikation 2×3 Boulder Flash (4 Minuten fix), Finale 4 Boulder Intervall On Sight (4 Minuten fix) mit 8 Minuten Besichtigung, ohne Halbfinale", "Qualifikation 5 Boulder, Halbfinale, Finale wie bei der DM", "Qualifikation 4 Boulder On Sight, Finale 4 Boulder Flash", "Nur ein Durchgang mit 8 Bouldern im JAM-Format"],
+    a: [0], e: "Im DJC Boulder gibt es kein Halbfinale. Qualifikation 2×3 Boulder im Flash-Format (4 Minuten fix, zufällig/versetzt), Finale 4 Boulder im Intervall-Format On Sight (4 Minuten fix) mit 8 Minuten Besichtigungszeit. Finalquote 10, bei weniger als 20 Startern 6.", r: "Anhang C §2.2 Tabelle 2" });
 
   add({ id: "B30", lvl: 1, q: "Wie lang ist die Pause nach jedem Intervall, um das Field of Play zu räumen?",
     o: ["15 Sekunden", "5 Sekunden", "30 Sekunden", "1 Minute"],
@@ -126,7 +126,7 @@
 
   add({ id: "B31", lvl: 2, q: "Wann endet im Boulderfinale ein Intervall?",
     o: ["Wenn alle Wettkämpfer auf dem Field of Play ihre Versuche beendet haben oder die maximale Intervalldauer abgelaufen ist", "Immer nach genau 4 Minuten", "Wenn der erste Wettkämpfer toppt", "Wenn der Jury-Präsident es beendet"],
-    a: [0], e: "Im Finale endet ein Intervall, wenn alle Wettkämpfer auf dem Field of Play fertig sind oder die maximale Dauer abgelaufen ist (World Series: „4 min max“).", r: "Anhang C §4.4" });
+    a: [0], e: "Im Finale endet ein Intervall, wenn alle Wettkämpfer auf dem Field of Play fertig sind oder die maximale Dauer abgelaufen ist (World Series: „max. 4 Minuten“).", r: "Anhang C §4.4" });
 
   add({ id: "B32", lvl: 2, q: "Wie läuft die gemeinsame Besichtigung vor dem Boulderfinale ab?",
     o: ["2 Minuten pro Boulder, ohne Aufzeichnungsgeräte. Alternativ 8 Minuten für alle Boulder gleichzeitig, mit freier Einteilung", "6 Minuten für alle Boulder zusammen, Fotos erlaubt", "1 Minute pro Boulder mit Trainer", "Es gibt keine Besichtigung im Finale"],
@@ -172,8 +172,8 @@
     o: ["Das Intervall wird für die betroffene Person und alle, die den Boulder noch nicht versucht haben, ausgesetzt. Nach der Behebung oder Streichung geht es auf Anweisung des JP weiter", "Die ganze Runde wird neu gestartet", "Nur die betroffene Person setzt aus, alle anderen klettern den defekten Boulder normal", "Der Boulder wird automatisch für alle mit Top gewertet"],
     a: [0], e: "Das Intervall ruht für die betroffene Person und alle, die den Boulder noch nicht versucht haben. Nach Behebung (oder Streichung) setzen sie auf Anweisung des Jury-Präsidenten fort.", r: "Anhang C §8.3" });
 
-  add({ id: "B43", lvl: 3, c: true, q: "Ein Athlet startet einen Versuch, als noch 2:10 Minuten im Intervall übrig sind. Ein TI unterbricht ihn. Wie viel Ausgleichszeit darf er höchstens bekommen?",
-    o: ["Höchstens 2:10 Minuten", "Ein volles neues Intervall", "Höchstens 1 Minute", "Die Zeit bis zum Ende der Runde"],
+  add({ id: "B43", lvl: 3, c: true, q: "Ein Athlet startet einen Versuch, als noch 2 Minuten und 10 Sekunden im Intervall übrig sind. Ein TI unterbricht ihn. Wie viel Ausgleichszeit darf er höchstens bekommen?",
+    o: ["Höchstens 2 Minuten und 10 Sekunden", "Ein volles neues Intervall", "Höchstens 1 Minute", "Die Zeit bis zum Ende der Runde"],
     a: [0], e: "Ausgeglichen wird nur die verlorene oder nicht genutzte Zeit. Sie darf nicht länger sein als die Restzeit im Intervall zu dem Zeitpunkt, als der betroffene Versuch begann.", r: "Anhang C §8.5" });
 
   add({ id: "B44", lvl: 2, c: true, q: "Eine Athletin wartet nach einem TI im Transitbereich und geht vor Klärung zurück in den Aufwärmbereich. Folge?",
@@ -204,9 +204,9 @@
     o: ["Mindestens 60 Minuten vor dem Start of Play gibt es eine Demonstration (Video oder live)", "Wettkämpfer bleiben im Wettkampfbereich, bis sie alle Boulder eines Sets beendet haben", "Aus der Transitzone dürfen sie mit Teamoffiziellen und anderen Wettkämpfern sprechen und deren Versuche beobachten", "Wettkämpfer müssen in der Isolationszone bleiben und dürfen niemanden beobachten"],
     a: [0, 1, 2], e: "Flash heißt: Demonstration mindestens 60 Minuten vorher, Verbleib im Wettkampfbereich bis zum Ende des Sets. Kommunikation und Beobachtung aus der Transitzone sind erlaubt. Isolation gibt es im Flash-Format nicht.", r: "Anhang C §4.7" });
 
-  add({ id: "B51", lvl: 3, q: "Welche Erholungsphase gilt im Flash-Format mit zwei Boulder-Sets zwischen den Sets?",
-    o: ["Mindestens drei Versuchsphasen zwischen dem Ende der letzten Versuchsphase im ersten Set und dem Start im zweiten Set", "Mindestens 50 Minuten", "Mindestens eine Versuchsphase", "Es gibt keine Vorgabe"],
-    a: [0], e: "Zwischen den Sets sind mindestens drei Versuchsphasen Erholung garantiert.", r: "Anhang C §4.7(C)" });
+  add({ id: "B51", lvl: 3, q: "Welche Erholungsphase gilt im Flash-Format mit 2 Boulder-Sets zwischen den Sets?",
+    o: ["Mindestens 3 Versuchsphasen zwischen dem Ende der letzten Versuchsphase im ersten Set und dem Start im zweiten Set", "Mindestens 50 Minuten", "Mindestens eine Versuchsphase", "Es gibt keine Vorgabe"],
+    a: [0], e: "Zwischen den Sets sind mindestens 3 Versuchsphasen Erholung garantiert.", r: "Anhang C §4.7(C)" });
 
   add({ id: "B52", lvl: 2, q: "Wann dürfen die Wettkämpfer im World-Series-Finale ihre Versuche beginnen?",
     o: ["Nach Aufruf durch den Call Zone Manager präsentieren sie sich dem Boulderschiedsrichter und starten mit dem Signal für den Beginn des Intervalls", "Sofort beim Betreten des Field of Play", "Wenn der Schiedsrichter „Go“ ruft", "Nach 40 Sekunden Besichtigung"],
@@ -221,7 +221,7 @@
     a: [0], e: "Ein kritischer Ausfall des Zeitmesssystems liegt im Bouldern vor, wenn Beginn oder Ende der erlaubten Kletterzeit nicht gemessen werden können. Eine kurze Unterbrechung der Anzeige ohne Auswirkung auf die Signale ist nicht automatisch ein TI.", r: "Glossar „Technischer Zwischenfall“ (D) mit Anmerkung" });
 
   add({ id: "B55", lvl: 3, c: true, q: "Ein Volumen ist als Startgriff markiert. Darauf ist ein kleiner Griff geschraubt. Daneben liegt ein zweites Volumen, das das erste berührt, aber nicht daran verschraubt ist. Was gehört laut Judge Guide zum Start?",
-    o: ["Das markierte Volumen und der daran verschraubte Griff. Das nur anliegende Volumen gehört nicht dazu", "Nur das markierte Volumen", "Alle drei Elemente", "Das anliegende Volumen, nicht aber der verschraubte Griff"],
+    o: ["Das markierte Volumen und der daran verschraubte Griff. Das nur anliegende Volumen gehört nicht dazu", "Nur das markierte Volumen", "Alle 3 Elemente", "Das anliegende Volumen, nicht aber der verschraubte Griff"],
     a: [0], e: "Ein Griff erbt die Markierung des Elements, an das er geschraubt ist. Ein nur anliegender, nicht verschraubter Griff erbt sie nicht. Er kann aber ein Blocker sein.", r: "Judge Guide (Inspection of Boulders); AR §1.12" });
 
   add({ id: "B56", lvl: 2, q: "Was beschreibt das alternative Qualifikationsformat „JAM“?",
@@ -230,7 +230,7 @@
 
   add({ id: "B57", lvl: 1, q: "Welche Mindestbreite pro Boulder soll eine Boulderwand haben?",
     o: ["3 Meter (z. B. 12 m für 4 gleichzeitig gekletterte Boulder)", "2 Meter", "5 Meter", "Es gibt keine Vorgabe"],
-    a: [0], e: "Pro Boulder sollen mindestens 3 m Breite zur Verfügung stehen. Bei 4 gleichzeitig gekletterten Bouldern sind das 12 m oder zwei Wände mit je 6 m.", r: "Anhang C §1.1 mit Anmerkung" });
+    a: [0], e: "Pro Boulder sollen mindestens 3 m Breite zur Verfügung stehen. Bei 4 gleichzeitig gekletterten Bouldern sind das 12 m oder 2 Wände mit je 6 m.", r: "Anhang C §1.1 mit Anmerkung" });
 
   add({ id: "B58", lvl: 2, c: true, q: "Ein Athlet verschüttet aus Unachtsamkeit seine Trinkflasche über die Fallschutzmatte. Was ist möglich?",
     o: ["Eine Sanktion nach AR §13.1", "Nichts, Wasser ist erlaubt", "Ein technischer Zwischenfall zu seinen Gunsten", "Zwangsweise Disqualifikation"],
