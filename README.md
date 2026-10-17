@@ -1,5 +1,7 @@
 # Regelwerk-Quiz Klettern
 
+Live: https://quiz.comptools.cloud (GitHub Pages, Custom Domain; DNS: CNAME bei Strato auf jannikweiser.github.io)
+
 Lern- und Prüfungsquiz für Schiedsrichterinnen und Schiedsrichter. Oberfläche zweisprachig (DE/EN, Voreinstellung nach Browsersprache); die Fragen bleiben in der Sprache ihres Regelwerks. Vor dem Start wählt man, aus welchen Regelwerken Fragen kommen:
 
 - **Nationales Regelwerk Klettern 2027 (DAV)** – Fragen auf Deutsch (`data/lead.js`, `boulder.js`, `speed.js`, `teamspeed.js`, `allgemein.js`)
