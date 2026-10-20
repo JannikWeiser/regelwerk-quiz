@@ -16,16 +16,16 @@
     o: ["Nein, die Markierung selbst darf berührt oder benutzt werden, ohne dass man out of bounds ist", "Ja, jede Berührung von schwarzem Tape ist out of bounds", "Nur, wenn sie das Tape mit der Hand berührt", "Ja, aber nur im Bouldern"],
     a: [0], e: "Wer die Begrenzungsmarkierung selbst berührt oder benutzt, gilt nicht als out of bounds.", r: "AR §1.14 (Anmerkung)" });
 
-  add({ id: "G04", k: [1, 1, 0], c: true, q: "Ein Athlet streift mit dem Knie kurz ein schwarz markiertes Volumen, ohne Gewicht darauf zu verlagern und ohne Einfluss auf die Bewegung. Wie ist das zu bewerten?",
-    o: ["Ein zufälliger Kontakt ohne Gewichtsverlagerung kann zulässig sein", "Immer out of bounds, der Versuch ist beendet", "Er bekommt eine Verwarnung", "Er muss den Versuch wiederholen"],
+  add({ id: "G04", k: [1, 1, 0], c: true, q: "Ein Athlet streift mit dem Knie kurz ein durch schwarzes Tape abgetrenntes Volumen, ohne Gewicht darauf zu verlagern und ohne Einfluss auf die Bewegung. Wie ist das zu bewerten?",
+    o: ["Ein zufälliger Kontakt ohne Gewichtsverlagerung kann zulässig sein", "Immer out of bounds, der Versuch ist beendet", "Er bekommt eine Verwarnung (Gelbe Karte)", "Er muss den Versuch wiederholen"],
     a: [0], e: "Bei unbeabsichtigten Kontakten zählt die Wirkung. Ein einfaches Streifen oder Berühren ohne Gewichtsverlagerung kann zulässig sein.", r: "AR §1.14 (Anmerkung)" });
 
-  add({ id: "G05", k: [1, 1, 0], c: true, q: "Eine Athletin stellt den Fuß bewusst auf ein schwarz markiertes Volumen, um sich zu stabilisieren. Wie ist das zu bewerten?",
-    o: ["Out of bounds: Jede aktive oder passive Nutzung, auch Stabilisieren, ist verboten", "Erlaubt, weil sie nur den Fuß benutzt", "Erlaubt, wenn sie den nächsten Griff auch ohne Volumen erreicht hätte", "Nur eine Verwarnung"],
+  add({ id: "G05", k: [1, 1, 0], c: true, q: "Eine Athletin stellt den Fuß bewusst auf ein durch schwarzes Tape abgetrenntes Volumen, um sich zu stabilisieren. Wie ist das zu bewerten?",
+    o: ["Out of bounds: Jede aktive oder passive Nutzung, auch Stabilisieren, ist verboten", "Erlaubt, weil sie nur den Fuß benutzt", "Erlaubt, wenn sie den nächsten Griff auch ohne Volumen erreicht hätte", "Nur eine Verwarnung (Gelbe Karte)"],
     a: [0], e: "Out of bounds liegt vor, wenn ein Verstoß absichtlich ist oder die Kletterbewegung verändert. Ziehen, Treten, Stabilisieren oder Nutzen zum Vorwärtskommen ist nicht erlaubt.", r: "AR §1.14 (Anmerkung); AR §8.1(D)" });
 
   add({ id: "G06", k: [0, 1, 1], q: "Eine Route ist mit farbigen Griffen gekennzeichnet (z. B. alle Griffe gelb). Welchen Status haben Griffe in anderen Farben?",
-    o: ["Sie gelten als out of bounds", "Sie dürfen mit den Füßen benutzt werden", "Sie dürfen benutzt werden, zählen aber nicht für die Wertung", "Sie dürfen benutzt werden, wenn sie nicht schwarz markiert sind"],
+    o: ["Sie gelten als out of bounds", "Sie dürfen mit den Füßen benutzt werden", "Sie dürfen benutzt werden, zählen aber nicht für die Wertung", "Sie dürfen benutzt werden, wenn sie nicht durch schwarzes Tape abgetrennt sind"],
     a: [0], e: "Wird eine Route mit optisch markanten Griffen ausgeführt, gelten alle Griffe ohne diese Unterscheidung als out of bounds.", r: "AR §1.9" });
 
   add({ id: "G07", k: [0, 0, 0], q: "Was müssen bzw. dürfen Wettkämpfer bei ihren Versuchen tragen bzw. benutzen?",
@@ -85,11 +85,11 @@
     a: [0], e: "On Sight: ohne Informationen zu den Bewegungssequenzen und ohne vorheriges Training. Flash: mit Informationen, ohne Training. After-Work: mit eigener Vorerfahrung.", r: "Glossar „On Sight“, „Flash“, „After-Work“" });
 
   add({ id: "G21", k: [1, 1, 2], c: true, q: "Ein Wettkämpfer hilft einem verletzten Konkurrenten, der in der Call Zone zusammengebrochen ist. Ist das eine unerlaubte Einmischung?",
-    o: ["Nein, Hilfe für verletzte oder in Not geratene Teilnehmer gilt nicht als Einmischung", "Ja, Wettkämpfer dürfen sich nicht einmischen", "Nur wenn er dabei Informationen weitergibt", "Ja, es gibt eine Verwarnung"],
+    o: ["Nein, Hilfe für verletzte oder in Not geratene Teilnehmer gilt nicht als Einmischung", "Ja, Wettkämpfer dürfen sich nicht einmischen", "Nur wenn er dabei Informationen weitergibt", "Ja, es gibt eine Verwarnung (Gelbe Karte)"],
     a: [0], e: "Wer einem verletzten oder in Not geratenen Teilnehmer hilft, mischt sich nicht unerlaubt ein.", r: "AR §5.2(A) mit Anmerkung" });
 
   add({ id: "G22", k: [0, 1, 0], q: "Aus welchen Gründen wird ein Versuch allgemein (alle Disziplinen) als nicht erfolgreich gewertet?",
-    o: ["Fehlstart, Sturz oder Bodenberührung", "Nutzung von out-of-bounds-Elementen, um sich einen Vorteil zu verschaffen", "Nutzung von Seil, Sicherungsmitteln, offenen Wandkanten, Schildern oder (mit den Händen) unbenutzten T-Nut-Löchern zum eigenen Vorteil", "Unbeabsichtigtes, folgenloses Streifen einer schwarzen Markierung"],
+    o: ["Fehlstart, Sturz oder Bodenberührung", "Nutzung von out-of-bounds-Elementen, um sich einen Vorteil zu verschaffen", "Nutzung von Seil, Sicherungsmitteln, offenen Wandkanten, Schildern oder (mit den Händen) unbenutzten T-Nut-Löchern zum eigenen Vorteil", "Unbeabsichtigtes, folgenloses Streifen eines durch schwarzes Tape abgetrennten Volumens"],
     a: [0, 1, 2], e: "§8.1 nennt: Ablauf der Kletterzeit, Fehlstart, Sturz, Bodenberührung, Vorteil durch out of bounds oder durch Sicherungsmittel, Kanten, Schilder, T-Nut-Löcher, sowie Stopp durch einen On-field Official. Ein folgenloses Streifen kann zulässig sein.", r: "AR §8.1" });
 
   add({ id: "G23", k: [1, 0, 1], q: "Was zählt laut Glossar als technischer Zwischenfall?",
@@ -128,9 +128,13 @@
     o: ["Jury-Präsident und Event Delegate; ist ein Mitglied an der strittigen Entscheidung beteiligt, ersetzt es ein DAV-Schiedsrichter", "3 Teamoffizielle", "Der DAV-Schiedsrichter allein", "Chefroutenbauer und Veranstalter"],
     a: [0], e: "Die Einspruchsjury besteht aus Jury-Präsident und Event Delegate. War ein Mitglied an der Ausgangsentscheidung beteiligt, rückt ein DAV-Schiedsrichter nach.", r: "WB §10.1; TO §3.2" });
 
-  add({ id: "G32", k: [0, 0, 1], q: "Wer ist laut Wettkampfbestimmungen einspruchsberechtigt?",
-    o: ["Ein für den Wettkampf registrierter Teamoffizieller, der einen Wettkämpfer der aktuellen Runde vertritt", "Jeder Zuschauer", "Jeder Wettkämpfer für jeden anderen Wettkämpfer", "Nur der Event Delegate"],
-    a: [0], e: "Einspruchsberechtigt ist ein registrierter Teamoffizieller, der einen Wettkämpfer der laufenden Runde vertritt.", r: "WB §10.2" });
+  add({ id: "G32", k: [2, 1, 1], q: "Wer darf einen Einspruch einlegen?",
+    o: ["Der betroffene Wettkämpfer selbst, wenn sein Ergebnis oder seine Platzierung beeinträchtigt ist", "Ein für den Wettkampf registrierter Teamoffizieller, der einen Wettkämpfer der aktuellen Runde vertritt", "Jeder Zuschauer, der einen Fehler beobachtet hat", "Ein Wettkämpfer gegen das Ergebnis eines anderen, auch wenn seine eigene Platzierung davon nicht berührt ist"],
+    a: [0, 1], e: "Einspruch einlegen kann der betroffene Wettkämpfer selbst oder ein einspruchsberechtigter Teamoffizieller in seinem Namen. Einspruchsberechtigt ist laut WB ein registrierter Teamoffizieller, der einen Wettkämpfer der aktuellen Runde vertritt. Voraussetzung ist immer, dass das eigene Ergebnis oder die eigene Platzierung betroffen ist.", r: "AR §12.1, §12.2(A); WB §10.2" });
+
+  add({ id: "G69", k: [2, 2, 1], c: true, q: "Eine Athletin sieht, dass eine knapp vor ihr platzierte Konkurrentin ein durch schwarzes Tape abgetrenntes Volumen zum Weiterkommen genutzt hat, ohne dass der Schiedsrichter eingegriffen hat. Kann sie (oder ihr Teamoffizieller) Einspruch einlegen?",
+    o: ["Ja, weil ihre eigene Platzierung durch den Schiedsrichterfehler beeinträchtigt ist", "Nein, Einsprüche sind nur gegen das eigene Ergebnis möglich", "Nein, ein fremdes Ergebnis kann nur der Jury-Präsident von sich aus ändern", "Ja, mündlich und ohne Frist"],
+    a: [0], e: "Ein Einspruch ist zulässig, wenn das eigene Ergebnis oder die eigene Platzierung durch einen Schiedsrichterfehler beeinträchtigt wird, auch wenn es um den Versuch einer anderen Person geht. Es gelten Schriftform und die üblichen Fristen. Laut Judge Guide lässt sich so z. B. eine niedrigere Wertung für eine Konkurrentin wegen out of bounds beantragen.", r: "AR §12.1(A), §12.2; Judge Guide" });
 
   add({ id: "G33", k: [0, 0, 1], q: "Welche Beweismittel sind im Einspruchsverfahren zulässig?",
     o: ["Die Angaben im Einspruchsformular", "Offizielle Videoaufzeichnungen, also aus einem vom Veranstalter zugelassenen System oder aus einem autorisierten Broadcast-Stream", "Aussagen der Offiziellen auf dem Field of Play", "Handyvideos des Trainers von der Tribüne"],
@@ -148,27 +152,27 @@
     o: ["Medaillenphase: spätestens 2 Minuten, jede andere Runde: spätestens 5 Minuten nach Veröffentlichung", "Immer 10 Minuten", "Bis zum Ende des Wettkampftages", "Medaillenphase: 5 Minuten, sonst 15 Minuten"],
     a: [0], e: "Einsprüche zu Fehlern in den offiziellen Ergebnissen: 2 Minuten in der Medaillenphase, sonst 5 Minuten nach Veröffentlichung.", r: "WB §10.4" });
 
-  add({ id: "G37", k: [0, 0, 1], q: "Welche Sanktion folgt auf 2 Verwarnungen bei einer Veranstaltung?",
-    o: ["Disqualifikation", "Eine dritte Verwarnung", "Zeitstrafe", "Keine weitere Sanktion"],
-    a: [0], e: "Wer bei einer Veranstaltung 2 Verwarnungen bekommt, wird disqualifiziert.", r: "AR §13.1" });
+  add({ id: "G37", k: [0, 0, 1], q: "Welche Sanktion folgt auf 2 Verwarnungen (Gelbe Karten) bei einer Veranstaltung?",
+    o: ["Disqualifikation (Rote Karte)", "Eine dritte Verwarnung (Gelbe Karte)", "Eine mündliche Ermahnung", "Keine weitere Sanktion"],
+    a: [0], e: "Wer bei einer Veranstaltung 2 Verwarnungen (Gelbe Karten) bekommt, wird disqualifiziert. Eine mündliche Ermahnung ist keine Verwarnung im Sinne der Sanktionstabelle und zählt nicht mit.", r: "AR §13.1" });
 
   add({ id: "G38", k: [2, 1, 1], c: true, q: "Ein Athlet filmt in einer On-Sight-Runde heimlich aus der Iso heraus den Versuch eines Konkurrenten. Welche Sanktion ist vorgesehen?",
-    o: ["Disqualifikation: Informationen über eine On-Sight-Route über das erlaubte Maß hinaus zu sammeln, ist ein schwerer Verstoß", "Eine Verwarnung", "Eine mündliche Ermahnung", "Ein Strafversuch"],
+    o: ["Disqualifikation: Informationen über eine On-Sight-Route über das erlaubte Maß hinaus zu sammeln, ist ein schwerer Verstoß", "Eine Verwarnung (Gelbe Karte)", "Eine mündliche Ermahnung", "Ein Strafversuch"],
     a: [0], e: "Wer Informationen über eine On-Sight-Route über das erlaubte Maß hinaus betrachtet oder sammelt, wird disqualifiziert. Umgehungsversuche gelten als schwerwiegender Verstoß.", r: "AR §13.1; AR §5.3(C)" });
 
   add({ id: "G39", k: [0, 0, 1], q: "Welche Sanktion ist für die Nichtbeachtung der Anweisungen eines Technical Officials vorgesehen?",
-    o: ["Verwarnung", "Disqualifikation", "Ausschluss aus der Saison", "Keine"],
-    a: [0], e: "Laut Sanktionstabelle wird die Nichtbeachtung von Anweisungen eines Technical Officials mit einer Verwarnung geahndet.", r: "AR §13.1" });
+    o: ["Verwarnung (Gelbe Karte)", "Disqualifikation (Rote Karte)", "Ausschluss aus der Saison", "Keine"],
+    a: [0], e: "Laut Sanktionstabelle wird die Nichtbeachtung von Anweisungen eines Technical Officials mit einer Verwarnung (Gelbe Karte) geahndet. Beim ersten Verstoß kann im Ermessensfall stattdessen eine mündliche Ermahnung ausgesprochen werden.", r: "AR §13.1" });
 
-  add({ id: "G40", k: [0, 0, 0], q: "Wie werden Verwarnung und Disqualifikation angezeigt?",
+  add({ id: "G40", k: [0, 0, 0], q: "Wie werden eine Verwarnung und eine Disqualifikation angezeigt?",
     o: ["Gelbe Karte für eine Verwarnung, Rote Karte für eine Disqualifikation", "Rote Karte für eine Verwarnung, Schwarze Karte für eine Disqualifikation", "Nur mündlich", "Durch Pfiff"],
-    a: [0], e: "Eine Verwarnung wird mit der Gelben Karte gezeigt, eine Disqualifikation mit der Roten Karte. Beim ersten Verstoß kann im Ermessensfall auch mündlich verwarnt werden.", r: "AR §13.3 mit Anmerkung" });
+    a: [0], e: "Eine Verwarnung wird mit der Gelben Karte gezeigt, eine Disqualifikation mit der Roten Karte. Beim ersten Verstoß kann im Ermessensfall stattdessen eine mündliche Ermahnung ausgesprochen werden.", r: "AR §13.3 mit Anmerkung" });
 
   add({ id: "G41", k: [0, 0, 1], q: "Wer darf bei DAV-Wettkämpfen welche Disziplinarstrafen verhängen?",
-    o: ["Verwarnung: Jury-Präsident und DAV-Schiedsrichter; Disqualifikation: nur der Jury-Präsident", "Beides darf jeder Routenschiedsrichter", "Verwarnung: nur der Event Delegate; Disqualifikation: Jury-Präsident", "Beides darf nur der Event Delegate"],
-    a: [0], e: "Verwarnen dürfen Jury-Präsident und DAV-Schiedsrichter, disqualifizieren darf nur der Jury-Präsident.", r: "WB §9.1" });
+    o: ["Verwarnung (Gelbe Karte): Jury-Präsident und DAV-Schiedsrichter; Disqualifikation (Rote Karte): nur der Jury-Präsident", "Beides darf jeder Routenschiedsrichter", "Verwarnung (Gelbe Karte): nur der Event Delegate; Disqualifikation (Rote Karte): Jury-Präsident", "Beides darf nur der Event Delegate"],
+    a: [0], e: "Eine Verwarnung (Gelbe Karte) dürfen Jury-Präsident und DAV-Schiedsrichter aussprechen, disqualifizieren darf nur der Jury-Präsident.", r: "WB §9.1" });
 
-  add({ id: "G42", k: [0, 0, 1], q: "Welche Folge hat eine Verwarnung für einen Teamoffiziellen?",
+  add({ id: "G42", k: [0, 0, 1], q: "Welche Folge hat eine Verwarnung (Gelbe Karte) für einen Teamoffiziellen?",
     o: ["Er darf den Wettkampfbereich für den Rest des Wettkampfs nicht mehr betreten", "Keine, er darf weiter coachen", "Er muss eine Geldstrafe zahlen", "Sein Athlet wird disqualifiziert"],
     a: [0], e: "Ein verwarnter Wettkämpfer darf weitermachen. Ein verwarnter Teamoffizieller darf den Wettkampfbereich für den Rest des Wettkampfs nicht mehr betreten.", r: "AR §13.4" });
 
@@ -176,7 +180,7 @@
     o: ["Er darf an den folgenden Runden nicht mehr teilnehmen und wird aus der Wertung genommen", "Bei einem schwerwiegenden Verstoß gilt die Disqualifikation für alle Wettkämpfe der Veranstaltung", "Er wird im General Ranking nicht gerankt", "Er behält seine Platzierung der laufenden Runde"],
     a: [0, 1, 2], e: "Disqualifizierte sind für folgende Runden gesperrt und werden aus der Wertung genommen, auch im General Ranking. Bei schweren Verstößen gilt das für die gesamte Veranstaltung.", r: "AR §13.5, §13.6 mit Anmerkung" });
 
-  add({ id: "G44", k: [0, 0, 2], q: "Was passiert, wenn eine Person innerhalb von 12 Monaten 3 Verwarnungen erhält?",
+  add({ id: "G44", k: [0, 0, 2], q: "Was passiert, wenn eine Person innerhalb von 12 Monaten 3 Verwarnungen (Gelbe Karten) erhält?",
     o: ["Ihre DAV-Wettkampflizenz wird nach dem Wettkampf mit der dritten Verwarnung ausgesetzt; die Teamquote ihres Landesverbands sinkt währenddessen um einen Slot", "Sie wird lebenslang gesperrt", "Nichts, Verwarnungen verfallen nach jedem Wettkampf", "Sie muss einen Lehrgang besuchen"],
     a: [0], e: "Nach der dritten Verwarnung in 12 Monaten wird die Lizenz ausgesetzt, die Dauer legt die Disziplinarkommission fest. Die Teamquote des Landesverbands verringert sich in dieser Zeit um einen Slot.", r: "WB §9.3" });
 
@@ -189,7 +193,7 @@
     a: [0, 1, 2], e: "Zu den IRMs gehören DNS (nicht gestartet), DSQ (technischer Regelverstoß) und DQB (unsportliches Verhalten).", r: "Glossar „Invalid Result Mark“" });
 
   add({ id: "G47", k: [1, 0, 0], q: "Was bedeuten „muss“, „soll“ und „kann“ im Regelwerk?",
-    o: ["„Muss“ ist zwingend, „soll“ eine Empfehlung, „kann/darf“ eine Ermessensentscheidung", "Alle 3 sind gleichbedeutend zwingend", "„Soll“ ist zwingend, „muss“ eine Empfehlung", "„Kann“ ist ein Verbot"],
+    o: ["„Muss“ ist zwingend, „soll“ eine Empfehlung, „kann/darf“ eine Ermessensentscheidung", "„Muss“, „soll“ und „kann“ sind alle gleichbedeutend zwingend", "„Muss“ ist eine Empfehlung, „soll“ zwingend, „kann“ ein Verbot", "„Muss“ und „soll“ sind zwingend, „kann“ ist eine Empfehlung"],
     a: [0], e: "Muss = zwingend, darf nicht = Verbot, soll/soll nicht = Empfehlung (Abweichung nur nach sorgfältiger Abwägung), kann/darf = Ermessen.", r: "Glossar 1" });
 
   add({ id: "G48", k: [1, 0, 0], q: "Was bedeutet die Startreihenfolge „versetzt“?",
@@ -241,7 +245,7 @@
     a: [0], e: "Fällt der JP aus, übernimmt der DAV-Schiedsrichter. Bei mehreren DAV-Schiedsrichtern entscheidet der Event Delegate. Fällt der ED aus, übernimmt der JP dessen Aufgaben.", r: "TO §2.1, §1.1; WB §12.1(D)" });
 
   add({ id: "G60", k: [2, 0, 0], q: "Welche Aufgaben hat der DAV-Schiedsrichter?",
-    o: ["Er koordiniert und überwacht die Routen-/Boulderschiedsrichter", "Er bestätigt und bearbeitet technische Störungen", "Er spricht Verwarnungen aus", "Er spricht Disqualifikationen aus"],
+    o: ["Er koordiniert und überwacht die Routen-/Boulderschiedsrichter", "Er bestätigt und bearbeitet Technical Incidents", "Er spricht Verwarnungen (Gelbe Karten) aus", "Er spricht Disqualifikationen aus"],
     a: [0, 1, 2], e: "Der DAV-Schiedsrichter assistiert dem JP, koordiniert die Schiedsrichter, prüft die Routen, gibt Wertungstopos frei, bearbeitet TIs, unterstützt die Einspruchsjury und verwarnt. Disqualifizieren darf nur der JP.", r: "TO §3.2; WB §9.1" });
 
   add({ id: "G61", k: [0, 0, 0], q: "In welchem Verhältnis werden Routen- bzw. Boulderschiedsrichter eingeteilt?",

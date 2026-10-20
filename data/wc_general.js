@@ -27,11 +27,11 @@
     o: ["No – climbers may touch or use the marking itself", "Yes, always", "Only with the hands", "Only in boulder"],
     a: [0], e: "Climbers may touch or use the boundary marking itself without being out of bounds.", r: "CR Note 5" });
 
-  add({ id: "WG07", k: [1, 1, 0], c: true, q: "A climber’s knee brushes an out-of-bounds volume without any weight transfer or effect on the move. Ruling?",
+  add({ id: "WG07", k: [1, 1, 0], c: true, q: "A climber’s knee brushes a volume marked off as out of bounds with black tape, without any weight transfer or effect on the move. Ruling?",
     o: ["Incidental contact can be allowed", "Always out of bounds", "A Yellow Card", "A re-climb"],
     a: [0], e: "For unintentional contact, the effect matters. Simply brushing or touching without weight transfer can be allowed.", r: "CR Note 5" });
 
-  add({ id: "WG08", k: [1, 1, 0], c: true, q: "A climber deliberately steps on an out-of-bounds volume to stabilise. Ruling?",
+  add({ id: "WG08", k: [1, 1, 0], c: true, q: "A climber deliberately steps on a volume marked off as out of bounds with black tape to stabilise. Ruling?",
     o: ["Out of bounds – any active or passive use, including stabilising, is not allowed", "Allowed with the feet", "Allowed if not needed", "A Yellow Card only"],
     a: [0], e: "A ruling should be made if the infraction is intentional or alters the climbing. Pulling, stepping or stabilising is not allowed.", r: "CR Note 5; CR §8.1(D)" });
 
@@ -135,9 +135,13 @@
     o: ["The Jury President – or an International Judge if the appeal relates to a Field of Play judgement made by the Jury President", "The Jury President and Event Delegate together", "3 team managers", "The Event Delegate alone"],
     a: [0], e: "The Appeal Jury is the Jury President. If the appeal concerns the JP’s own Field of Play judgement, an International Judge decides.", r: "ER §10.1" });
 
-  add({ id: "WG34", k: [0, 0, 1], q: "Who has Appeal Eligibility?",
-    o: ["A team official registered as team manager or coach for the event, representing a competitor in the current round", "Any spectator", "Any competitor for any other competitor", "Only the Event Delegate"],
-    a: [0], e: "Appeal Eligibility belongs to a registered team manager or coach who represents a competitor in the current round.", r: "ER §10.2" });
+  add({ id: "WG34", k: [2, 1, 1], q: "Who may file an appeal?",
+    o: ["The affected competitor, if their result or ranking is affected", "A team official registered as team manager or coach for the event, representing a competitor in the current round", "Any spectator who noticed an error", "A competitor against another competitor’s result, even if their own ranking is not affected"],
+    a: [0, 1], e: "An appeal may be filed by the affected competitor or by a team official with Appeal Eligibility acting on their behalf. Appeal Eligibility belongs to a registered team manager or coach representing a competitor in the current round. The appellant’s own result or ranking must always be affected.", r: "CR §12.1, §12.2(A); ER §10.2" });
+
+  add({ id: "WG60", k: [2, 2, 1], c: true, q: "A climber notices that a competitor ranked just ahead of her used a volume marked off as out of bounds with black tape to progress, and the judge did not intervene. Can she (or her coach) appeal?",
+    o: ["Yes – her own ranking is affected by the judging error", "No – appeals are only possible against one’s own result", "No – only the Jury President can change another competitor’s result on their own initiative", "Yes, verbally and without a deadline"],
+    a: [0], e: "An appeal is admissible if the appellant’s own result or ranking is affected by a judging error, even when it concerns another competitor’s attempt. Written form and the usual deadlines apply. The Judge Guide confirms that a lower score for another competitor can be sought for an out-of-bounds infraction.", r: "CR §12.1(A), §12.2; Judge Guide" });
 
   add({ id: "WG35", k: [0, 0, 1], q: "Which is Admissible Evidence in an appeal?",
     o: ["Statements on the appeal form", "Official video recordings (organiser-approved system or authorised broadcast stream)", "Statements collected from on-field officials", "A coach’s phone video from the stands"],
@@ -155,23 +159,23 @@
     o: ["Medal phase: immediately on publication; other rounds: within 5 minutes", "Always 10 minutes", "Medal phase 2 minutes, others 5 minutes", "End of the day"],
     a: [0], e: "For the medal phase the appeal is due immediately on publication, for other rounds within 5 minutes.", r: "ER §10.4" });
 
-  add({ id: "WG39", k: [0, 0, 1], q: "What follows 2 cautions in one event?",
-    o: ["Disqualification", "A third caution", "A time penalty", "Nothing"],
-    a: [0], e: "Receiving 2 cautions in an event leads to disqualification.", r: "CR §13.1" });
+  add({ id: "WG39", k: [0, 0, 1], q: "What follows 2 Cautions (Yellow Cards) in one event?",
+    o: ["Disqualification (Red Card)", "A third Caution (Yellow Card)", "A verbal warning", "Nothing"],
+    a: [0], e: "Receiving 2 Cautions (Yellow Cards) in an event leads to disqualification. A verbal warning is not a Caution and does not count.", r: "CR §13.1" });
 
   add({ id: "WG40", k: [0, 1, 1], c: true, q: "A competitor gathers information about an on-sight route by watching a livestream in the warm-up area. Sanction?",
-    o: ["Disqualification", "Caution", "Verbal warning", "Penalty attempt"],
+    o: ["Disqualification (Red Card)", "Caution (Yellow Card)", "Verbal warning", "Penalty attempt"],
     a: [0], e: "Observing or gathering information on an on-sight route beyond what the rules allow is a disqualification offence.", r: "CR §13.1; §5.3(C)" });
 
-  add({ id: "WG41", k: [0, 0, 1], q: "Who may issue cautions and disqualifications at World Climbing events?",
-    o: ["Caution: Jury President and International Judge; Disqualification: Jury President only", "Any route judge", "Caution: Event Delegate; Disqualification: Jury President", "Event Delegate only"],
+  add({ id: "WG41", k: [0, 0, 1], q: "Who may issue Cautions and disqualifications at World Climbing events?",
+    o: ["Caution (Yellow Card): Jury President and International Judge; Disqualification (Red Card): Jury President only", "Any route judge", "Caution (Yellow Card): Event Delegate; Disqualification (Red Card): Jury President", "Event Delegate only"],
     a: [0], e: "Cautions may be issued by the Jury President or an International Judge. Disqualifications are reserved for the Jury President.", r: "ER §9.1" });
 
-  add({ id: "WG42", k: [0, 0, 1], q: "What happens to a team official who receives a caution?",
+  add({ id: "WG42", k: [0, 0, 1], q: "What happens to a team official who receives a Caution (Yellow Card)?",
     o: ["They are not allowed access to the Competition Area for the remainder of the event", "Nothing", "A fine", "Their athlete is disqualified"],
     a: [0], e: "A cautioned competitor may continue. A cautioned team official loses access to the Competition Area for the rest of the event.", r: "CR §13.4" });
 
-  add({ id: "WG43", k: [0, 0, 2], q: "What happens if a person receives 3 cautions in the same year?",
+  add({ id: "WG43", k: [0, 0, 2], q: "What happens if a person receives 3 Cautions (Yellow Cards) in the same year?",
     o: ["Their International Licence is suspended after the competition where the 3rd caution was received; the federation’s quota is reduced during the suspension", "Lifetime ban", "Nothing", "A training course"],
     a: [0], e: "After the 3rd caution in a year, the International Licence is suspended. The Disciplinary Commission sets the duration, and the federation’s team quota is reduced meanwhile.", r: "ER §9.3" });
 
@@ -188,7 +192,7 @@
     a: [0, 1, 2], e: "The IRMs are DNS, DSQ and DQB.", r: "CR Glossary “Invalid Result Mark”" });
 
   add({ id: "WG47", k: [1, 0, 0], q: "What do “shall/must”, “should” and “may” mean in the rules?",
-    o: ["Mandatory, recommendation, discretionary", "All mandatory", "Recommendation, mandatory, prohibition", "Discretionary, mandatory, recommendation"],
+    o: ["“Shall/must” is mandatory, “should” a recommendation, “may” discretionary", "“Shall/must”, “should” and “may” are all equally mandatory", "“Shall/must” is a recommendation, “should” mandatory, “may” a prohibition", "“Shall/must” and “should” are mandatory, “may” is a recommendation"],
     a: [0], e: "Shall/must are mandatory, should is a recommendation (deviate only after weighing the implications), may is discretionary.", r: "CR Glossary 1" });
 
   add({ id: "WG48", k: [0, 0, 2], q: "How are ties for 1st place in a World Climbing Series ranking broken?",

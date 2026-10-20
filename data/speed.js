@@ -77,7 +77,7 @@
     a: [0], e: "In der Qualifikation läuft das Race weiter, der Fehlstart wird nur visuell angezeigt, ohne akustisches Signal.", r: "Anhang B §5.1(A) mit Anmerkung" });
 
   add({ id: "S19", k: [1, 0, 0], q: "Was passiert bei einem Fehlstart in der Speed-Finalrunde?",
-    o: ["Der Starter bricht das Race ab. Der Fehlstart wird visuell und akustisch angezeigt", "Das Race läuft weiter, angezeigt wird nur visuell", "Beide Athleten bekommen eine Verwarnung", "Das Race wird gewertet, der Athlet bekommt eine Zeitstrafe"],
+    o: ["Der Starter bricht das Race ab. Der Fehlstart wird visuell und akustisch angezeigt", "Das Race läuft weiter, angezeigt wird nur visuell", "Beide Athleten bekommen eine Verwarnung (Gelbe Karte)", "Das Race wird gewertet, der Athlet bekommt eine Zeitstrafe"],
     a: [0], e: "In der Finalrunde bricht der Starter das Race ab. Der Fehlstart wird optisch und akustisch angezeigt.", r: "Anhang B §5.1(B) mit Anmerkung" });
 
   add({ id: "S20", k: [1, 1, 2], c: true, q: "In der Qualifikation lässt die Zeitmessanlage ein Weiterlaufen nach einem Fehlstart technisch nicht zu, deshalb wird das Race abgebrochen. Was gilt für den Gegner ohne Fehlstart?",
@@ -209,7 +209,7 @@
     a: [0], e: "Die Lanes heißen von links nach rechts A und B (bei Speed 4 A–D). Gesichert wird von oben mit einem Autobelay-System, jede Lane hat einen Sicherer für den Wechsel.", r: "Anhang B §1.2, §3.1" });
 
   add({ id: "S52", k: [1, 1, 1], c: true, q: "Eine Athletin berührt im Speed-Race mit der Hand einen Bohrhaken, um sich abzustützen, und schlägt danach normal am Ziel-Pad an. Wie wird gewertet?",
-    o: ["Als Sturz", "Als gültige Zeit", "Als Fehlstart", "Gültige Zeit mit Verwarnung"],
+    o: ["Als Sturz", "Als gültige Zeit", "Als Fehlstart", "Gültige Zeit mit Verwarnung (Gelbe Karte)"],
     a: [0], e: "Wird ein Speed-Versuch aus einem der Gründe in §8.1(C), (D) oder (E) nicht erfolgreich gewertet (Boden, out of bounds, Sicherungsmittel usw.), gilt er als Sturz.", r: "AR §8.1(E) mit Anmerkung" });
 
   add({ id: "S53", k: [0, 0, 1], q: "Wie lange muss ein Speed-Wettkämpfer im Wettkampfbereich bleiben?",

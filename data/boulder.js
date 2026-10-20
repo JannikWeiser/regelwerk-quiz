@@ -13,7 +13,7 @@
     a: [0], e: "Springen zum Bürsten ist erlaubt und zählt nicht als Versuch, solange weder Kletterfläche noch andere Griffe benutzt oder berührt werden.", r: "AR §7.4 (Anmerkung)" });
 
   add({ id: "B03", k: [1, 1, 0], c: true, q: "Beim Sprung zum Bürsten stützt sich eine Athletin kurz mit der freien Hand an einem Griff ab. Was gilt?",
-    o: ["Das zählt als Versuch", "Das zählt nicht als Versuch, weil sie nur bürsten wollte", "Sie bekommt eine Verwarnung, der Versuch zählt nicht", "Das zählt nur, wenn der Griff ein Startgriff ist"],
+    o: ["Das zählt als Versuch", "Das zählt nicht als Versuch, weil sie nur bürsten wollte", "Sie bekommt eine Verwarnung (Gelbe Karte), der Versuch zählt nicht", "Das zählt nur, wenn der Griff ein Startgriff ist"],
     a: [0], e: "Die Ausnahme fürs Bürsten gilt nur, wenn weder Kletterfläche noch andere Griffe benutzt oder berührt werden. Hier wurde ein Griff benutzt, also zählt es als Versuch.", r: "AR §7.4 (Anmerkung)" });
 
   add({ id: "B04", k: [0, 0, 0], q: "Was ist für einen gültigen Start im Bouldern erforderlich?",
@@ -21,7 +21,7 @@
     a: [0], e: "Der Wettkämpfer muss die markierten Startgriffe kontrolliert halten und mit beiden Händen und beiden Füßen eine stabile Startposition einnehmen.", r: "AR §7.5" });
 
   add({ id: "B05", k: [0, 1, 0], c: true, q: "Eine Athletin springt vom Boden direkt an einen Griff oberhalb der Startgriffe, ohne die Startposition eingenommen zu haben. Was gilt?",
-    o: ["Fehlstart: Der Versuch ist nicht erfolgreich und zählt als Versuch", "Erlaubt, wenn sie danach die Zone erreicht", "Der Versuch zählt nicht, sie darf ohne Folgen neu starten", "Sie bekommt eine Verwarnung"],
+    o: ["Fehlstart: Der Versuch ist nicht erfolgreich und zählt als Versuch", "Erlaubt, wenn sie danach die Zone erreicht", "Der Versuch zählt nicht, sie darf ohne Folgen neu starten", "Sie bekommt eine Verwarnung (Gelbe Karte)"],
     a: [0], e: "Wer andere Griffe benutzt, bevor die Startposition korrekt eingenommen ist, macht einen Fehlstart. Der Versuch endet erfolglos.", r: "AR §7.5, §8.1(A)" });
 
   add({ id: "B06", k: [1, 0, 0], q: "Was muss ein Boulderschiedsrichter beim Start eines Wettkämpfers beurteilen?",
@@ -41,7 +41,7 @@
     a: [0], e: "Blockerholds verändern oder begrenzen den nutzbaren Teil eines Startgriffs. Beim Start dürfen sie nicht genutzt werden.", r: "AR §1.12 (Anmerkung zu A); AR §7.5" });
 
   add({ id: "B10", k: [0, 0, 0], q: "Wie kann ein Boulder-Top markiert sein?",
-    o: ["Als Endgriff in derselben Farbe wie die Startgriffe", "Als stehende Position auf dem Boulder", "In derselben Farbe wie die Zonengriffe", "Als schwarz markierter Griff"],
+    o: ["Als Endgriff in derselben Farbe wie die Startgriffe", "Als stehende Position auf dem Boulder", "In derselben Farbe wie die Zonengriffe", "Als mit schwarzem Tape markierter Griff"],
     a: [0, 1], e: "Der Top ist entweder ein Endgriff in der Farbe der Startgriffe oder eine stehende Position auf dem Boulder. Zonengriffe haben eine andere Farbe als die Startgriffe.", r: "AR §1.12(B), (C)" });
 
   add({ id: "B11", k: [0, 0, 2], q: "Wie viele Griffe sollte ein Wettkampfboulder höchstens haben, und wie viele im Durchschnitt pro Runde?",
@@ -177,7 +177,7 @@
     a: [0], e: "Ausgeglichen wird nur die verlorene oder nicht genutzte Zeit. Sie darf nicht länger sein als die Restzeit im Intervall zu dem Zeitpunkt, als der betroffene Versuch begann.", r: "Anhang C §8.5" });
 
   add({ id: "B44", k: [0, 1, 1], c: true, q: "Eine Athletin wartet nach einem TI im Transitbereich und geht vor Klärung zurück in den Aufwärmbereich. Folge?",
-    o: ["Sie darf ihre Versuche nicht wieder aufnehmen", "Sie bekommt eine Verwarnung, darf aber weiterklettern", "Keine, wenn sie pünktlich zurückkommt", "Sie wird disqualifiziert"],
+    o: ["Sie darf ihre Versuche nicht wieder aufnehmen", "Sie bekommt eine Verwarnung (Gelbe Karte), darf aber weiterklettern", "Keine, wenn sie pünktlich zurückkommt", "Sie wird disqualifiziert"],
     a: [0], e: "Wer den Transitbereich verlässt, bevor der Zwischenfall gelöst ist, darf seine Versuche nicht wieder aufnehmen.", r: "Anhang C §8.4" });
 
   add({ id: "B45", k: [0, 0, 1], q: "Welche Frist gilt für einen Einspruch, der Top, Zone oder Anzahl der Versuche betrifft (ohne Anspruch auf zusätzliche Versuche)?",
@@ -198,7 +198,7 @@
 
   add({ id: "B49", k: [2, 1, 1], c: true, q: "Eine Athletin spuckt sich vor dem Versuch in die Hände. Wie ist das zu behandeln?",
     o: ["Speichel ist verboten. Kontaminierte Griffe werden wie bei Blut gereinigt, ohne Zusatzzeit. Sanktion möglich", "Erlaubt, weil Speichel die Griffe nicht verändert", "Erlaubt, wenn sie danach chalkt", "Nur im Finale verboten"],
-    a: [0], e: "Speichel vor oder während eines Versuchs ist verboten. Verunreinigungen werden wie Blut behandelt und ohne Zusatzzeit gereinigt. Laut Judge Guide gibt es eine mündliche Verwarnung oder Gelbe Karte.", r: "AR §3.4 (Anmerkung); Judge Guide" });
+    a: [0], e: "Speichel vor oder während eines Versuchs ist verboten. Verunreinigungen werden wie Blut behandelt und ohne Zusatzzeit gereinigt. Laut Judge Guide gibt es eine mündliche Ermahnung oder eine Verwarnung (Gelbe Karte).", r: "AR §3.4 (Anmerkung); Judge Guide" });
 
   add({ id: "B50", k: [0, 0, 1], q: "Was gilt im Flash-Format im Bouldern?",
     o: ["Mindestens 60 Minuten vor dem Start of Play gibt es eine Demonstration (Video oder live)", "Wettkämpfer bleiben im Wettkampfbereich, bis sie alle Boulder eines Sets beendet haben", "Aus der Transitzone dürfen sie mit Teamoffiziellen und anderen Wettkämpfern sprechen und deren Versuche beobachten", "Wettkämpfer müssen in der Isolationszone bleiben und dürfen niemanden beobachten"],

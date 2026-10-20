@@ -53,7 +53,7 @@
     a: [0], e: "Safety Holds bekommen ein blaues Kreuz, ein zweites blaues Kreuz sitzt neben dem Haken der zugehörigen Expressschlinge. Außerdem stehen sie auf dem Wertungstopo und werden in der gemeinsamen Besichtigung angekündigt.", r: "AR §1.13" });
 
   add({ id: "L13", k: [2, 1, 1], c: true, q: "Ein Athlet steht am markierten Safety Hold und macht, ohne die zugehörige Expressschlinge eingehängt zu haben, eine Kletterbewegung darüber hinaus. Was passiert?",
-    o: ["Der Versuch ist nicht erfolgreich und wird abgebrochen", "Der Versuch läuft weiter, gewertet wird nur bis zum Safety Hold", "Er bekommt eine Verwarnung und darf weiterklettern", "Nichts, solange er die Expressschlinge später noch einhängt"],
+    o: ["Der Versuch ist nicht erfolgreich und wird abgebrochen", "Der Versuch läuft weiter, gewertet wird nur bis zum Safety Hold", "Er bekommt eine Verwarnung (Gelbe Karte) und darf weiterklettern", "Nichts, solange er die Expressschlinge später noch einhängt"],
     a: [0], e: "Ein markierter Safety Hold ist eine letzte sichere Position. Wer ohne Einhängen eine Kletterbewegung darüber hinaus macht, beendet den Versuch erfolglos. Laut Judge Guide müssen JP oder DAV-Schiedsrichter ihn dann abbrechen.", r: "AR §8.2(C); Glossar „Letzte sichere Position“" });
 
   add({ id: "L14", k: [1, 0, 1], q: "Wer bestimmt eine letzte sichere Position, die nicht als Safety Hold markiert ist?",
@@ -157,7 +157,7 @@
     a: [0], e: "Die Routendemonstration gibt es mindestens 60 Minuten vor dem Start of Play, bevorzugt als Video (Download, Stream oder Dauerschleife im Aufwärmbereich), sonst live.", r: "Anhang A §4.7" });
 
   add({ id: "L39", k: [0, 1, 1], c: true, q: "In einer On-Sight-Runde verlässt eine Athletin nach Schließung der Isolationszone ohne Erlaubnis die Iso, um etwas aus dem Auto zu holen. Was gilt?",
-    o: ["Sie ist nicht startberechtigt und wird als DNS gewertet", "Sie erhält eine Verwarnung und darf starten", "Sie startet als Letzte der Runde", "Das ist erlaubt, solange sie die Route nicht gesehen hat"],
+    o: ["Sie ist nicht startberechtigt und wird als DNS gewertet", "Sie erhält eine Verwarnung (Gelbe Karte) und darf starten", "Sie startet als Letzte der Runde", "Das ist erlaubt, solange sie die Route nicht gesehen hat"],
     a: [0], e: "Wer die Isolationszone nach der Schließzeit ohne Erlaubnis verlässt, ist nicht startberechtigt und wird als DNS gewertet.", r: "Anhang A §4.2" });
 
   add({ id: "L40", k: [1, 1, 1], c: true, q: "Ein Athlet ist zu seinem Zeitpunkt nicht in der Call Zone, weil ihn die Sanitäter wegen einer Kleinigkeit aufgehalten haben. Was gilt?",
@@ -225,7 +225,7 @@
     a: [0], e: "Ein Neustart wird abgesagt, wenn er die Platzierung des Wettkämpfers am Ende der Runde nicht beeinflussen kann.", r: "Anhang A §8.3" });
 
   add({ id: "L56", k: [0, 1, 1], c: true, q: "Ein Athlet wartet nach einem möglichen TI im separaten Bereich und geht ohne Erlaubnis zu seinem Trainer, um mit ihm zu sprechen. Folge?",
-    o: ["Der technische Zwischenfall gilt als abgeschlossen, weitere Versuche sind nicht mehr möglich", "Er erhält eine Verwarnung, der Neustart bleibt", "Die Erholungszeit beginnt von vorn", "Keine Folge, solange er rechtzeitig zurück ist"],
+    o: ["Der technische Zwischenfall gilt als abgeschlossen, weitere Versuche sind nicht mehr möglich", "Er erhält eine Verwarnung (Gelbe Karte), der Neustart bleibt", "Die Erholungszeit beginnt von vorn", "Keine Folge, solange er rechtzeitig zurück ist"],
     a: [0], e: "Im separaten Bereich darf er nur mit Officials sprechen. Verlässt er den Bereich ohne Erlaubnis, ist der TI abgeschlossen und es gibt keine weiteren Versuche.", r: "Anhang A §8.2(A)" });
 
   add({ id: "L57", k: [0, 0, 1], q: "Bis wann muss ein Einspruch gegen den Abbruch eines Lead-Versuchs eingelegt werden?",
@@ -249,11 +249,11 @@
     a: [0], e: "Das Seil wird von einem Sichernden pro Seil bedient. Manuelle Sicherungsgeräte sind zu bevorzugen.", r: "Anhang A §3.3 mit Anmerkung" });
 
   add({ id: "L62", k: [0, 1, 1], c: true, q: "Ein Athlet greift mit 2 Fingern in ein unbenutztes, offenes T-Nut-Loch, um sich zu halten. Was gilt?",
-    o: ["Der Versuch ist nicht erfolgreich, weil er sich durch ein unbenutztes T-Nut-Loch einen Vorteil verschafft hat", "Erlaubt, T-Nut-Löcher sind Teil der Wand", "Erlaubt, aber das Loch zählt nicht für die Wertung", "Er bekommt eine Verwarnung"],
+    o: ["Der Versuch ist nicht erfolgreich, weil er sich durch ein unbenutztes T-Nut-Loch einen Vorteil verschafft hat", "Erlaubt, T-Nut-Löcher sind Teil der Wand", "Erlaubt, aber das Loch zählt nicht für die Wertung", "Er bekommt eine Verwarnung (Gelbe Karte)"],
     a: [0], e: "Unbenutzte, offene T-Nut-Löcher dürfen nicht mit den Händen benutzt werden. Wer sich so einen Vorteil verschafft, beendet den Versuch erfolglos.", r: "AR §8.1(E)" });
 
   add({ id: "L63", k: [0, 2, 1], c: true, q: "Eine Athletin stellt den Fuß in ein unbenutztes T-Nut-Loch. Was gilt?",
-    o: ["Das ist erlaubt, das Verbot gilt nur für die Hände", "Der Versuch ist nicht erfolgreich", "Sie bekommt eine Verwarnung", "Das ist nur erlaubt, wenn das Loch verschraubt ist"],
+    o: ["Das ist erlaubt, das Verbot gilt nur für die Hände", "Der Versuch ist nicht erfolgreich", "Sie bekommt eine Verwarnung (Gelbe Karte)", "Das ist nur erlaubt, wenn das Loch verschraubt ist"],
     a: [0], e: "§8.1(E) verbietet die Nutzung unbenutzter T-Nut-Löcher ausdrücklich nur mit den Händen.", r: "AR §8.1(E)" });
 
   add({ id: "L64", k: [0, 1, 1], c: true, q: "Ein Athlet tritt beim Klettern auf die Lasche eines Bohrhakens, um eine Stelle zu überbrücken. Was gilt?",
