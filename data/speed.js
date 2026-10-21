@@ -25,8 +25,8 @@
     a: [0], e: "Ein Sturz liegt vor, wenn beide Hände den Kontakt verlieren und der Wettkämpfer sich ohne Autobelay nicht abfangen kann, oder wenn er das Ziel-Pad anschlägt, ohne die Zeit zu stoppen. Wer nach einem Rutscher wieder Kontrolle hat, darf weiterklettern.", r: "AR §8.1 (Anmerkung zu B)" });
 
   add({ id: "S06", k: [2, 1, 1], c: true, q: "Eine Athletin schlägt oben auf das Ziel-Pad, die Zeitmessung stoppt aber nicht (anerkanntes Zeitmesssystem). Wie wird gewertet?",
-    o: ["Als Sturz. Ein Einspruch dagegen ist nicht möglich, nur ein Antrag auf technischen Zwischenfall", "Als gültige Zeit, die per Video ermittelt wird", "Automatischer Re-Run", "Als Fehlstart"],
-    a: [0], e: "Wer am Ziel-Pad anschlägt, ohne die Zeitmessung zu stoppen, hat einen Sturz. Bei einem vom DAV anerkannten Zeitmesssystem ist dagegen kein Einspruch möglich. Beschwerden über das System laufen nur als Antrag auf einen technischen Zwischenfall.", r: "AR §8.1 (Anmerkung); Anhang B §10.1" });
+    o: ["Als Sturz. Ein Einspruch dagegen ist nicht möglich, nur ein Antrag auf einen Technical Incident", "Als gültige Zeit, die per Video ermittelt wird", "Automatischer Re-Run", "Als Fehlstart"],
+    a: [0], e: "Wer am Ziel-Pad anschlägt, ohne die Zeitmessung zu stoppen, hat einen Sturz. Bei einem vom DAV anerkannten Zeitmesssystem ist dagegen kein Einspruch möglich. Beschwerden über das System laufen nur als Antrag auf einen Technical Incident.", r: "AR §8.1 (Anmerkung); Anhang B §10.1" });
 
   add({ id: "S07", k: [0, 0, 0], q: "Wie viele Runden hat ein Individual-Speed-Wettkampf?",
     o: ["2 Runden: Qualifikation und Finalrunde (K.-o.-System)", "3 Runden: Qualifikation, Halbfinale, Finale", "1 Runde", "4 Runden"],
@@ -152,7 +152,7 @@
     o: ["2 m", "1 m", "3 m", "5 m"],
     a: [0], e: "Die Einhängeposition, in der die Wettkämpfer mit dem Rücken zur Wand stehen, darf höchstens 2 m von der Wand entfernt sein.", r: "Anhang B §4.7 (Anmerkung)" });
 
-  add({ id: "S38", k: [0, 0, 1], q: "Bis wann kann im Speed ein technischer Zwischenfall reklamiert werden?",
+  add({ id: "S38", k: [0, 0, 1], q: "Bis wann kann im Speed ein Technical Incident reklamiert werden?",
     o: ["Bis im nächsten planmäßigen Race das Kommando „At your marks“ gegeben wurde", "Bis zur Veröffentlichung der Ergebnisse", "Bis 5 Minuten nach dem Race", "Bis zum Ende der Runde"],
     a: [0], e: "Sobald im nächsten planmäßigen Race „At your marks“ gegeben wurde, ist keine TI-Reklamation mehr möglich.", r: "Anhang B §9.1" });
 
@@ -225,6 +225,6 @@
     a: [0], e: "Das Startsignal ist das Aufleuchten der Startlampe links der Route plus ein akustisches Signal des Zeitmesssystems.", r: "Glossar „Startsignal“ (A); Anhang B §4.11" });
 
   add({ id: "S56", k: [0, 1, 1], c: true, q: "Ein Trainer will Einspruch einlegen, weil die Reaktionszeit seines Athleten (0,098 Sekunden, Fehlstart) „unmöglich“ sei. Das Zeitmesssystem ist vom DAV anerkannt. Was gilt?",
-    o: ["Gegen die Gültigkeit einer Reaktionszeit ist kein Einspruch möglich; nur ein Antrag auf technischen Zwischenfall wegen der Systemfunktion", "Einspruch innerhalb von 5 Minuten möglich", "Einspruch nur mündlich vor dem nächsten Race", "Der Starter kann den Fehlstart zurücknehmen"],
+    o: ["Gegen die Gültigkeit einer Reaktionszeit ist kein Einspruch möglich; nur ein Antrag auf einen Technical Incident wegen der Systemfunktion", "Einspruch innerhalb von 5 Minuten möglich", "Einspruch nur mündlich vor dem nächsten Race", "Der Starter kann den Fehlstart zurücknehmen"],
     a: [0], e: "Bei einem anerkannten Zeitmesssystem ist gegen die Gültigkeit einer Reaktionszeit kein Einspruch möglich. Beschwerden zur Funktion des Systems laufen nur als TI-Antrag.", r: "Anhang B §10.1 mit Anmerkung" });
 })();

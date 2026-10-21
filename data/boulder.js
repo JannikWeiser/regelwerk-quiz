@@ -160,7 +160,7 @@
     o: ["Mehrere Versuche sind erlaubt, jeder muss vom Start aus erfolgen; einzelne Teile dürfen nicht separat probiert werden", "Pro Intervall ist nur ein Versuch erlaubt", "Man darf einzelne Züge separat üben, solange man vom Boden startet", "Nach einem Sturz darf man an der Sturzstelle weiterklettern"],
     a: [0], e: "Innerhalb eines Intervalls sind mehrere Versuche erlaubt. Jeder Versuch muss vom Start aus erfolgen, Teile des Boulders separat zu probieren ist verboten.", r: "Anhang C §4.12" });
 
-  add({ id: "B40", k: [0, 0, 1], q: "Bis wann kann im Bouldern ein möglicher technischer Zwischenfall reklamiert werden?",
+  add({ id: "B40", k: [0, 0, 1], q: "Bis wann kann im Bouldern ein möglicher Technical Incident reklamiert werden?",
     o: ["Bis zum Beginn des nächsten planmäßigen Intervalls", "Bis zur Veröffentlichung der offiziellen Ergebnisse", "Bis der nächste Wettkämpfer am Boulder startet", "Bis zum Ende der Runde"],
     a: [0], e: "Nach Beginn des nächsten planmäßigen Intervalls kann kein möglicher TI mehr reklamiert werden.", r: "Anhang C §8.1" });
 
@@ -178,7 +178,7 @@
 
   add({ id: "B44", k: [0, 1, 1], c: true, q: "Eine Athletin wartet nach einem TI im Transitbereich und geht vor Klärung zurück in den Aufwärmbereich. Folge?",
     o: ["Sie darf ihre Versuche nicht wieder aufnehmen", "Sie bekommt eine Verwarnung (Gelbe Karte), darf aber weiterklettern", "Keine, wenn sie pünktlich zurückkommt", "Sie wird disqualifiziert"],
-    a: [0], e: "Wer den Transitbereich verlässt, bevor der Zwischenfall gelöst ist, darf seine Versuche nicht wieder aufnehmen.", r: "Anhang C §8.4" });
+    a: [0], e: "Wer den Transitbereich verlässt, bevor der Technical Incident gelöst ist, darf seine Versuche nicht wieder aufnehmen.", r: "Anhang C §8.4" });
 
   add({ id: "B45", k: [0, 0, 1], q: "Welche Frist gilt für einen Einspruch, der Top, Zone oder Anzahl der Versuche betrifft (ohne Anspruch auf zusätzliche Versuche)?",
     o: ["Medaillenphase: 2 Minuten, sonst 5 Minuten nach Veröffentlichung der offiziellen Ergebnisse", "Vor Ende des nächsten Intervalls", "Bevor der nächste Wettkämpfer startet", "Bis zum Ende des Wettkampftages"],
@@ -193,8 +193,8 @@
     a: [0], e: "Der Einspruch kann zu zusätzlicher Zeit oder zusätzlichen Versuchen führen, also gilt §9.2. Außerhalb von Finals im World-Series-/Classic-Format heißt das: vor Ende des nächstfolgenden Intervalls. Die Absicht kann mündlich angemeldet werden, schriftlich folgt innerhalb von bis zu 5 Minuten.", r: "Anhang C §9.2, §9.3" });
 
   add({ id: "B48", k: [1, 1, 1], c: true, q: "Ein Athlet reißt sich am Boulder die Fingerkuppe auf und blutet. Was gilt?",
-    o: ["Er muss die Blutung stillen, bevor er weiterklettert. Verschmutzte Griffe werden vor dem nächsten Athleten gereinigt. Zusätzliche Zeit gibt es nicht", "Das ist ein technischer Zwischenfall mit Zusatzzeit", "Er darf blutend weiterklettern, die Griffe werden erst nach der Runde gereinigt", "Er muss die Runde abbrechen"],
-    a: [0], e: "Eine blutende Verletzung ist kein technischer Zwischenfall. Zusatzzeit gibt es nur, wenn die Verletzung selbst Folge eines TI ist. Die Blutung muss gestillt sein, und kontaminierte Griffe werden gereinigt, bevor andere Wettkämpfer beginnen.", r: "AR §11.6 mit Anmerkung" });
+    o: ["Er muss die Blutung stillen, bevor er weiterklettert. Verschmutzte Griffe werden vor dem nächsten Athleten gereinigt. Zusätzliche Zeit gibt es nicht", "Das ist ein Technical Incident mit Zusatzzeit", "Er darf blutend weiterklettern, die Griffe werden erst nach der Runde gereinigt", "Er muss die Runde abbrechen"],
+    a: [0], e: "Eine blutende Verletzung ist kein Technical Incident. Zusatzzeit gibt es nur, wenn die Verletzung selbst Folge eines TI ist. Die Blutung muss gestillt sein, und kontaminierte Griffe werden gereinigt, bevor andere Wettkämpfer beginnen.", r: "AR §11.6 mit Anmerkung" });
 
   add({ id: "B49", k: [2, 1, 1], c: true, q: "Eine Athletin spuckt sich vor dem Versuch in die Hände. Wie ist das zu behandeln?",
     o: ["Speichel ist verboten. Kontaminierte Griffe werden wie bei Blut gereinigt, ohne Zusatzzeit. Sanktion möglich", "Erlaubt, weil Speichel die Griffe nicht verändert", "Erlaubt, wenn sie danach chalkt", "Nur im Finale verboten"],
@@ -216,9 +216,9 @@
     o: ["Der Athlet selbst, innerhalb seines Intervalls", "Ausschließlich die Routenbauer", "Der Boulderschiedsrichter", "Der nächste Athlet"],
     a: [0], e: "Jeder Athlet reinigt die von ihm versuchten Boulder eigenverantwortlich innerhalb seines Intervalls. Gibt es Personal, soll der JP für eine Reinigung am Ende jeder Rotation sorgen.", r: "Anhang C §4.6 mit Anmerkung" });
 
-  add({ id: "B54", k: [1, 2, 2], c: true, q: "Während eines Intervalls fällt die Zeitanzeige für einige Sekunden aus, Start- und Stoppsignal funktionieren normal. Ist das ein technischer Zwischenfall?",
+  add({ id: "B54", k: [1, 2, 2], c: true, q: "Während eines Intervalls fällt die Zeitanzeige für einige Sekunden aus, Start- und Stoppsignal funktionieren normal. Ist das ein Technical Incident?",
     o: ["Nicht automatisch: Kritisch ist ein Ausfall im Bouldern erst, wenn Beginn oder Ende der Kletterzeit nicht gemessen werden können", "Ja, jeder Ausfall der Anzeige ist ein TI", "Ja, alle Athleten bekommen ein neues Intervall", "Nein, Zeitmessung ist im Bouldern egal"],
-    a: [0], e: "Ein kritischer Ausfall des Zeitmesssystems liegt im Bouldern vor, wenn Beginn oder Ende der erlaubten Kletterzeit nicht gemessen werden können. Eine kurze Unterbrechung der Anzeige ohne Auswirkung auf die Signale ist nicht automatisch ein TI.", r: "Glossar „Technischer Zwischenfall“ (D) mit Anmerkung" });
+    a: [0], e: "Ein kritischer Ausfall des Zeitmesssystems liegt im Bouldern vor, wenn Beginn oder Ende der erlaubten Kletterzeit nicht gemessen werden können. Eine kurze Unterbrechung der Anzeige ohne Auswirkung auf die Signale ist nicht automatisch ein TI.", r: "Glossar „Technical Incident“ (D) mit Anmerkung" });
 
   add({ id: "B55", k: [2, 2, 1], c: true, q: "Ein Volumen ist als Startgriff markiert. Darauf ist ein kleiner Griff geschraubt. Daneben liegt ein zweites Volumen, das das erste berührt, aber nicht daran verschraubt ist. Was gehört laut Judge Guide zum Start?",
     o: ["Das markierte Volumen und der daran verschraubte Griff. Das nur anliegende Volumen gehört nicht dazu", "Nur das markierte Volumen", "Alle 3 Elemente", "Das anliegende Volumen, nicht aber der verschraubte Griff"],
@@ -233,7 +233,7 @@
     a: [0], e: "Pro Boulder sollen mindestens 3 m Breite zur Verfügung stehen. Bei 4 gleichzeitig gekletterten Bouldern sind das 12 m oder 2 Wände mit je 6 m.", r: "Anhang C §1.1 mit Anmerkung" });
 
   add({ id: "B58", k: [1, 1, 2], c: true, q: "Ein Athlet verschüttet aus Unachtsamkeit seine Trinkflasche über die Fallschutzmatte. Was ist möglich?",
-    o: ["Eine Sanktion nach AR §13.1", "Nichts, Wasser ist erlaubt", "Ein technischer Zwischenfall zu seinen Gunsten", "Zwangsweise Disqualifikation"],
+    o: ["Eine Sanktion nach AR §13.1", "Nichts, Wasser ist erlaubt", "Ein Technical Incident zu seinen Gunsten", "Zwangsweise Disqualifikation"],
     a: [0], e: "Bei Verstößen gegen §4.14 und bei unachtsamem oder vorsätzlichem Verschütten von Flüssigkeiten auf die Matten kann eine Sanktion verhängt werden.", r: "Anhang C §4.14 (Anmerkung); AR §13.1" });
 
   add({ id: "B59", k: [0, 0, 1], q: "Welche Anforderungen gelten für das Zeitmesssystem im Bouldern?",

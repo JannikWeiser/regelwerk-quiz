@@ -25,7 +25,7 @@
     a: [0, 1, 2], e: "§8.2 nennt: Einhängen außerhalb der Reihenfolge, Aushängen (außer zum Korrigieren eines Z-Clips) und Klettern über die letzte sichere Position hinaus. Spätes Einhängen vor der letzten sicheren Position unterbricht nur die Wertung, der Versuch läuft weiter.", r: "AR §8.2" });
 
   add({ id: "L06", k: [1, 1, 1], c: true, q: "Während eines Versuchs hängt sich eine bereits eingehängte Expressschlinge von selbst aus. Wie wird das grundsätzlich bewertet?",
-    o: ["Es wird angenommen, dass sie nicht ordnungsgemäß eingehängt war: Der Versuch ist an der letzten Einhängeposition dieser Expressschlinge nicht erfolgreich", "Das ist immer ein technischer Zwischenfall", "Das hat keine Folgen, solange der Wettkämpfer nicht stürzt", "Der Wettkämpfer muss sofort abgelassen werden und erhält einen Neustart"],
+    o: ["Es wird angenommen, dass sie nicht ordnungsgemäß eingehängt war: Der Versuch ist an der letzten Einhängeposition dieser Expressschlinge nicht erfolgreich", "Das ist immer ein Technical Incident", "Das hat keine Folgen, solange der Wettkämpfer nicht stürzt", "Der Wettkämpfer muss sofort abgelassen werden und erhält einen Neustart"],
     a: [0], e: "Wenn es sich nicht schlüssig widerlegen lässt, gilt die Expressschlinge als nicht ordnungsgemäß eingehängt. Ausnahme: Es ist eindeutig belegt, dass sie richtig eingehängt war und sich durch Faktoren außerhalb der Kontrolle des Wettkämpfers ausgehängt hat.", r: "AR §8.2 (Anmerkung zu A)" });
 
   add({ id: "L07", k: [1, 0, 1], q: "Wie wird ein Z-Clip gewertet, solange er nicht korrigiert ist?",
@@ -37,7 +37,7 @@
     a: [0], e: "Ein Z-Clip wird korrigiert, indem eine der beiden betroffenen Expressschlingen ausgehängt und wieder eingehängt wird. Dieses Aushängen ist ausdrücklich erlaubt.", r: "AR §8.2(B) mit Anmerkung" });
 
   add({ id: "L09", k: [1, 2, 1], c: true, q: "Ein Athlet bemerkt seinen Z-Clip nicht und klettert über die letzte sichere Position der betroffenen Expressschlinge hinaus. Was gilt?",
-    o: ["Der Versuch wird als nicht erfolgreich gewertet", "Der Versuch läuft weiter, die Wertung bleibt aber an der letzten Einhängeposition stehen", "Es liegt ein technischer Zwischenfall vor, weil das Seil falsch lief", "Der Schiedsrichter muss den Athleten auf den Z-Clip hinweisen und weiterklettern lassen"],
+    o: ["Der Versuch wird als nicht erfolgreich gewertet", "Der Versuch läuft weiter, die Wertung bleibt aber an der letzten Einhängeposition stehen", "Es liegt ein Technical Incident vor, weil das Seil falsch lief", "Der Schiedsrichter muss den Athleten auf den Z-Clip hinweisen und weiterklettern lassen"],
     a: [0], e: "Wer einen Z-Clip nicht korrigiert, fällt unter §8.2(C): Eine Kletterbewegung über die letzte sichere Position hinaus beendet den Versuch als nicht erfolgreich.", r: "AR §8.2(C) (Anmerkung zu B)" });
 
   add({ id: "L10", k: [1, 1, 1], q: "Welche Aussagen zu „letzter Einhängeposition“ und „letzter sicherer Position“ sind richtig?",
@@ -200,23 +200,23 @@
     o: ["Nein, das Finale bleibt die geplante Medaillenphase, die Halbfinalergebnisse werden nicht neu berechnet", "Ja, das Halbfinale wird automatisch zur Medaillenphase", "Ja, aber nur für Platz 1", "Die Plätze werden ausgelost"],
     a: [0], e: "Geplante Medaillenphase ist die letzte Runde im Zeitplan vor Beginn dieser Runde. Wird das Finale erst nach Beginn des Halbfinales abgesagt, bleibt es geplante Medaillenphase, und die Kletterzeit wird im Halbfinale nicht herangezogen. Bei einer Absage vor Beginn des Halbfinales wäre das anders.", r: "Anhang A §7.3 (Anmerkung zur Medaillenphase)" });
 
-  add({ id: "L50", k: [0, 0, 1], q: "Bei wem muss ein möglicher technischer Zwischenfall im Lead gemeldet werden, und wer entscheidet?",
+  add({ id: "L50", k: [0, 0, 1], q: "Bei wem muss ein möglicher Technical Incident im Lead gemeldet werden, und wer entscheidet?",
     o: ["Meldung unverzüglich an einen DAV-Schiedsrichter; der DAV-Schiedsrichter entscheidet", "Meldung beim Routenschiedsrichter, der allein entscheidet", "Meldung beim Event Delegate, der entscheidet", "Schriftlich bei der Einspruchsjury"],
     a: [0], e: "Wettkämpfer, Teamoffizielle, Sicherer, Routenbauer und On-field Officials melden mögliche TIs unverzüglich einem DAV-Schiedsrichter. Er entscheidet über die Bestätigung.", r: "Anhang A §8.1" });
 
-  add({ id: "L51", k: [0, 0, 1], q: "Bis wann kann im Lead ein möglicher technischer Zwischenfall reklamiert werden?",
+  add({ id: "L51", k: [0, 0, 1], q: "Bis wann kann im Lead ein möglicher Technical Incident reklamiert werden?",
     o: ["Bis der planmäßig nächste Wettkämpfer auf der betroffenen Route gestartet ist", "Bis zur Veröffentlichung der offiziellen Ergebnisse", "Bis 5 Minuten nach Ende des Versuchs", "Bis zum Ende der Runde"],
     a: [0], e: "Sobald der planmäßig nächste Wettkämpfer auf der betroffenen Route gestartet ist, kann kein TI mehr reklamiert werden.", r: "Anhang A §8.1" });
 
-  add({ id: "L52", k: [0, 2, 1], c: true, q: "Ein Athlet stürzt an Griff 14 wegen eines bestätigten technischen Zwischenfalls (loser Griff). Wie lang ist seine Erholungszeit?",
+  add({ id: "L52", k: [0, 2, 1], c: true, q: "Ein Athlet stürzt an Griff 14 wegen eines bestätigten Technical Incidents (loser Griff). Wie lang ist seine Erholungszeit?",
     o: ["14 Minuten", "20 Minuten", "7 Minuten", "Die verbleibende Kletterzeit"],
     a: [0], e: "Pro gewertetem Griff vor dem TI gibt es 1 Minute Erholungszeit, maximal 20 Minuten. 14 Griffe ergeben 14 Minuten.", r: "Anhang A §8.2(B)" });
 
-  add({ id: "L53", k: [0, 2, 1], c: true, q: "Eine Athletin fällt an Griff 35 wegen eines bestätigten technischen Zwischenfalls. Wie lang ist ihre Erholungszeit?",
+  add({ id: "L53", k: [0, 2, 1], c: true, q: "Eine Athletin fällt an Griff 35 wegen eines bestätigten Technical Incidents. Wie lang ist ihre Erholungszeit?",
     o: ["20 Minuten", "35 Minuten", "30 Minuten", "17,5 Minuten"],
     a: [0], e: "1 Minute pro gewertetem Griff, aber höchstens 20 Minuten.", r: "Anhang A §8.2(B)" });
 
-  add({ id: "L54", k: [0, 0, 1], q: "Welches Ergebnis zählt nach einem Neustart wegen eines technischen Zwischenfalls im Lead?",
+  add({ id: "L54", k: [0, 0, 1], q: "Welches Ergebnis zählt nach einem Neustart wegen eines Technical Incidents im Lead?",
     o: ["Das bessere Ergebnis aus ursprünglichem und neu gestartetem Versuch", "Immer das Ergebnis des Neustarts", "Immer das ursprüngliche Ergebnis", "Der Durchschnitt beider Versuche"],
     a: [0], e: "Gewertet wird das bessere der beiden Ergebnisse.", r: "Anhang A §8.4; AR §11.4(C)" });
 
@@ -225,7 +225,7 @@
     a: [0], e: "Ein Neustart wird abgesagt, wenn er die Platzierung des Wettkämpfers am Ende der Runde nicht beeinflussen kann.", r: "Anhang A §8.3" });
 
   add({ id: "L56", k: [0, 1, 1], c: true, q: "Ein Athlet wartet nach einem möglichen TI im separaten Bereich und geht ohne Erlaubnis zu seinem Trainer, um mit ihm zu sprechen. Folge?",
-    o: ["Der technische Zwischenfall gilt als abgeschlossen, weitere Versuche sind nicht mehr möglich", "Er erhält eine Verwarnung (Gelbe Karte), der Neustart bleibt", "Die Erholungszeit beginnt von vorn", "Keine Folge, solange er rechtzeitig zurück ist"],
+    o: ["Der Technical Incident gilt als abgeschlossen, weitere Versuche sind nicht mehr möglich", "Er erhält eine Verwarnung (Gelbe Karte), der Neustart bleibt", "Die Erholungszeit beginnt von vorn", "Keine Folge, solange er rechtzeitig zurück ist"],
     a: [0], e: "Im separaten Bereich darf er nur mit Officials sprechen. Verlässt er den Bereich ohne Erlaubnis, ist der TI abgeschlossen und es gibt keine weiteren Versuche.", r: "Anhang A §8.2(A)" });
 
   add({ id: "L57", k: [0, 0, 1], q: "Bis wann muss ein Einspruch gegen den Abbruch eines Lead-Versuchs eingelegt werden?",
@@ -237,8 +237,8 @@
     a: [0], e: "In der Medaillenphase sind es 2 Minuten, sonst 5 Minuten nach Veröffentlichung der offiziellen Ergebnisse, jeweils schriftlich.", r: "Anhang A §9.2" });
 
   add({ id: "L59", k: [2, 1, 1], c: true, q: "Der Sichernde holt während eines Versuchs so viel Seil ein, dass er den Athleten am Seil nach oben zieht. Wie ist das einzuordnen?",
-    o: ["Als technischer Zwischenfall (Straffseil durch den Sichernden). Der Vorteil wird abgezogen: Gewertet wird höchstens bis zum letzten kontrollierten Griff vor dem Vorteil", "Als Regelverstoß des Athleten mit Disqualifikation", "Als normaler Rennverlauf ohne Folgen", "Als Sturz, der Versuch ist beendet"],
-    a: [0], e: "Ein vom Sichernden verursachtes Straffseil, das den Wettkämpfer unterstützt oder behindert, ist ein technischer Zwischenfall. Laut Judge Guide wird das Ergebnis auf den letzten kontrollierten Griff vor dem Vorteil reduziert, ein weiterer Versuch ist nach den TI-Regeln möglich.", r: "Glossar „Technischer Zwischenfall“ (C); AR §11.3; Judge Guide" });
+    o: ["Als Technical Incident (Straffseil durch den Sichernden). Der Vorteil wird abgezogen: Gewertet wird höchstens bis zum letzten kontrollierten Griff vor dem Vorteil", "Als Regelverstoß des Athleten mit Disqualifikation", "Als normaler Rennverlauf ohne Folgen", "Als Sturz, der Versuch ist beendet"],
+    a: [0], e: "Ein vom Sichernden verursachtes Straffseil, das den Wettkämpfer unterstützt oder behindert, ist ein Technical Incident. Laut Judge Guide wird das Ergebnis auf den letzten kontrollierten Griff vor dem Vorteil reduziert, ein weiterer Versuch ist nach den TI-Regeln möglich.", r: "Glossar „Technical Incident“ (C); AR §11.3; Judge Guide" });
 
   add({ id: "L60", k: [1, 1, 2], q: "Der Jury-Präsident will das Seil in die ersten beiden Expressschlingen vorhängen lassen. Was gilt?",
     o: ["Das ist möglich, aber nur für alle Wettkämpfer oder für keinen", "Das darf nur auf Antrag einzelner Wettkämpfer geschehen", "Das ist grundsätzlich verboten", "Das entscheidet jeder Wettkämpfer selbst"],
@@ -274,7 +274,7 @@
 
   add({ id: "L68", k: [0, 0, 0], q: "Wie viele gewertete Versuche hat ein Wettkämpfer im Lead pro Route und Runde?",
     o: ["1", "2", "Unbegrenzt innerhalb der Kletterzeit", "3"],
-    a: [0], e: "Pro Route und Runde gibt es einen separaten, gewerteten Versuch. Ein Neustart ist nur nach einem technischen Zwischenfall möglich.", r: "AR §6.1, §6.2" });
+    a: [0], e: "Pro Route und Runde gibt es einen separaten, gewerteten Versuch. Ein Neustart ist nur nach einem Technical Incident möglich.", r: "AR §6.1, §6.2" });
 
   add({ id: "L69", k: [0, 0, 1], q: "Wann sollte das Wertungstopo den einspruchsberechtigten Teamoffiziellen zur Verfügung stehen?",
     o: ["Nach dem Ende einer gemeinsamen Besichtigung bzw. vor dem Start of Play", "Erst mit den offiziellen Ergebnissen", "Am Vortag des Wettkampfs", "Nur auf Nachfrage nach einem Einspruch"],

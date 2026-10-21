@@ -92,23 +92,23 @@
     o: ["Fehlstart, Sturz oder Bodenberührung", "Nutzung von out-of-bounds-Elementen, um sich einen Vorteil zu verschaffen", "Nutzung von Seil, Sicherungsmitteln, offenen Wandkanten, Schildern oder (mit den Händen) unbenutzten T-Nut-Löchern zum eigenen Vorteil", "Unbeabsichtigtes, folgenloses Streifen eines durch schwarzes Tape abgetrennten Volumens"],
     a: [0, 1, 2], e: "§8.1 nennt: Ablauf der Kletterzeit, Fehlstart, Sturz, Bodenberührung, Vorteil durch out of bounds oder durch Sicherungsmittel, Kanten, Schilder, T-Nut-Löcher, sowie Stopp durch einen On-field Official. Ein folgenloses Streifen kann zulässig sein.", r: "AR §8.1" });
 
-  add({ id: "G23", k: [1, 0, 1], q: "Was zählt laut Glossar als technischer Zwischenfall?",
+  add({ id: "G23", k: [1, 0, 1], q: "Was zählt laut Glossar als Technical Incident?",
     o: ["Ein gebrochener oder loser Griff", "Eine falsch positionierte Expressschlinge oder ein falsch positionierter Karabiner", "Ein vom Sichernden verursachtes Straffseil, das den Wettkämpfer unterstützt oder behindert", "Ein Abrutschen wegen der eigenen schwitzigen Hände"],
-    a: [0, 1, 2], e: "TIs sind: gebrochener oder loser Griff, falsch positionierte Expressschlinge, Straffseil durch den Sichernden, kritischer Ausfall der Zeitmessung, sowie ungewöhnliche Umstände mit wesentlichem Vor- oder Nachteil, die nicht vom Wettkämpfer selbst verursacht wurden.", r: "Glossar „Technischer Zwischenfall“" });
+    a: [0, 1, 2], e: "TIs sind: gebrochener oder loser Griff, falsch positionierte Expressschlinge, Straffseil durch den Sichernden, kritischer Ausfall der Zeitmessung, sowie ungewöhnliche Umstände mit wesentlichem Vor- oder Nachteil, die nicht vom Wettkämpfer selbst verursacht wurden.", r: "Glossar „Technical Incident“" });
 
   add({ id: "G24", k: [0, 1, 1], c: true, q: "Ein Griff dreht sich unter der Hand einer Athletin leicht und wird dadurch schwerer. Sie klettert trotzdem weiter und stürzt 3 Züge später. Kann sie noch einen TI geltend machen?",
     o: ["Nein, wer nach einem möglichen TI weiterklettert, hat ihn akzeptiert, er ist für sie abgeschlossen", "Ja, bis zur Veröffentlichung der Ergebnisse", "Ja, weil der Griff nachweislich lose war", "Nur wenn ihr Trainer sofort protestiert"],
-    a: [0], e: "Wer einen Versuch nach einem möglichen oder bestätigten TI fortsetzt, akzeptiert ihn. Der Zwischenfall ist für diesen Wettkämpfer abgeschlossen.", r: "AR §11.3" });
+    a: [0], e: "Wer einen Versuch nach einem möglichen oder bestätigten TI fortsetzt, akzeptiert ihn. Der Technical Incident ist für diesen Wettkämpfer abgeschlossen.", r: "AR §11.3" });
 
   add({ id: "G25", k: [0, 2, 2], c: true, q: "Ein Griff dreht sich so, dass er deutlich besser wird, und der Athlet profitiert davon. Er klettert weiter. Gilt der TI als akzeptiert und abgeschlossen?",
-    o: ["Nein, ein Zwischenfall, der einen Vorteil verschafft hat, kann nicht durch Akzeptieren abgeschlossen werden", "Ja, wer weiterklettert, akzeptiert immer", "Ja, aber nur im Bouldern", "Das entscheidet der Athlet"],
-    a: [0], e: "Hat der Zwischenfall einen Vorteil verschafft, ist er durch Weiterklettern nicht abgeschlossen. Der Vorteil wird korrigiert.", r: "AR §11.3" });
+    o: ["Nein, ein Technical Incident, der einen Vorteil verschafft hat, kann nicht durch Akzeptieren abgeschlossen werden", "Ja, wer weiterklettert, akzeptiert immer", "Ja, aber nur im Bouldern", "Das entscheidet der Athlet"],
+    a: [0], e: "Hat der Technical Incident einen Vorteil verschafft, ist er durch Weiterklettern nicht abgeschlossen. Der Vorteil wird korrigiert.", r: "AR §11.3" });
 
-  add({ id: "G26", k: [0, 0, 1], q: "Ein technischer Zwischenfall ist bestätigt und nicht abgeschlossen. Was ist möglich?",
-    o: ["Der Versuch wird an Stelle und Zeitpunkt des Vorfalls als nicht erfolgreich gewertet", "Der Wettkämpfer darf neu starten, sobald die Ursache behoben ist, die Kletterzeit wird bei Bedarf zurückgesetzt oder angepasst", "Gewertet wird das bessere Ergebnis aus der Zeit vor dem Zwischenfall und nach dem Neustart", "Der Wettkämpfer bekommt automatisch das Ergebnis TOP"],
+  add({ id: "G26", k: [0, 0, 1], q: "Ein Technical Incident ist bestätigt und nicht abgeschlossen. Was ist möglich?",
+    o: ["Der Versuch wird an Stelle und Zeitpunkt des Vorfalls als nicht erfolgreich gewertet", "Der Wettkämpfer darf neu starten, sobald die Ursache behoben ist, die Kletterzeit wird bei Bedarf zurückgesetzt oder angepasst", "Gewertet wird das bessere Ergebnis aus der Zeit vor dem Technical Incident und nach dem Neustart", "Der Wettkämpfer bekommt automatisch das Ergebnis TOP"],
     a: [0, 1, 2], e: "Bei einem bestätigten, nicht abgeschlossenen TI: Wertung als erfolglos an der Stelle des Vorfalls, Neustart nach Behebung mit angepasster Zeit, und das bessere Ergebnis zählt.", r: "AR §11.4" });
 
-  add({ id: "G27", k: [2, 0, 1], q: "Wer entscheidet, ob ein Vorfall als technischer Zwischenfall eingestuft wird?",
+  add({ id: "G27", k: [2, 0, 1], q: "Wer entscheidet, ob ein Vorfall als Technical Incident eingestuft wird?",
     o: ["Die On-field Officials, bei Bedarf nach Rücksprache mit dem Chefroutenbauer", "Der Event Delegate allein", "Der Veranstalter", "Die Teamoffiziellen gemeinsam"],
     a: [0], e: "Die On-field Officials entscheiden und beraten sich bei Bedarf mit dem Chefroutenbauer. In der Praxis bestätigt der DAV-Schiedsrichter den TI.", r: "AR §11.2; Anhänge A–D §8.1/§9.1" });
 

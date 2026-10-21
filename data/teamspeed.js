@@ -84,7 +84,7 @@
     o: ["Gemessen auf 1/1000 Sekunde, offiziell auf 1/100 Sekunde abgerundet", "Gemessen und offiziell auf 1/100 Sekunde", "Gemessen auf 1/1000 Sekunde, offiziell aufgerundet", "Nur die Zeit des Anchor Leg zählt"],
     a: [0], e: "Wie im Individual Speed: Messung auf 1/1000 Sekunde, offizielle Zeiten auf 1/100 Sekunde abgerundet. Die Tausendstel dürfen einen Gleichstand anzeigen.", r: "Anhang D §7.1–7.3" });
 
-  add({ id: "T21", k: [0, 0, 1], q: "Bis wann kann im Team Speed ein technischer Zwischenfall reklamiert werden, und wer bekommt einen Re-Run?",
+  add({ id: "T21", k: [0, 0, 1], q: "Bis wann kann im Team Speed ein Technical Incident reklamiert werden, und wer bekommt einen Re-Run?",
     o: ["Bis im nächsten planmäßigen Race „At your marks“ gegeben wurde; Re-Run nur für das bzw. die direkt betroffenen Teams", "Bis zur Veröffentlichung der Ergebnisse; Re-Run für alle Teams des Race", "Bis 5 Minuten nach dem Race; Re-Run nur für den betroffenen Wettkämpfer", "TIs gibt es im Team Speed nicht"],
     a: [0], e: "Die Reklamationsgrenze ist das Kommando „At your marks“ im nächsten Race. Ein bestätigter TI bringt einen Re-Run nur für die direkt betroffenen Teams.", r: "Anhang D §9.1, §9.3" });
 
