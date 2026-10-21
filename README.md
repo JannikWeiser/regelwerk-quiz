@@ -22,10 +22,17 @@ Inoffizielles Lernangebot. Verbindlich sind allein die jeweils veröffentlichten
 
 ## Schwierigkeit
 
-Jede Frage hat `k: [Fundstelle, Denkschritt, Seltenheit]` mit Werten 0–2:
+Jede Frage hat drei Angaben:
 
-- **Fundstelle:** 0 Haupttext · 1 Anmerkung/Tabelle/Formatdetail · 2 mehrere Stellen, Errata oder Judge Guide
-- **Denkschritt:** 0 Regel wiedergeben · 1 auf einen Fall anwenden · 2 Regeln verknüpfen, rechnen oder Ausnahme erkennen
-- **Seltenheit in der Praxis:** 0 bei jedem Wettkampf · 1 gelegentlich · 2 selten
+- `cat` – Themenkategorie, bestimmt die Grundstufe:
+  - `W` Wertung, leichte Verfahren → Grundlagen
+  - `J` JP-Fragen, schwere Verfahren → Fortgeschritten
+  - `O` Organisation, Medaillen, Disziplinarisches → Experte
+- `k: [Fundstelle, Denkschritt, Seltenheit]` mit Werten 0–2:
+  - **Fundstelle:** 0 Haupttext · 1 Anmerkung/Tabelle/Formatdetail · 2 mehrere Stellen, Errata oder Judge Guide
+  - **Denkschritt:** 0 Regel wiedergeben · 1 auf einen Fall anwenden · 2 Regeln verknüpfen, rechnen oder Ausnahme erkennen
+  - **Seltenheit in der Praxis:** 0 bei jedem Wettkampf · 1 gelegentlich · 2 selten
+  - Punkte = Fundstelle + Denkschritt + 2 × Seltenheit (0–8). Ab 6 Punkten eine Stufe höher, bei 0–1 Punkten eine Stufe tiefer (`SHIFT_UP`/`SHIFT_DOWN` in `app.js`).
+- `stufe` (optional, 1–3) – manuelle Festlegung, hat Vorrang.
 
-Punkte = Fundstelle + Denkschritt + 2 × Seltenheit (0–8). Stufen: 0–2 Grundlagen, 3–5 Fortgeschritten, 6–8 Experte (`LEVEL_LIMITS` in `app.js`). Mehrfachauswahl zählt nicht.
+Mehrfachauswahl zählt nicht.

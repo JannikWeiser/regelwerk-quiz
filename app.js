@@ -2,14 +2,27 @@
   "use strict";
 
   const QUESTIONS = window.QUESTIONS || [];
-  // Schwierigkeit: k = [Fundstelle 0–2, Denkschritt 0–2, Seltenheit in der Praxis 0–2]; Seltenheit zählt doppelt.
-  // Punkte 0–8 → Stufe nach LEVEL_LIMITS (bis einschließlich Grenze).
-  const LEVEL_LIMITS = [2, 5]; // 0–2 Grundlagen · 3–5 Fortgeschritten · 6–8 Experte
+  // Schwierigkeit:
+  // 1. Die Kategorie (cat) bestimmt die Grundstufe: W Wertung/leichte Verfahren → Grundlagen,
+  //    J JP-Fragen/schwere Verfahren → Fortgeschritten, O Organisation/Medaillen/Disziplinarisches → Experte.
+  // 2. Das Punkteschema k = [Fundstelle 0–2, Denkschritt 0–2, Seltenheit 0–2] (Seltenheit doppelt, 0–8 Punkte)
+  //    verschiebt um höchstens eine Stufe: ab SHIFT_UP Punkten eine höher, bis SHIFT_DOWN Punkte eine tiefer.
+  // 3. stufe (1–3) legt die Stufe fest und hat Vorrang (manuelle Festlegung).
+  const CAT_BASE = { W: 1, J: 2, O: 3 };
+  const SHIFT_UP = 6;
+  const SHIFT_DOWN = 1;
   const points = (q) => q.k[0] + q.k[1] + 2 * q.k[2];
+  function levelOf(q) {
+    if (q.stufe) return q.stufe;
+    const p = points(q);
+    let l = CAT_BASE[q.cat] || 2;
+    if (p >= SHIFT_UP) l = Math.min(3, l + 1);
+    if (p <= SHIFT_DOWN) l = Math.max(1, l - 1);
+    return l;
+  }
   QUESTIONS.forEach((q) => {
     if (!q.rb) q.rb = "dav";
-    const p = points(q);
-    q.lvl = p <= LEVEL_LIMITS[0] ? 1 : p <= LEVEL_LIMITS[1] ? 2 : 3;
+    q.lvl = levelOf(q);
   });
   const BY_ID = Object.fromEntries(QUESTIONS.map((q) => [q.id, q]));
 
@@ -67,7 +80,8 @@
       wrongList: "Falsch beantwortet", tapHint: "zum Aufklappen tippen", yourChoice: "deine Wahl", notAnswered: "Nicht beantwortet.",
       allRight: "Alles richtig, stark!",
       locale: "de-DE",
-      lvlWhy: (k, p) => `${p} Punkte: Fundstelle ${k[0]} + Denkschritt ${k[1]} + Seltenheit in der Praxis ${k[2]} × 2`,
+      cats: { W: "Wertung/leichtes Verfahren", J: "JP-Frage/schweres Verfahren", O: "Organisation/Disziplinarisches" },
+      lvlWhy: (q, p, cat) => q.stufe ? "Stufe manuell festgelegt" : `${cat} · ${p} ${p === 1 ? "Punkt" : "Punkte"} (Fundstelle ${q.k[0]} + Denkschritt ${q.k[1]} + Seltenheit ${q.k[2]} × 2)`,
       minutes: (n) => `${n} ${n === 1 ? "Minute" : "Minuten"}`,
       dur: (m, s) => (m ? `${m} ${m === 1 ? "Minute" : "Minuten"}${s ? ` und ${s} ${s === 1 ? "Sekunde" : "Sekunden"}` : ""}` : `${s} ${s === 1 ? "Sekunde" : "Sekunden"}`),
     },
@@ -123,7 +137,8 @@
       wrongList: "Answered incorrectly", tapHint: "tap to expand", yourChoice: "your choice", notAnswered: "Not answered.",
       allRight: "All correct – great job!",
       locale: "en-GB",
-      lvlWhy: (k, p) => `${p} points: source ${k[0]} + reasoning ${k[1]} + rarity in practice ${k[2]} × 2`,
+      cats: { W: "scoring/basic procedure", J: "JP topic/complex procedure", O: "organisation/disciplinary" },
+      lvlWhy: (q, p, cat) => q.stufe ? "Level set manually" : `${cat} · ${p} ${p === 1 ? "point" : "points"} (source ${q.k[0]} + reasoning ${q.k[1]} + rarity ${q.k[2]} × 2)`,
       minutes: (n) => `${n} ${n === 1 ? "minute" : "minutes"}`,
       dur: (m, s) => (m ? `${m} ${m === 1 ? "minute" : "minutes"}${s ? ` and ${s} ${s === 1 ? "second" : "seconds"}` : ""}` : `${s} ${s === 1 ? "second" : "seconds"}`),
     },
@@ -586,7 +601,7 @@
           <span class="tag rb-tag">${RB[q.rb].short}</span>
           <span class="tag disc d-${q.d}"><span class="dot"></span>${t.disc[q.d]}</span>
           ${q.c ? `<span class="tag case">${t.caseStudy}</span>` : ""}
-          <span class="tag" title="${t.lvlWhy(q.k, points(q))}">${lvlDots(q.lvl)} ${t.levels[q.lvl]}</span>
+          <span class="tag" title="${t.lvlWhy(q, points(q), t.cats[q.cat])}">${lvlDots(q.lvl)} ${t.levels[q.lvl]}</span>
         </div>
         <h2 class="question" id="qtext" lang="${ql}">${esc(q.q)}</h2>
         ${multi ? `<div class="multi-hint">${t.multi}</div>` : ""}
