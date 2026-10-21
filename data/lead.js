@@ -240,7 +240,7 @@
     o: ["Als Technical Incident (Straffseil durch den Sichernden); gewertet wird höchstens bis zum letzten kontrollierten Griff vor dem Vorteil", "Als Regelverstoß des Athleten; er wird disqualifiziert, weil er sich durch das Seil einen Vorteil verschafft hat", "Als normaler Verlauf; das Seilhandling liegt beim Sichernden und hat keine Folgen für die Wertung", "Als Sturz; der Versuch ist an der Stelle beendet, an der das Seil straff wurde"],
     a: [0], e: "Ein vom Sichernden verursachtes Straffseil, das den Wettkämpfer unterstützt oder behindert, ist ein Technical Incident. Laut Judge Guide wird das Ergebnis auf den letzten kontrollierten Griff vor dem Vorteil reduziert, ein weiterer Versuch ist nach den TI-Regeln möglich.", r: "Glossar „Technical Incident“ (C); AR §11.3; Judge Guide" });
 
-  add({ id: "L60", k: [1, 1, 2], q: "Der Jury-Präsident will das Seil in die ersten beiden Expressschlingen vorhängen lassen. Was gilt?",
+  add({ id: "L60", k: [1, 1, 1], q: "Der Jury-Präsident will das Seil in die ersten beiden Expressschlingen vorhängen lassen. Was gilt?",
     o: ["Das ist möglich, aber nur für alle Wettkämpfer oder für keinen", "Das darf nur auf Antrag einzelner Wettkämpfer geschehen", "Das ist grundsätzlich verboten", "Das entscheidet jeder Wettkämpfer selbst"],
     a: [0], e: "Der JP kann Vorhängen oder einen Spotter anordnen, aber nur für alle Wettkämpfer oder für keinen. Anträge einzelner Wettkämpfer darf er nicht berücksichtigen.", r: "Anhang A §3.2 mit Anmerkung; AR §4.3" });
 
@@ -260,7 +260,7 @@
     o: ["Der Versuch ist nicht erfolgreich, weil er Sicherungsmittel benutzt hat", "Erlaubt, solange er nicht an der Expressschlinge zieht", "Das wird nur verwarnt", "Erlaubt, wenn der Bohrhaken unterhalb der letzten Expressschlinge liegt"],
     a: [0], e: "Wer sich durch Seil, Expressschlingen, Bohrhaken oder andere Sicherungsmittel einen Vorteil verschafft, beendet den Versuch erfolglos.", r: "AR §8.1(E)" });
 
-  add({ id: "L65", k: [2, 2, 1], c: true, q: "Der Routenschiedsrichter ist unsicher, ob ein Athlet beim Klettern kurz die offene Seitenkante der Wand benutzt hat, und lässt ihn zu Ende klettern. Der Versuch wurde also nicht abgebrochen. Welche Einspruchsfrist gilt für eine Beschwerde dazu?",
+  add({ id: "L65", k: [1, 2, 1], c: true, q: "Der Routenschiedsrichter ist unsicher, ob ein Athlet beim Klettern kurz die offene Seitenkante der Wand benutzt hat, und lässt ihn zu Ende klettern. Der Versuch wurde also nicht abgebrochen. Welche Einspruchsfrist gilt für eine Beschwerde dazu?",
     o: ["Die Frist für Wertungs- und Ranking-Einsprüche (z. B. 5 Minuten nach den offiziellen Ergebnissen)", "Die Frist für Einsprüche gegen einen Abbruch (bevor der nächste Wettkämpfer startet)", "Eine Sonderfrist bis zum Ende des Wettkampftages, weil kein Abbruch erfolgt ist", "Keine, denn ohne Abbruch durch den Schiedsrichter ist kein Einspruch möglich"],
     a: [0], e: "Die Frist „vor dem nächsten Starter“ gilt nur, wenn ein Versuch abgebrochen wurde. Lief der Versuch weiter, ist es ein Wertungseinspruch mit der normalen Frist nach Veröffentlichung der Ergebnisse.", r: "Anhang A §9.1 / §9.2; Judge Guide" });
 

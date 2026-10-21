@@ -131,7 +131,7 @@
     o: ["The Jury President, the International Judge and the Head Routesetter", "The Event Delegate alone, after the routesetters have finished", "The route judges of the respective routes, before the warm-up opens", "The Head Routesetter alone, together with the routesetting team"],
     a: [0], e: "The Jury President, the International Judge and the Head Routesetter inspect each route before each round.", r: "ER Annex A §3.1" });
 
-  add({ id: "WL33", k: [1, 1, 2], q: "The Jury President wants the rope pre-clipped into the first 2 quickdraws. What applies?",
+  add({ id: "WL33", k: [1, 1, 1], q: "The Jury President wants the rope pre-clipped into the first 2 quickdraws. What applies?",
     o: ["This is possible but must be implemented for all competitors or none", "It may only be done at the request of individual competitors", "It is always prohibited", "Each competitor decides individually"],
     a: [0], e: "The Jury President may require pre-clipping or a spotter. Such precautions apply to all competitors or none. Requests by or for individual competitors are not considered.", r: "ER Annex A §3.2, Note 16; CR §4.3" });
 
