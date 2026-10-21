@@ -9,15 +9,15 @@
     a: [0], e: "Wettkämpfe nach diesen Regeln finden nur an künstlichen Kletterwänden statt, nicht an natürlichen Felsformationen oder Felsblöcken.", r: "AR §1.1" });
 
   add({ id: "G02", k: [1, 0, 0], q: "In welcher Farbe sind Grenzmarkierungen (out of bounds) gehalten?",
-    o: ["Schwarz, in allen Routen/Bouldern und Runden einheitlich", "Rot", "Blau", "Frei wählbar je Route"],
+    o: ["Schwarz, in allen Routen/Bouldern und Runden einheitlich", "Rot, in allen Routen/Bouldern und Runden einheitlich", "Blau, in allen Routen/Bouldern und Runden einheitlich", "Frei wählbar, aber innerhalb einer Runde einheitlich"],
     a: [0], e: "Alle Grenzmarkierungen sind in allen Routen und Bouldern einer Runde und in allen Runden schwarz.", r: "AR §1.14 (Anmerkung)" });
 
   add({ id: "G03", k: [1, 1, 0], c: true, q: "Eine Athletin berührt beim Klettern das schwarze Tape einer Grenzmarkierung. Ist sie damit out of bounds?",
-    o: ["Nein, die Markierung selbst darf berührt oder benutzt werden, ohne dass man out of bounds ist", "Ja, jede Berührung von schwarzem Tape ist out of bounds", "Nur, wenn sie das Tape mit der Hand berührt", "Ja, aber nur im Bouldern"],
+    o: ["Nein, die Markierung selbst darf berührt oder benutzt werden, ohne dass man out of bounds ist", "Ja, jede Berührung des schwarzen Tapes gilt als out of bounds und beendet den Versuch", "Nur wenn sie das Tape mit der Hand berührt, mit dem Fuß ist es erlaubt", "Ja, aber nur im Bouldern; im Lead darf das Tape berührt werden"],
     a: [0], e: "Wer die Begrenzungsmarkierung selbst berührt oder benutzt, gilt nicht als out of bounds.", r: "AR §1.14 (Anmerkung)" });
 
   add({ id: "G04", k: [1, 1, 0], c: true, q: "Ein Athlet streift mit dem Knie kurz ein durch schwarzes Tape abgetrenntes Volumen, ohne Gewicht darauf zu verlagern und ohne Einfluss auf die Bewegung. Wie ist das zu bewerten?",
-    o: ["Ein zufälliger Kontakt ohne Gewichtsverlagerung kann zulässig sein", "Immer out of bounds, der Versuch ist beendet", "Er bekommt eine Verwarnung (Gelbe Karte)", "Er muss den Versuch wiederholen"],
+    o: ["Ein zufälliger Kontakt ohne Gewichtsverlagerung kann zulässig sein", "Out of bounds: Jeder Kontakt mit dem Volumen beendet den Versuch", "Erlaubt, aber er bekommt eine Verwarnung (Gelbe Karte)", "Erlaubt, aber er muss den Versuch wiederholen"],
     a: [0], e: "Bei unbeabsichtigten Kontakten zählt die Wirkung. Ein einfaches Streifen oder Berühren ohne Gewichtsverlagerung kann zulässig sein.", r: "AR §1.14 (Anmerkung)" });
 
   add({ id: "G05", k: [1, 1, 0], c: true, q: "Eine Athletin stellt den Fuß bewusst auf ein durch schwarzes Tape abgetrenntes Volumen, um sich zu stabilisieren. Wie ist das zu bewerten?",
@@ -33,11 +33,11 @@
     a: [0, 1, 2], e: "Pflicht sind Kletterschuhe und gegebenenfalls ein Gurt. Erlaubt sind Chalkbag, Chalk und Helm. Handschuhe und Knee Pads sind verboten, sofern nicht ausdrücklich zugelassen.", r: "AR §3.3, §3.4" });
 
   add({ id: "G08", k: [0, 1, 1], c: true, q: "Ein Athlet will mit Knee Pad in den Boulder einsteigen. Was gilt?",
-    o: ["Nicht erlaubt: Knee Pads sind verboten, sofern die Wettkampfbestimmungen sie nicht zulassen", "Erlaubt, wenn sie nicht klebrig sind", "Erlaubt, wenn der Boulderschiedsrichter zustimmt", "Erlaubt, aber nur im Finale"],
+    o: ["Nicht erlaubt: Knee Pads sind verboten, sofern die Wettkampfbestimmungen sie nicht zulassen", "Erlaubt: Knee Pads sind zulässig, solange sie nicht klebrig beschichtet sind", "Erlaubt: Knee Pads sind zulässig, wenn der Boulderschiedsrichter vorher zustimmt", "Erlaubt: Knee Pads sind zulässig, aber nur in der Finalrunde"],
     a: [0], e: "Handschuhe und Knee Pads sind untersagt, wenn die Wettkampfbestimmungen sie nicht ausdrücklich erlauben.", r: "AR §3.4(B)" });
 
   add({ id: "G09", k: [1, 1, 0], c: true, q: "Eine Athletin hat einen Tape-Verband und eine elastische Kompressionsbandage am Unterarm. Erlaubt?",
-    o: ["Ja, elastische Kompressionsbandagen und kinesiologisches Tape sind erlaubt, wenn sie zur Vorbeugung oder Behandlung von Verletzungen nötig sind", "Nein, alles außer Schuhen, Gurt und Chalk ist verboten", "Nur das Tape ist erlaubt", "Nur mit ärztlichem Attest"],
+    o: ["Ja, Kompressionsbandagen und kinesiologisches Tape sind zur Vorbeugung oder Behandlung von Verletzungen erlaubt", "Nein, außer Schuhen, Gurt, Chalk und Helm ist keine weitere Ausrüstung am Körper erlaubt", "Nur das Tape ist erlaubt, Kompressionsbandagen gelten als unzulässige Hilfsmittel", "Nur mit ärztlichem Attest, das vor dem Wettkampf beim Jury-Präsidenten vorliegt"],
     a: [0], e: "Kompressionsbandagen für Arme und Beine sowie kinesiologisches oder ähnliches Tape sind erlaubt, wenn sie zur Vorbeugung oder Behandlung von Verletzungen dienen.", r: "AR §3.4 (Anmerkung zu B)" });
 
   add({ id: "G10", k: [1, 0, 0], q: "Womit dürfen sich Wettkämpfer vor einem Versuch die Hände reinigen?",
@@ -45,7 +45,7 @@
     a: [0, 1], e: "Erlaubt sind Trinkwasser und nicht fettende feuchtigkeitsspendende Mittel, wenn überschüssige Flüssigkeit vor dem Versuch entfernt wird. Speichel und grifffördernde Substanzen sind verboten.", r: "AR §3.4 (Anmerkung zu A)" });
 
   add({ id: "G11", k: [1, 0, 1], q: "Welcher Grundsatz steht hinter den Regeln zu Chalk und Substanzen?",
-    o: ["Die Substanz eines einzelnen Wettkämpfers darf keine Auswirkungen auf später startende Wettkämpfer haben", "Jeder darf benutzen, was er möchte, solange es sichtbar ist", "Nur Produkte des Ausrüsters sind erlaubt", "Flüssigchalk ist generell verboten"],
+    o: ["Die Substanz eines einzelnen Wettkämpfers darf keine Auswirkungen auf später startende Wettkämpfer haben", "Jeder darf benutzen, was er möchte, solange es für die Schiedsrichter sichtbar ist", "Nur Produkte des offiziellen Ausrüsters dürfen auf dem Field of Play genutzt werden", "Flüssigchalk ist generell verboten, weil er Rückstände auf den Griffen hinterlässt"],
     a: [0], e: "Was ein Wettkämpfer verwendet, darf die Bedingungen für spätere Starter nicht verändern. Normale Chalkrückstände von den Händen sind kein Verstoß.", r: "AR §3.4 (Anmerkung)" });
 
   add({ id: "G12", k: [0, 0, 1], q: "Welche Anforderungen gelten für den Jury-Präsidenten?",
@@ -53,7 +53,7 @@
     a: [0, 1, 2], e: "Der Jury-Präsident muss strikt neutral und unabhängig sein: unabhängig vom Veranstalter, ohne enge Beziehungen zu Beteiligten und ohne eigene Interessen.", r: "AR §4.1" });
 
   add({ id: "G13", k: [1, 1, 1], c: true, q: "Ein Trainer bittet den Jury-Präsidenten, für seine ängstliche Athletin eine zusätzliche Expressschlinge vorzuhängen. Wie entscheidet der JP?",
-    o: ["Ablehnen: Sonderregelungen zugunsten einzelner Wettkämpfer sind unzulässig", "Zustimmen, Sicherheit geht vor", "Zustimmen, wenn der Chefroutenbauer einverstanden ist", "Zustimmen, wenn der Gegner zustimmt"],
+    o: ["Ablehnen: Sonderregelungen zugunsten einzelner Wettkämpfer sind unzulässig", "Zustimmen: Bei Sicherheitsfragen hat der Jury-Präsident freies Ermessen", "Zustimmen, wenn der Chefroutenbauer die zusätzliche Expressschlinge für sicher hält", "Zustimmen, wenn die Teamoffiziellen der anderen Wettkämpfer einverstanden sind"],
     a: [0], e: "Der JP darf keine Sonderregelungen für einzelne Wettkämpfer treffen. Ausdrücklich nicht stattgegeben werden darf z. B. Anträgen auf zusätzliche Expressschlingen, Matten oder eine Leiter zum Abstieg.", r: "AR §4.3 mit Anmerkung" });
 
   add({ id: "G14", k: [0, 0, 0], q: "Wer gehört zu den On-field Officials?",
@@ -69,7 +69,7 @@
     a: [0], e: "Informationen aus der gemeinsamen Besichtigung dürfen weitergegeben werden, solange keiner der beiden die Route oder den Boulder versucht hat.", r: "AR §5.4(B)" });
 
   add({ id: "G17", k: [1, 1, 0], c: true, q: "2 Athleten, die ihre Versuche in der Runde beide abgeschlossen haben, reden in der „Leader Corner“ über die Route. Erlaubt?",
-    o: ["Ja, nach Abschluss ihrer Versuche dürfen sie sich austauschen", "Nein, erst nach der Siegerehrung", "Nur mit Erlaubnis des JP", "Nein, das ist ein schwerer Verstoß"],
+    o: ["Ja, nach Abschluss ihrer Versuche dürfen sie sich austauschen", "Nein, ein Austausch ist erst nach der Siegerehrung erlaubt", "Nur mit ausdrücklicher Erlaubnis des Jury-Präsidenten", "Nein, das ist ein schwerer Verstoß gegen die On-Sight-Regeln"],
     a: [0], e: "Wer seine Versuche in der Runde abgeschlossen hat, darf sich mit anderen, die ebenfalls fertig sind, austauschen.", r: "AR §5.4 (Anmerkung)" });
 
   add({ id: "G18", k: [0, 0, 0], q: "Ab wann dürfen Teamoffizielle in einer On-Sight-Runde mit ihrem Athleten über die Route sprechen?",
@@ -81,11 +81,11 @@
     a: [0, 1], e: "Flash heißt: Demonstration vor der Runde, und Teamoffizielle dürfen jederzeit informieren. Trainieren an der Route ist nicht Flash, sondern After-Work.", r: "AR §5.5; Glossar „Flash“" });
 
   add({ id: "G20", k: [1, 0, 0], q: "Was bedeutet „On Sight“?",
-    o: ["Vom Boden aus geklettert, ohne Informationen zu den Bewegungssequenzen und ohne vorheriges Training oder Versuche", "Mit Informationen zu den Bewegungen, aber ohne vorherige Versuche", "Mit vorherigem Training an der Route", "Nach Videostudium der Route"],
+    o: ["Vom Boden aus, ohne Informationen zu den Bewegungssequenzen und ohne vorheriges Training oder Versuche", "Vom Boden aus, mit Informationen zu den Bewegungssequenzen, aber ohne vorheriges Training oder Versuche", "Vom Boden aus, mit eigener Vorerfahrung aus Training oder früheren Versuchen an der Route", "Vom Boden aus, nach dem Studium eines Videos der Route, aber ohne eigene Versuche"],
     a: [0], e: "On Sight: ohne Informationen zu den Bewegungssequenzen und ohne vorheriges Training. Flash: mit Informationen, ohne Training. After-Work: mit eigener Vorerfahrung.", r: "Glossar „On Sight“, „Flash“, „After-Work“" });
 
   add({ id: "G21", k: [1, 1, 2], c: true, q: "Ein Wettkämpfer hilft einem verletzten Konkurrenten, der in der Call Zone zusammengebrochen ist. Ist das eine unerlaubte Einmischung?",
-    o: ["Nein, Hilfe für verletzte oder in Not geratene Teilnehmer gilt nicht als Einmischung", "Ja, Wettkämpfer dürfen sich nicht einmischen", "Nur wenn er dabei Informationen weitergibt", "Ja, es gibt eine Verwarnung (Gelbe Karte)"],
+    o: ["Nein, Hilfe für verletzte oder in Not geratene Teilnehmer gilt nicht als Einmischung", "Ja, Wettkämpfer dürfen sich grundsätzlich nicht in Angelegenheiten anderer einmischen", "Nur wenn er dabei Informationen über die Route an den Verletzten weitergibt", "Ja, er bekommt deshalb eine Verwarnung (Gelbe Karte)"],
     a: [0], e: "Wer einem verletzten oder in Not geratenen Teilnehmer hilft, mischt sich nicht unerlaubt ein.", r: "AR §5.2(A) mit Anmerkung" });
 
   add({ id: "G22", k: [0, 1, 0], q: "Aus welchen Gründen wird ein Versuch allgemein (alle Disziplinen) als nicht erfolgreich gewertet?",
@@ -97,19 +97,19 @@
     a: [0, 1, 2], e: "TIs sind: gebrochener oder loser Griff, falsch positionierte Expressschlinge, Straffseil durch den Sichernden, kritischer Ausfall der Zeitmessung, sowie ungewöhnliche Umstände mit wesentlichem Vor- oder Nachteil, die nicht vom Wettkämpfer selbst verursacht wurden.", r: "Glossar „Technical Incident“" });
 
   add({ id: "G24", k: [0, 1, 1], c: true, q: "Ein Griff dreht sich unter der Hand einer Athletin leicht und wird dadurch schwerer. Sie klettert trotzdem weiter und stürzt 3 Züge später. Kann sie noch einen TI geltend machen?",
-    o: ["Nein, wer nach einem möglichen TI weiterklettert, hat ihn akzeptiert, er ist für sie abgeschlossen", "Ja, bis zur Veröffentlichung der Ergebnisse", "Ja, weil der Griff nachweislich lose war", "Nur wenn ihr Trainer sofort protestiert"],
+    o: ["Nein, wer nach einem möglichen TI weiterklettert, hat ihn akzeptiert; er ist für sie abgeschlossen", "Ja, ein TI kann bis zur Veröffentlichung der Ergebnisse geltend gemacht werden", "Ja, weil der Griff nachweislich lose war, ist der TI unabhängig vom Weiterklettern gültig", "Nur wenn ihr Trainer unmittelbar nach dem Drehen des Griffs protestiert hat"],
     a: [0], e: "Wer einen Versuch nach einem möglichen oder bestätigten TI fortsetzt, akzeptiert ihn. Der Technical Incident ist für diesen Wettkämpfer abgeschlossen.", r: "AR §11.3" });
 
   add({ id: "G25", k: [0, 2, 2], c: true, q: "Ein Griff dreht sich so, dass er deutlich besser wird, und der Athlet profitiert davon. Er klettert weiter. Gilt der TI als akzeptiert und abgeschlossen?",
-    o: ["Nein, ein Technical Incident, der einen Vorteil verschafft hat, kann nicht durch Akzeptieren abgeschlossen werden", "Ja, wer weiterklettert, akzeptiert immer", "Ja, aber nur im Bouldern", "Das entscheidet der Athlet"],
+    o: ["Nein, ein Technical Incident, der einen Vorteil verschafft hat, kann nicht durch Akzeptieren abgeschlossen werden", "Ja, wer weiterklettert, akzeptiert den Technical Incident immer, egal ob mit Vor- oder Nachteil", "Ja, aber nur im Bouldern; im Lead muss der Vorteil trotzdem korrigiert werden", "Das entscheidet der Athlet selbst, indem er nach dem Versuch einen Antrag stellt oder nicht"],
     a: [0], e: "Hat der Technical Incident einen Vorteil verschafft, ist er durch Weiterklettern nicht abgeschlossen. Der Vorteil wird korrigiert.", r: "AR §11.3" });
 
   add({ id: "G26", k: [0, 0, 1], q: "Ein Technical Incident ist bestätigt und nicht abgeschlossen. Was ist möglich?",
-    o: ["Der Versuch wird an Stelle und Zeitpunkt des Vorfalls als nicht erfolgreich gewertet", "Der Wettkämpfer darf neu starten, sobald die Ursache behoben ist, die Kletterzeit wird bei Bedarf zurückgesetzt oder angepasst", "Gewertet wird das bessere Ergebnis aus der Zeit vor dem Technical Incident und nach dem Neustart", "Der Wettkämpfer bekommt automatisch das Ergebnis TOP"],
+    o: ["Der Versuch wird an Stelle und Zeitpunkt des Vorfalls als nicht erfolgreich gewertet", "Der Wettkämpfer darf nach Behebung neu starten; die Kletterzeit wird bei Bedarf angepasst", "Gewertet wird das bessere Ergebnis vor dem Technical Incident und nach dem Neustart", "Der Wettkämpfer bekommt an dieser Route bzw. diesem Boulder automatisch das Ergebnis TOP"],
     a: [0, 1, 2], e: "Bei einem bestätigten, nicht abgeschlossenen TI: Wertung als erfolglos an der Stelle des Vorfalls, Neustart nach Behebung mit angepasster Zeit, und das bessere Ergebnis zählt.", r: "AR §11.4" });
 
   add({ id: "G27", k: [2, 0, 1], q: "Wer entscheidet, ob ein Vorfall als Technical Incident eingestuft wird?",
-    o: ["Die On-field Officials, bei Bedarf nach Rücksprache mit dem Chefroutenbauer", "Der Event Delegate allein", "Der Veranstalter", "Die Teamoffiziellen gemeinsam"],
+    o: ["Die On-field Officials, bei Bedarf nach Rücksprache mit dem Chefroutenbauer", "Der Event Delegate allein, ohne Rücksprache mit anderen", "Der Veranstalter, nach Rücksprache mit dem Chefroutenbauer", "Die Teamoffiziellen gemeinsam, mit einfacher Mehrheit"],
     a: [0], e: "Die On-field Officials entscheiden und beraten sich bei Bedarf mit dem Chefroutenbauer. In der Praxis bestätigt der DAV-Schiedsrichter den TI.", r: "AR §11.2; Anhänge A–D §8.1/§9.1" });
 
   add({ id: "G28", k: [0, 0, 1], q: "Aus welchen Gründen kann ein Einspruch eingelegt werden?",
@@ -121,11 +121,11 @@
     a: [0, 1, 2], e: "Der Einspruch geht schriftlich an die Einspruchsjury, kommt von einer berechtigten Person, wird fristgerecht eingereicht und nennt Wettkämpfer, Inhalt und Regelgrundlage. 3 Teams braucht es nur bei der Sicherheitspetition.", r: "AR §12.2" });
 
   add({ id: "G30", k: [0, 0, 1], q: "Wann darf eine Einspruchsgebühr erhoben werden?",
-    o: ["Nur, wenn der Einspruch nicht erfolgreich bleibt", "Immer bei Einreichung", "Nur bei unzulässigen Einsprüchen", "Nie"],
+    o: ["Nur, wenn der Einspruch nicht erfolgreich bleibt", "Immer, und zwar bei Einreichung des Einspruchs", "Nur, wenn der Einspruch als unzulässig erklärt wird", "Nie, Einsprüche sind grundsätzlich gebührenfrei"],
     a: [0], e: "Eine Gebühr fällt nur an, wenn der Einspruch erfolglos bleibt. Bei unzulässigen Einsprüchen wird das Formular zurückgegeben und als ungültig markiert, eine Gebühr ist dann nicht zu zahlen.", r: "AR §12.2, §12.6" });
 
   add({ id: "G31", k: [2, 0, 1], q: "Wer bildet bei DAV-Wettkämpfen die Einspruchsjury?",
-    o: ["Jury-Präsident und Event Delegate; ist ein Mitglied an der strittigen Entscheidung beteiligt, ersetzt es ein DAV-Schiedsrichter", "3 Teamoffizielle", "Der DAV-Schiedsrichter allein", "Chefroutenbauer und Veranstalter"],
+    o: ["Jury-Präsident und Event Delegate; ist ein Mitglied beteiligt, ersetzt es ein DAV-Schiedsrichter", "3 Teamoffizielle aus verschiedenen Teams; der Jury-Präsident hat den Vorsitz", "Der DAV-Schiedsrichter allein; ist er beteiligt, ersetzt ihn der Jury-Präsident", "Chefroutenbauer und Veranstalter; bei Uneinigkeit entscheidet der Event Delegate"],
     a: [0], e: "Die Einspruchsjury besteht aus Jury-Präsident und Event Delegate. War ein Mitglied an der Ausgangsentscheidung beteiligt, rückt ein DAV-Schiedsrichter nach.", r: "WB §10.1; TO §3.2" });
 
   add({ id: "G32", k: [2, 1, 1], q: "Wer darf einen Einspruch einlegen?",
@@ -141,7 +141,7 @@
     a: [0, 1, 2], e: "Zulässig sind die Angaben im Formular, offizielle Videoaufzeichnungen und Aussagen der Offiziellen auf dem Field of Play. Private Handyvideos gehören nicht dazu.", r: "WB §10.2" });
 
   add({ id: "G34", k: [0, 1, 2], c: true, q: "Die Mitglieder der Einspruchsjury kommen nach Sichtung des Videos zu keinem einstimmigen Ergebnis. Was gilt?",
-    o: ["Die On-field-Entscheidung bleibt bestehen, der Einspruch wird als „nicht entschieden“ gekennzeichnet", "Der Einspruch ist automatisch erfolgreich", "Der Event Delegate entscheidet allein", "Der Athlet darf noch einmal klettern"],
+    o: ["Die On-field-Entscheidung bleibt bestehen, der Einspruch wird als „nicht entschieden“ gekennzeichnet", "Der Einspruch gilt als erfolgreich, weil die Entscheidung nicht eindeutig bestätigt wurde", "Der Event Delegate entscheidet allein und sein Urteil ist endgültig", "Der betroffene Athlet darf seinen Versuch noch einmal klettern"],
     a: [0], e: "Ist die Jury nicht einstimmig oder lassen die Beweise keine Überprüfung zu, bleibt die On-field-Entscheidung bestehen und der Einspruch wird als nicht entschieden gekennzeichnet. Sind die Beweise dagegen nur nicht schlüssig, ist der Einspruch nicht erfolgreich (§12.4 B).", r: "AR §12.5" });
 
   add({ id: "G35", k: [1, 0, 2], q: "Welche Prinzipien soll die Einspruchsjury bei ihrer Entscheidung abwägen?",
@@ -149,7 +149,7 @@
     a: [0, 1, 2], e: "Abzuwägen sind Konsistenz, Korrektheit und Fairness.", r: "AR §12.3 (Anmerkung)" });
 
   add({ id: "G36", k: [0, 0, 1], q: "Bis wann muss ein Einspruch gegen einen Fehler in den offiziellen Ergebnissen eingereicht werden?",
-    o: ["Medaillenphase: spätestens 2 Minuten, jede andere Runde: spätestens 5 Minuten nach Veröffentlichung", "Immer 10 Minuten", "Bis zum Ende des Wettkampftages", "Medaillenphase: 5 Minuten, sonst 15 Minuten"],
+    o: ["Medaillenphase: spätestens 2 Minuten, jede andere Runde: spätestens 5 Minuten nach Veröffentlichung", "Medaillenphase und jede andere Runde: spätestens 10 Minuten nach Veröffentlichung", "Medaillenphase und jede andere Runde: bis zum Ende des Wettkampftages", "Medaillenphase: spätestens 5 Minuten, jede andere Runde: spätestens 15 Minuten nach Veröffentlichung"],
     a: [0], e: "Einsprüche zu Fehlern in den offiziellen Ergebnissen: 2 Minuten in der Medaillenphase, sonst 5 Minuten nach Veröffentlichung.", r: "WB §10.4" });
 
   add({ id: "G37", k: [0, 0, 1], q: "Welche Sanktion folgt auf 2 Verwarnungen (Gelbe Karten) bei einer Veranstaltung?",
@@ -157,7 +157,7 @@
     a: [0], e: "Wer bei einer Veranstaltung 2 Verwarnungen (Gelbe Karten) bekommt, wird disqualifiziert. Eine mündliche Ermahnung ist keine Verwarnung im Sinne der Sanktionstabelle und zählt nicht mit.", r: "AR §13.1" });
 
   add({ id: "G38", k: [2, 1, 1], c: true, q: "Ein Athlet filmt in einer On-Sight-Runde heimlich aus der Iso heraus den Versuch eines Konkurrenten. Welche Sanktion ist vorgesehen?",
-    o: ["Disqualifikation: Informationen über eine On-Sight-Route über das erlaubte Maß hinaus zu sammeln, ist ein schwerer Verstoß", "Eine Verwarnung (Gelbe Karte)", "Eine mündliche Ermahnung", "Ein Strafversuch"],
+    o: ["Disqualifikation (Rote Karte), weil es ein schwerer Verstoß gegen die On-Sight-Regeln ist", "Verwarnung (Gelbe Karte), weil es der erste Verstoß des Athleten ist", "Mündliche Ermahnung, weil der Konkurrent dadurch keinen Nachteil hat", "Strafversuch an dieser Route, weil er sich einen Vorteil verschafft hat"],
     a: [0], e: "Wer Informationen über eine On-Sight-Route über das erlaubte Maß hinaus betrachtet oder sammelt, wird disqualifiziert. Umgehungsversuche gelten als schwerwiegender Verstoß.", r: "AR §13.1; AR §5.3(C)" });
 
   add({ id: "G39", k: [0, 0, 1], q: "Welche Sanktion ist für die Nichtbeachtung der Anweisungen eines Technical Officials vorgesehen?",
@@ -173,7 +173,7 @@
     a: [0], e: "Eine Verwarnung (Gelbe Karte) dürfen Jury-Präsident und DAV-Schiedsrichter aussprechen, disqualifizieren darf nur der Jury-Präsident.", r: "WB §9.1" });
 
   add({ id: "G42", k: [0, 0, 1], q: "Welche Folge hat eine Verwarnung (Gelbe Karte) für einen Teamoffiziellen?",
-    o: ["Er darf den Wettkampfbereich für den Rest des Wettkampfs nicht mehr betreten", "Keine, er darf weiter coachen", "Er muss eine Geldstrafe zahlen", "Sein Athlet wird disqualifiziert"],
+    o: ["Er darf den Wettkampfbereich für den Rest des Wettkampfs nicht mehr betreten", "Keine weitere Folge, er darf seinen Athleten weiter betreuen", "Er muss eine Geldstrafe an den Veranstalter zahlen", "Sein Athlet wird für den Rest des Wettkampfs disqualifiziert"],
     a: [0], e: "Ein verwarnter Wettkämpfer darf weitermachen. Ein verwarnter Teamoffizieller darf den Wettkampfbereich für den Rest des Wettkampfs nicht mehr betreten.", r: "AR §13.4" });
 
   add({ id: "G43", k: [1, 0, 2], q: "Was folgt aus einer Disqualifikation eines Wettkämpfers?",
@@ -181,11 +181,11 @@
     a: [0, 1, 2], e: "Disqualifizierte sind für folgende Runden gesperrt und werden aus der Wertung genommen, auch im General Ranking. Bei schweren Verstößen gilt das für die gesamte Veranstaltung.", r: "AR §13.5, §13.6 mit Anmerkung" });
 
   add({ id: "G44", k: [0, 0, 2], q: "Was passiert, wenn eine Person innerhalb von 12 Monaten 3 Verwarnungen (Gelbe Karten) erhält?",
-    o: ["Ihre DAV-Wettkampflizenz wird nach dem Wettkampf mit der dritten Verwarnung ausgesetzt; die Teamquote ihres Landesverbands sinkt währenddessen um einen Slot", "Sie wird lebenslang gesperrt", "Nichts, Verwarnungen verfallen nach jedem Wettkampf", "Sie muss einen Lehrgang besuchen"],
+    o: ["Die DAV-Wettkampflizenz wird nach diesem Wettkampf ausgesetzt; die Teamquote des Landesverbands sinkt währenddessen", "Die DAV-Wettkampflizenz wird sofort und dauerhaft entzogen; die Teamquote bleibt unverändert", "Nichts, denn Verwarnungen (Gelbe Karten) verfallen nach jedem Wettkampf", "Die Person muss einen Regellehrgang besuchen, bevor sie wieder starten darf"],
     a: [0], e: "Nach der dritten Verwarnung in 12 Monaten wird die Lizenz ausgesetzt, die Dauer legt die Disziplinarkommission fest. Die Teamquote des Landesverbands verringert sich in dieser Zeit um einen Slot.", r: "WB §9.3" });
 
   add({ id: "G45", k: [0, 0, 2], q: "Eine Person ist sowohl als Wettkämpfer als auch als Teamoffizieller registriert. Wie werden ihre Strafen behandelt?",
-    o: ["Als dieselbe Person: Disziplinarstrafen und ihre Kumulierung gelten gemeinsam", "Getrennt nach Rolle", "Strafen als Teamoffizieller zählen nicht", "Sie darf nicht beide Rollen haben"],
+    o: ["Als dieselbe Person: Disziplinarstrafen und ihre Kumulierung gelten gemeinsam", "Getrennt nach Rolle: Strafen als Wettkämpfer und als Teamoffizieller zählen einzeln", "Nur Strafen als Wettkämpfer zählen; Strafen als Teamoffizieller verfallen", "Gar nicht, weil eine Person nicht beide Rollen gleichzeitig haben darf"],
     a: [0], e: "Wer als Wettkämpfer und als Teamoffizieller registriert ist, gilt bei allen Disziplinarstrafen und deren Kumulierung als dieselbe Person.", r: "WB §9.4" });
 
   add({ id: "G46", k: [1, 0, 0], q: "Welche Invalid Result Marks (IRM) gibt es?",
@@ -197,32 +197,36 @@
     a: [0], e: "Muss = zwingend, darf nicht = Verbot, soll/soll nicht = Empfehlung (Abweichung nur nach sorgfältiger Abwägung), kann/darf = Ermessen.", r: "Glossar 1" });
 
   add({ id: "G48", k: [1, 0, 0], q: "Was bedeutet die Startreihenfolge „versetzt“?",
-    o: ["Die Startreihenfolge einer Route bzw. eines Boulder-Sets ist eine zyklische Verschiebung der Reihenfolge einer anderen, typischerweise proportional zur Anzahl der Routen", "Jeder Wettkämpfer startet um eine feste Zeit versetzt", "Damen und Herren starten abwechselnd", "Die Reihenfolge wird für jede Route neu ausgelost"],
+    o: ["Die Reihenfolge einer Route ist eine zyklische Verschiebung der Reihenfolge einer anderen Route", "Die Reihenfolge einer Route ist die umgekehrte Reihenfolge einer anderen Route", "Jeder Wettkämpfer startet auf der zweiten Route mit einem festen Zeitversatz", "Die Reihenfolge wird für jede Route unabhängig neu ausgelost"],
     a: [0], e: "Bei versetzter Reihenfolge wird zyklisch verschoben, z. B. bei 2 Routen um die halbe Starterzahl, abgerundet.", r: "Glossar 3 „Versetzte Reihenfolge“" });
 
   add({ id: "G49", k: [0, 0, 1], q: "Bis wann muss die Teilnahme bestätigt werden (Registration), wenn die Ausschreibung keinen Termin nennt?",
-    o: ["30 Minuten vor Beginn des Technical Meetings", "60 Minuten vor Start of Play", "Am Vortag um 20 Uhr", "Bis zum Start der Qualifikation"],
+    o: ["30 Minuten vor Beginn des Technical Meetings", "60 Minuten vor dem Start of Play der Qualifikation", "Am Vortag des Wettkampfs um 20 Uhr", "Bis zum Start of Play der Qualifikation"],
     a: [0], e: "Ohne Termin in der Ausschreibung gilt: 30 Minuten vor Beginn des Technical Meetings. Wer nicht bestätigt ist, kommt nicht auf die Startliste.", r: "WB §6.2" });
 
   add({ id: "G50", k: [0, 1, 2], c: true, q: "Zum Registrationsschluss sind in einer Kategorie nur 3 Wettkämpferinnen registriert. Was gilt?",
-    o: ["Für diese Kategorie findet kein Wettkampf statt, es gibt keine Meisterschaftspunkte", "Der Wettkampf findet normal statt", "Die Kategorie wird mit der nächsthöheren zusammengelegt", "Es wird nur ein Finale geklettert"],
+    o: ["Für diese Kategorie findet kein Wettkampf statt, es gibt keine Meisterschaftspunkte", "Der Wettkampf findet normal statt, die Meisterschaftspunkte werden halbiert", "Die Kategorie wird mit der nächsthöheren Altersklasse zusammengelegt", "Es wird nur ein Finale geklettert, die Qualifikation entfällt"],
     a: [0], e: "Bei weniger als 4 Registrierten findet für die Kategorie kein Wettkampf statt, und es werden keine Meisterschaftspunkte vergeben.", r: "WB §6.2" });
 
   add({ id: "G51", k: [0, 0, 1], q: "Ab wann bis wann muss medizinisches Personal anwesend sein?",
-    o: ["Von der Öffnung der Isolationszone bzw. der Aufwärmwand bis zum Ende des Versuchs des letzten Wettkämpfers jeder Runde", "Nur während der Finalrunde", "Von Start of Play bis zur Siegerehrung", "Nur auf Anforderung"],
+    o: ["Von der Öffnung der Isolationszone bzw. Aufwärmwand bis zum Ende des letzten Versuchs jeder Runde", "Vom Start of Play der Finalrunde bis zum Ende des letzten Versuchs im Finale", "Vom Start of Play der Qualifikation bis zum Ende der Siegerehrung", "Nur auf Anforderung des Jury-Präsidenten, wenn eine Verletzung vorliegt"],
     a: [0], e: "Das medizinische Personal ist ab Öffnung der Iso oder Aufwärmwand bis zum letzten Versuch jeder Runde anwesend.", r: "WB §3.1" });
 
   add({ id: "G52", k: [0, 0, 2], q: "Wie muss eine Sicherheitspetition eingereicht werden?",
-    o: ["Schriftlich, unterzeichnet von Teamoffiziellen aus 3 verschiedenen Teams", "Mündlich beim Routenschiedsrichter", "Schriftlich von einem Wettkämpfer", "Per E-Mail an den DAV"],
+    o: ["Schriftlich, unterzeichnet von Teamoffiziellen aus 3 verschiedenen Teams", "Mündlich, durch einen Teamoffiziellen beim Jury-Präsidenten", "Schriftlich, unterzeichnet von einem betroffenen Wettkämpfer", "Per E-Mail an den DAV, unterzeichnet von einem Landesverband"],
     a: [0], e: "Sicherheitspetitionen sind schriftlich einzureichen und von Teamoffiziellen aus 3 verschiedenen Teams zu unterzeichnen. Stimmt der JP zu, muss er sich sofort darum kümmern.", r: "WB §3.3" });
 
   add({ id: "G53", k: [1, 1, 1], c: true, q: "Ein Trainer will in einer On-Sight-Runde sein Handy in der Coaching Zone benutzen, um Ergebnisse nachzusehen. Erlaubt?",
-    o: ["Ja, in der Coaching Zone sind elektronische Geräte erlaubt, solange sie nicht zur Kommunikation mit den Wettkämpfern genutzt werden", "Nein, im Wettkampfbereich sind Handys in On-Sight-Runden immer verboten", "Nur mit Flugmodus", "Nur nach der Runde"],
+    o: ["Ja, in der Coaching Zone sind elektronische Geräte erlaubt, solange sie nicht zur Kommunikation mit Wettkämpfern dienen", "Nein, in On-Sight-Runden sind elektronische Geräte im gesamten Wettkampfbereich ausnahmslos verboten", "Ja, aber nur im Flugmodus, damit keine Kommunikation mit Wettkämpfern möglich ist", "Nein, das Handy darf erst nach dem Ende der Runde wieder benutzt werden"],
     a: [0], e: "Grundsätzlich darf in On-Sight-Runden kein Teammitglied ohne Genehmigung des JP elektronische Kommunikationsgeräte im Wettkampfbereich nutzen. Ausnahme: Coaches in der Coaching Zone, wenn sie damit nicht mit den Athleten kommunizieren.", r: "WB §4.3 mit Anmerkung" });
 
   add({ id: "G54", k: [0, 0, 0], q: "Wo müssen Kletterer ihre Startnummer tragen?",
-    o: ["Auf der Rückseite ihres Oberteils, in der Call Zone und auf dem Field of Play", "Am Klettergurt", "Auf der Vorderseite des Oberteils", "Am Chalkbag"],
-    a: [0], e: "Die Startnummer gehört in der Call Zone und auf dem Field of Play auf die Rückseite des Oberteils.", r: "WB §5.3" });
+    o: ["Auf der Rückseite ihres Oberteils", "Am Klettergurt", "Auf der Vorderseite des Oberteils", "Am Chalkbag"],
+    a: [0], e: "Die Startnummer gehört auf die Rückseite des Oberteils.", r: "WB §5.3" });
+
+  add({ id: "G70", k: [0, 0, 0], q: "Wann müssen Kletterer ihre Startnummer tragen?",
+    o: ["In der Call Zone und auf dem Field of Play", "Nur auf dem Field of Play", "Im gesamten Wettkampfbereich, auch beim Aufwärmen", "Nur bei der Siegerehrung"],
+    a: [0], e: "Die Startnummer ist in der Call Zone und auf dem Field of Play zu tragen, jeweils auf der Rückseite des Oberteils.", r: "WB §5.3" });
 
   add({ id: "G55", k: [0, 0, 1], q: "Welche Zeitvorgaben gelten für Aufwärmbereich und Isolationszone?",
     o: ["Der Aufwärmbereich öffnet spätestens 90 Minuten (niemals später als 60 Minuten) vor Start of Play", "Die Isolationszone schließt spätestens 30 Minuten vor Start of Play", "Zwischen Finalistenpräsentation und dem ersten Versuch liegen mindestens 2 Minuten", "Der Aufwärmbereich öffnet frühestens 30 Minuten vor Start of Play"],
@@ -233,7 +237,7 @@
     a: [0], e: "Jugendwettkämpfe sollen bis 20:00 Uhr abgeschlossen sein.", r: "WB §6.5" });
 
   add({ id: "G57", k: [1, 1, 1], c: true, q: "Nach Veröffentlichung der offiziellen Startliste fürs Halbfinale zieht eine Athletin zurück. Was passiert mit der Startliste?",
-    o: ["Sie wird mit dem entsprechenden IRM-Vermerk aktualisiert; Reihenfolge und Zeiten bleiben, niemand rückt nach", "Der nächste Wettkämpfer aus der Qualifikation rückt nach", "Die Startliste wird neu erstellt", "Die Startzeiten aller anderen werden vorgezogen"],
+    o: ["Sie wird mit dem IRM-Vermerk aktualisiert; Reihenfolge und Zeiten bleiben, niemand rückt nach", "Sie wird aktualisiert; der Nächstplatzierte aus der Qualifikation rückt nach", "Sie wird komplett neu erstellt, mit neuer Reihenfolge und neuen Zeiten", "Sie wird aktualisiert; die Startzeiten aller Nachfolgenden werden vorgezogen"],
     a: [0], e: "Die Liste bekommt den Vermerk (DNS/DSQ/DQB). Startreihenfolge und Zeiten bleiben, Ersatzwettkämpfer werden nicht eingefügt.", r: "WB §7.6 mit Anmerkung" });
 
   add({ id: "G58", k: [0, 1, 2], q: "Welche Befugnisse hat der Jury-Präsident bei unvorhergesehenen Ereignissen?",
@@ -241,7 +245,7 @@
     a: [0, 1], e: "Der JP kann Runden unterbrechen, abbrechen, neu starten und Halbfinale oder Finale streichen. Absagen oder annullieren kann den Wettkampf nur der Event Delegate. Gegen solche Entscheidungen gibt es keinen Einspruch.", r: "WB §11.1" });
 
   add({ id: "G59", k: [2, 0, 2], q: "Wer übernimmt, wenn der Jury-Präsident ungeplant ausfällt?",
-    o: ["Der DAV-Schiedsrichter; sind mehrere anwesend, nominiert der Event Delegate", "Der Event Delegate", "Der Chefroutenbauer", "Der Veranstalter bestimmt jemanden"],
+    o: ["Der DAV-Schiedsrichter; sind mehrere anwesend, nominiert der Event Delegate einen davon", "Der Event Delegate; er übernimmt die Aufgaben zusätzlich zu seinen eigenen", "Der Chefroutenbauer; er kennt die Routen und die Sicherheitslage am besten", "Der Veranstalter bestimmt eine geeignete Person aus seinem Team"],
     a: [0], e: "Fällt der JP aus, übernimmt der DAV-Schiedsrichter. Bei mehreren DAV-Schiedsrichtern entscheidet der Event Delegate. Fällt der ED aus, übernimmt der JP dessen Aufgaben.", r: "TO §2.1, §1.1; WB §12.1(D)" });
 
   add({ id: "G60", k: [2, 0, 0], q: "Welche Aufgaben hat der DAV-Schiedsrichter?",
@@ -249,7 +253,7 @@
     a: [0, 1, 2], e: "Der DAV-Schiedsrichter assistiert dem JP, koordiniert die Schiedsrichter, prüft die Routen, gibt Wertungstopos frei, bearbeitet TIs, unterstützt die Einspruchsjury und verwarnt. Disqualifizieren darf nur der JP.", r: "TO §3.2; WB §9.1" });
 
   add({ id: "G61", k: [0, 0, 0], q: "In welchem Verhältnis werden Routen- bzw. Boulderschiedsrichter eingeteilt?",
-    o: ["1:1, also ein Schiedsrichter je Route bzw. Boulder einer Runde", "Ein Schiedsrichter für alle Routen", "2 Schiedsrichter je Wettkämpfer", "Ein Schiedsrichter je 3 Boulder"],
+    o: ["1:1, also ein Schiedsrichter je Route bzw. Boulder einer Runde", "1 Schiedsrichter für alle Routen bzw. Boulder einer Runde", "2 Schiedsrichter je Route bzw. Boulder einer Runde", "1 Schiedsrichter je 3 Routen bzw. Boulder einer Runde"],
     a: [0], e: "Routen- und Boulderschiedsrichter werden im Verhältnis 1:1 je Route oder Boulder eingeteilt. Ein zweiter Offizieller kann Zeiten und Ergebnisse aufzeichnen.", r: "WB §12.2(B)" });
 
   add({ id: "G62", k: [0, 2, 1], c: true, q: "Bei einem DJC-Wettkampf liegen 2 Athleten gemeinsam auf Platz 2. Wie viele Cup-Ranglistenpunkte bekommt jeder (Platz 2 = 80, Platz 3 = 65)?",
@@ -257,26 +261,26 @@
     a: [0], e: "Gleichplatzierte erhalten den Durchschnitt der betroffenen Plätze, auf ganze Zahlen abgerundet: (80 + 65) / 2 = 72,5, also 72.", r: "WB §7.10" });
 
   add({ id: "G63", k: [0, 0, 1], q: "Was gilt für Medaillen bei Gleichplatzierungen und bei Abwesenheit von der Siegerehrung?",
-    o: ["Medaillen werden bei Gleichplatzierung mehrfach vergeben, Preisgelder aufsummiert und geteilt", "Medaillen und Preise gibt es nur für Anwesende, sie werden nicht nachgereicht", "Bei Gleichplatzierung entscheidet das Los über die Medaille", "Abwesende bekommen ihre Medaille per Post"],
+    o: ["Medaillen werden bei Gleichplatzierung mehrfach vergeben, Preisgelder aufsummiert und geteilt", "Medaillen und Preise gibt es nur für Anwesende, sie werden nicht nachgereicht", "Bei Gleichplatzierung entscheidet das Los, wer die Medaille bekommt", "Abwesende bekommen ihre Medaille und ihr Preisgeld nachträglich per Post"],
     a: [0, 1], e: "Bei Gleichplatzierung gibt es Medaillen mehrfach, Preisgelder werden summiert und geteilt. Wer nicht bei der Siegerehrung ist, bekommt nichts nachgereicht.", r: "WB §8.4" });
 
   add({ id: "G64", k: [1, 0, 0], q: "Was ist der „Start of Play“ einer Runde?",
-    o: ["Der Zeitpunkt, an dem der erste Wettkämpfer das Field of Play betritt, um seinen (ersten) Versuch oder eine individuelle Besichtigung zu beginnen", "Die Öffnung des Aufwärmbereichs", "Der Beginn der gemeinsamen Besichtigung", "Die Schließung der Isolationszone"],
+    o: ["Der Zeitpunkt, an dem der erste Wettkämpfer das Field of Play zum Versuch oder zur individuellen Besichtigung betritt", "Der Zeitpunkt, an dem der Aufwärmbereich für die Wettkämpfer der Runde geöffnet wird", "Der Zeitpunkt, an dem die gemeinsame Besichtigung der Route bzw. Boulder beginnt", "Der Zeitpunkt, an dem die Isolationszone für die Wettkämpfer der Runde geschlossen wird"],
     a: [0], e: "Start of Play ist der Moment, in dem der erste Wettkämpfer der Runde das Field of Play für seinen ersten Versuch oder eine individuelle Besichtigung betritt.", r: "Glossar „Start of Play“" });
 
   add({ id: "G65", k: [1, 0, 0], q: "Was bedeutet „Kontrolle“ laut Glossar?",
-    o: ["Die willentliche Steuerung von Position und Bewegung durch Nutzung der Kletterfläche/Griffe oder durch Verlagerung des Körperschwerpunkts", "Das Berühren eines Griffs mit mindestens 2 Fingern", "Das Halten eines Griffs für mindestens 3 Sekunden", "Das Einhängen einer Expressschlinge"],
+    o: ["Die willentliche Steuerung von Position und Bewegung über Kletterfläche/Griffe oder Verlagerung des Schwerpunkts", "Das Berühren eines Griffs mit mindestens 2 Fingern, ohne dass der Wettkämpfer abrutscht", "Das ruhige Halten eines Griffs für mindestens 3 Sekunden in stabiler Position", "Das Einhängen einer Expressschlinge von einem Griff aus, ohne zu stürzen"],
     a: [0], e: "Kontrolle ist die willentliche Steuerung von Positionierung und Bewegung, entweder über Kletterfläche und Griffe oder über die Verlagerung des Körperschwerpunkts.", r: "Glossar „Kontrolle“" });
 
   add({ id: "G66", k: [0, 0, 1], q: "Welche Personen dürfen den Wettkampfbereich betreten?",
-    o: ["Technical Officials, Personal von DAV und Ausrichter, Anti-Doping-Personal", "Wettkämpfer der laufenden Runde und ihre registrierten Teamoffiziellen", "Weitere vom Jury-Präsidenten autorisierte Personen unter Aufsicht", "Eltern der Wettkämpfer ohne Akkreditierung"],
+    o: ["Technical Officials, Personal von DAV und Ausrichter sowie Anti-Doping-Personal", "Wettkämpfer der laufenden Runde und ihre registrierten Teamoffiziellen", "Weitere vom Jury-Präsidenten autorisierte Personen, unter Aufsicht", "Eltern und Angehörige der Wettkämpfer, auch ohne Akkreditierung"],
     a: [0, 1, 2], e: "Zugang haben nur die in WB §4.1 genannten Personen. Teamoffizielle dürfen Field of Play, Call Zones und Transitbereiche nur mit Genehmigung des JP betreten.", r: "WB §4.1, §4.2" });
 
   add({ id: "G67", k: [1, 1, 2], q: "Was unterscheidet „Phase“ und „Runde“ im Regelwerk?",
-    o: ["„Runde“ beschreibt die Organisation (Format), „Phase“ die Ranglistenberechnung. Wird das Finale abgesagt, kann das Halbfinale zur Medaillenphase werden", "Die Begriffe bedeuten immer exakt dasselbe", "Eine Phase umfasst mehrere Wettkämpfe", "Phase ist nur ein Begriff aus dem Speed"],
+    o: ["„Runde“ beschreibt das Format, „Phase“ die Ranglistenberechnung; fällt das Finale aus, kann das Halbfinale Medaillenphase werden", "„Runde“ und „Phase“ bedeuten immer exakt dasselbe; der Begriff hängt nur von der Disziplin ab", "„Phase“ umfasst mehrere Wettkämpfe einer Serie, „Runde“ einen einzelnen Wettkampf", "„Phase“ gibt es nur im Speed für die Stufen des Wettkampfbaums, sonst heißt es „Runde“"],
     a: [0], e: "Phase wird für Ranglisten und Medaillen meist synonym mit Runde verwendet. Die Trennung macht klar: Fällt die letzte Runde aus, wird z. B. das Halbfinale zur Medaillenphase, und es können dort Tie-Breaks greifen.", r: "Glossar 5 „Phase“ mit Anmerkung" });
 
   add({ id: "G68", k: [0, 0, 1], q: "Was regelt das Regelwerk, wenn eine Situation nicht direkt in den Regeln geregelt ist?",
-    o: ["Die Technical Officials berücksichtigen Wortlaut und Zweck der Regeln; bei Unklarheiten wird die World-Climbing-Vorlage mit herangezogen", "Es entscheidet immer der Veranstalter", "Die Situation bleibt ohne Entscheidung", "Es wird gelost"],
+    o: ["Die Technical Officials berücksichtigen Wortlaut und Zweck der Regeln, bei Unklarheiten auch die World-Climbing-Vorlage", "Der Veranstalter entscheidet nach eigenem Ermessen, eine Rücksprache mit den Officials ist nicht nötig", "Die Situation bleibt ohne Entscheidung, das Ergebnis wird so gewertet, wie es entstanden ist", "Die Teamoffiziellen stimmen gemeinsam ab, bei Gleichstand entscheidet das Los"],
     a: [0], e: "Fehlt eine direkte Regel, entscheiden die Technical Officials nach Wortlaut und Zweck der Regeln. Bei Unklarheiten oder Regellücken wird die World-Climbing-Vorlage mitberücksichtigt.", r: "AR, Über diese Regeln / Anmerkungen zu den Regeln" });
 })();

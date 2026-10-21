@@ -9,7 +9,7 @@
     a: [0], e: "Ein Team besteht aus 2 Wettkämpfern. Die Wand hat 4 parallele Lanes (A–D).", r: "Anhang D §1.1, §1.2" });
 
   add({ id: "T02", k: [0, 0, 0], q: "Welches Team gewinnt beim Team Speed?",
-    o: ["Das Team mit der niedrigsten Gesamtkletterzeit vom Startsignal des Lead-off bis zum erfolgreichen Abschluss des Anchor Leg", "Das Team mit der schnellsten Einzelzeit", "Das Team, dessen Anchor Leg zuerst oben ist, egal wie lange der Lead-off brauchte", "Das Team mit der niedrigsten Summe der Reaktionszeiten"],
+    o: ["Das Team mit der niedrigsten Gesamtzeit vom Startsignal des Lead-off bis zum erfolgreichen Abschluss des Anchor Leg", "Das Team mit der schnellsten Einzelzeit eines Teammitglieds, egal ob Lead-off oder Anchor Leg", "Das Team, dessen Anchor Leg zuerst oben anschlägt, egal wie lange der Lead-off gebraucht hat", "Das Team mit der niedrigsten Summe der beiden Einzelzeiten ohne die Wechselzeit"],
     a: [0], e: "Die Gesamtkletterzeit läuft vom Startsignal des Lead-off Leg bis zum erfolgreichen Abschluss des Anchor Leg. Die niedrigste Zeit gewinnt.", r: "Anhang D §1.3, §6.1 mit Anmerkung" });
 
   add({ id: "T03", k: [0, 0, 0], q: "Wie viele Läufe hat ein Team in der Team-Speed-Qualifikation?",
@@ -33,23 +33,23 @@
     a: [0], e: "Die Lead-off-Wettkämpfer starten auf A und C, jeweils mit einem deutlich hörbaren Startsignal.", r: "Anhang D §4.12" });
 
   add({ id: "T08", k: [0, 0, 0], q: "Welches Startsignal bekommt der Anchor-Leg-Wettkämpfer?",
-    o: ["Eine rein visuelle Anzeige, sobald der Lead-off seine Strecke erfolgreich beendet hat", "Ein akustisches Signal wie der Lead-off", "Ein Handzeichen des Starters", "Gar keins, er startet nach eigenem Ermessen"],
+    o: ["Eine rein visuelle Anzeige, sobald der Lead-off seine Strecke erfolgreich beendet hat", "Ein akustisches Signal, sobald der Lead-off seine Strecke erfolgreich beendet hat", "Ein Handzeichen des Starters, sobald der Lead-off oben angeschlagen hat", "Keins, er startet nach eigenem Ermessen, wenn der Lead-off oben ist"],
     a: [0], e: "Für den Anchor Leg gibt das Zeitmesssystem ein rein visuelles Signal, sobald der Lead-off erfolgreich angeschlagen hat.", r: "Anhang D §4.12" });
 
   add({ id: "T09", k: [1, 0, 1], q: "Was bedeutet „kletterfertig“ für den Anchor-Leg-Wettkämpfer, bevor der Starter „Ready“ meldet?",
-    o: ["Er steht höchstens einen Schritt vom Start-Pad entfernt und hat alle Vorbereitungen, z. B. Chalken, abgeschlossen", "Er hängt bereits in der Startposition an der Wand", "Er steht in der Einhängeposition 2 m von der Wand entfernt", "Er hat den Lead-off abgeklatscht"],
+    o: ["Er steht höchstens einen Schritt vom Start-Pad entfernt und hat alle Vorbereitungen, z. B. Chalken, abgeschlossen", "Er hängt bereits in der Startposition an der Wand und hält beide Startgriffe", "Er steht in der Einhängeposition höchstens 2 m von der Wand entfernt, mit dem Rücken zur Wand", "Er steht neben dem Lead-off und ist bereit, ihn nach dessen Lauf abzuklatschen"],
     a: [0], e: "Kletterfertig heißt: höchstens ein Schritt vom Start-Pad entfernt und alle Vorbereitungen erledigt. Vor dem visuellen Startsignal muss er die reguläre Startposition einnehmen.", r: "Anhang D §4.11 mit Anmerkung" });
 
   add({ id: "T10", k: [1, 1, 1], c: true, q: "Der Anchor-Leg-Wettkämpfer hat beim Aufleuchten seines Startsignals noch einen Fuß auf dem Boden statt auf dem Start-Pad. Gegen welche Vorgabe verstößt er?",
-    o: ["Vor dem Startsignal muss er die reguläre Startposition einnehmen: beide Hände und ein Fuß an den Startgriffen, der andere Fuß auf dem Start-Pad", "Gegen keine, der Anchor Leg darf aus dem Stand starten", "Gegen die 2-m-Regel der Einhängeposition", "Gegen die Pflicht, den Lead-off abzuklatschen"],
+    o: ["Gegen die Pflicht, vor seinem Startsignal die reguläre Startposition einzunehmen (ein Fuß auf dem Start-Pad)", "Gegen keine Vorgabe, denn der Anchor Leg darf auch aus dem Stand vom Boden starten", "Gegen die Vorgabe, dass die Einhängeposition höchstens 2 m von der Wand entfernt sein darf", "Gegen die Pflicht, den Lead-off vor dem eigenen Start abzuklatschen"],
     a: [0], e: "Bevor das visuelle Startsignal für den Anchor Leg aufleuchtet, muss er die reguläre Startposition eingenommen haben.", r: "Anhang D §4.11 (Anmerkung)" });
 
   add({ id: "T11", k: [0, 0, 0], q: "Was passiert, wenn ein Lead-off-Wettkämpfer in der Qualifikation einen Fehlstart macht?",
-    o: ["Das Race läuft ohne Abbruchsignal weiter und das Ergebnis wird gewertet. Angezeigt wird nur visuell", "Das Race wird abgebrochen", "Das Team wird disqualifiziert", "Der Anchor Leg darf nicht starten"],
+    o: ["Das Race läuft ohne Abbruchsignal weiter und wird gewertet; angezeigt wird nur visuell", "Das Race wird abgebrochen und sofort mit beiden Teams wiederholt", "Das Race läuft weiter, das Team wird aber disqualifiziert", "Das Race läuft weiter, der Anchor Leg dieses Teams darf aber nicht starten"],
     a: [0], e: "In der Qualifikation läuft das Race nach einem Lead-off-Fehlstart weiter und wird gewertet, mit rein visueller Anzeige. In der Finalrunde bricht der Starter ab.", r: "Anhang D §5.1(A) mit Anmerkung" });
 
   add({ id: "T12", k: [0, 0, 0], q: "Was passiert, wenn ein Anchor-Leg-Wettkämpfer einen Fehlstart macht?",
-    o: ["Das Race wird fortgesetzt und das Ergebnis gewertet, in der Qualifikation wie im Finale", "Das Race wird abgebrochen und wiederholt", "Nur im Finale wird abgebrochen", "Der Anchor Leg muss zurück und neu starten"],
+    o: ["Das Race wird fortgesetzt und gewertet, in der Qualifikation wie im Finale", "Das Race wird abgebrochen und wiederholt, in der Qualifikation wie im Finale", "Das Race wird nur im Finale abgebrochen, in der Qualifikation fortgesetzt", "Der Anchor Leg muss zurück in die Startposition und neu starten"],
     a: [0], e: "Bei einem Fehlstart im Anchor Leg wird das Race immer fortgesetzt und das Ergebnis gewertet.", r: "Anhang D §5.2" });
 
   add({ id: "T13", k: [0, 0, 0], q: "Wie lautet das Race-Ergebnis eines Teams?",
@@ -69,27 +69,27 @@
     a: [0], e: "Startet keines der beiden Teams, gibt es keinen Sieger.", r: "Anhang D §6.2 (Anmerkung)" });
 
   add({ id: "T17", k: [1, 1, 1], c: true, q: "Ein Team ist zu seinem Zeitpunkt nicht in der Call Zone. Wann darf der Jury-Präsident es trotzdem klettern lassen?",
-    o: ["Nur, wenn die Abwesenheit auf Faktoren außerhalb des Einflussbereichs des Teams zurückgeht", "Immer, wenn es vor dem Start erscheint", "Nie", "Wenn der Gegner zustimmt"],
+    o: ["Nur, wenn die Abwesenheit auf Faktoren außerhalb des Einflussbereichs des Teams zurückgeht", "Immer, wenn das Team noch vor dem Start seines Race in der Call Zone erscheint", "Nie, ein Team, das nicht rechtzeitig da ist, wird ohne Ausnahme DNS", "Wenn das gegnerische Team zustimmt, dass später gestartet wird"],
     a: [0], e: "Der Jury-Präsident darf ein Team ohne rechtzeitige Anwesenheit in der Call Zone nur klettern lassen, wenn die Abwesenheit nicht in seinem Einflussbereich lag. Ein DNS-Team im K.-o. heißt: Das Race entfällt, der Gegner bekommt eine Wildcard.", r: "Anhang D §4.7 mit Anmerkung" });
 
   add({ id: "T18", k: [1, 0, 1], q: "Wie werden Gleichstände an der Quotengrenze zum Team-Speed-Finale aufgelöst?",
-    o: ["Bei 2 Teams Kopf-an-Kopf mit ausgelosten Bahnen; bei mehr Teams läuft jedes Team einmal auf A & B. Diese Races zählen nicht als Wertungsversuche", "Durch Los", "Durch die bessere Einzelzeit des Anchor Leg", "Alle gleichplatzierten Teams kommen weiter"],
+    o: ["Bei 2 Teams Kopf-an-Kopf, bei mehr Teams je 1 Lauf auf A & B; diese Läufe zählen nicht als Wertungsversuche", "Bei 2 Teams Kopf-an-Kopf, bei mehr Teams entscheidet das Los; diese Läufe zählen als Wertungsversuche", "Durch die bessere Einzelzeit des Anchor Leg aus der Qualifikation, ohne zusätzliche Läufe", "Alle gleichplatzierten Teams kommen weiter, die Quote wird entsprechend erhöht"],
     a: [0], e: "Bei 2 gleichplatzierten Teams gibt es ein Kopf-an-Kopf-Rennen, bei mehr Teams je 1 Lauf auf A & B. Die Zeiten kommen nicht in die Official Results, Rekorde sind nicht möglich.", r: "Anhang D §2.4 mit Anmerkungen" });
 
   add({ id: "T19", k: [1, 0, 0], q: "Wie ist die Team-Speed-Finalrunde organisiert?",
-    o: ["Als K.-o.-System nach dem Wettkampfbaum von Speed 2, mit kleinem Finale (3/4) und großem Finale (1/2)", "Als Speed-4-Modus, die besten 2 kommen weiter", "Als Zeitfahren, alle Teams laufen einmal", "Als Round-Robin"],
+    o: ["Als K.-o.-System nach dem Wettkampfbaum von Speed 2, mit kleinem und großem Finale", "Als Speed-4-Modus, bei dem in jedem Race die besten 2 Teams weiterkommen", "Als Zeitfahren, bei dem jedes Team einmal läuft und die Zeit entscheidet", "Als Round-Robin, bei dem jedes Team gegen jedes andere Team antritt"],
     a: [0], e: "Das Siegerteam jedes Race kommt weiter. Nach dem Halbfinale gibt es ein kleines und ein großes Finale. Die Wettkampfbäume entsprechen denen von Speed 2.", r: "Anhang D §2.5 mit Anmerkung" });
 
   add({ id: "T20", k: [0, 0, 0], q: "Wie werden Team-Speed-Zeiten gemessen und offiziell angegeben?",
-    o: ["Gemessen auf 1/1000 Sekunde, offiziell auf 1/100 Sekunde abgerundet", "Gemessen und offiziell auf 1/100 Sekunde", "Gemessen auf 1/1000 Sekunde, offiziell aufgerundet", "Nur die Zeit des Anchor Leg zählt"],
+    o: ["Gemessen auf 1/1000 Sekunde, offiziell auf 1/100 Sekunde abgerundet", "Gemessen und offiziell angegeben auf 1/100 Sekunde", "Gemessen auf 1/1000 Sekunde, offiziell auf 1/100 Sekunde aufgerundet", "Gemessen auf 1/1000 Sekunde, gewertet wird nur die Zeit des Anchor Leg"],
     a: [0], e: "Wie im Individual Speed: Messung auf 1/1000 Sekunde, offizielle Zeiten auf 1/100 Sekunde abgerundet. Die Tausendstel dürfen einen Gleichstand anzeigen.", r: "Anhang D §7.1–7.3" });
 
   add({ id: "T21", k: [0, 0, 1], q: "Bis wann kann im Team Speed ein Technical Incident reklamiert werden, und wer bekommt einen Re-Run?",
-    o: ["Bis im nächsten planmäßigen Race „At your marks“ gegeben wurde; Re-Run nur für das bzw. die direkt betroffenen Teams", "Bis zur Veröffentlichung der Ergebnisse; Re-Run für alle Teams des Race", "Bis 5 Minuten nach dem Race; Re-Run nur für den betroffenen Wettkämpfer", "TIs gibt es im Team Speed nicht"],
+    o: ["Bis „At your marks“ im nächsten Race; Re-Run nur für das bzw. die direkt betroffenen Teams", "Bis zu den offiziellen Ergebnissen; Re-Run für alle Teams des betroffenen Race", "Bis 5 Minuten nach dem Race; Re-Run nur für den direkt betroffenen Wettkämpfer", "Gar nicht, im Team Speed gibt es keine Technical Incidents"],
     a: [0], e: "Die Reklamationsgrenze ist das Kommando „At your marks“ im nächsten Race. Ein bestätigter TI bringt einen Re-Run nur für die direkt betroffenen Teams.", r: "Anhang D §9.1, §9.3" });
 
   add({ id: "T22", k: [0, 0, 0], q: "Welche Mindestpause steht einem Team zwischen 2 Races zu?",
-    o: ["5 Minuten, außer bei einem wiederholten Race", "2 Minuten", "10 Minuten", "Keine Vorgabe"],
+    o: ["5 Minuten, außer bei einem wiederholten Race", "2 Minuten, außer bei einem wiederholten Race", "10 Minuten, auch bei einem wiederholten Race", "Keine Vorgabe, die Startliste bestimmt den Ablauf"],
     a: [0], e: "Jedes Team hat Anspruch auf mindestens 5 Minuten zwischen 2 Races, außer bei einem Re-Run.", r: "Anhang D §4.3(C)" });
 
   add({ id: "T23", k: [2, 1, 1], c: true, q: "Ein Landesverband meldet die Athleten A, B und C für Team Speed. A und B klettern die Qualifikation, B und C das Finale, das Team wird Dritter. Wer bekommt eine Medaille?",
@@ -101,10 +101,10 @@
     a: [0], e: "DM Speed und Team Speed: ab dem 15. Lebensjahr. DM Lead und Boulder: ab dem 16. Lebensjahr. Maßgeblich ist das Jahr, in dem das Lebensjahr vollendet wird.", r: "WB §1.1" });
 
   add({ id: "T25", k: [0, 0, 1], q: "Wie werden Teams im Team-Speed-Finale platziert?",
-    o: ["Nach der zuletzt absolvierten Phase: erst die Sieger, dann die Verlierer, jeweils durch Vergleich ihrer besten Ergebnisse aus allen Races (§8.2)", "Ausschließlich nach der Qualifikationszeit", "Alle Verlierer einer Phase gleichplatziert", "Nach der schnellsten Einzelzeit eines Teammitglieds"],
+    o: ["Nach der zuletzt erreichten Phase: erst die Sieger, dann die Verlierer, jeweils verglichen über alle Races", "Nach der zuletzt erreichten Phase: alle Verlierer einer Phase werden gleichplatziert", "Nach der Qualifikation: die Qualifikationsplatzierung entscheidet über alle Finalplätze", "Nach der schnellsten Einzelzeit eines Teammitglieds über alle Races"],
     a: [0], e: "Gerankt wird nach der zuletzt absolvierten Phase, erst die Sieger, dann die Verlierer. Innerhalb dieser Gruppen entscheiden die besten Ergebnisse aus allen gestarteten Races.", r: "Anhang D §8.3" });
 
   add({ id: "T26", k: [0, 1, 1], c: true, q: "Finale: Bei Team 1 macht der Lead-off einen Fehlstart, bei Team 2 ebenfalls der Lead-off. Was passiert?",
-    o: ["Sofortiger Re-Run, weil beide Teams im gleichen Leg einen Fehlstart haben", "Team 1 gewinnt, weil es zuerst gestartet ist", "Beide Teams scheiden aus", "Die Qualifikationsergebnisse entscheiden sofort"],
+    o: ["Sofortiger Re-Run, weil beide Teams im gleichen Leg einen Fehlstart haben", "Team 1 gewinnt, weil sein Fehlstart zuerst erfolgt ist", "Beide Teams scheiden aus, weil beide einen Fehlstart haben", "Die Qualifikationsergebnisse entscheiden sofort ohne Re-Run"],
     a: [0], e: "Haben beide Teams im gleichen Leg einen Fehlstart, gibt es einen sofortigen Re-Run. Ist auch der unentschieden, gilt §8.2.", r: "Anhang D §6.3(C)" });
 })();
