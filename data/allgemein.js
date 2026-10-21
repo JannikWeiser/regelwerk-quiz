@@ -84,7 +84,7 @@
     o: ["Vom Boden aus, ohne Informationen zu den Bewegungssequenzen und ohne vorheriges Training oder Versuche", "Vom Boden aus, mit Informationen zu den Bewegungssequenzen, aber ohne vorheriges Training oder Versuche", "Vom Boden aus, mit eigener Vorerfahrung aus Training oder früheren Versuchen an der Route", "Vom Boden aus, nach dem Studium eines Videos der Route, aber ohne eigene Versuche"],
     a: [0], e: "On Sight: ohne Informationen zu den Bewegungssequenzen und ohne vorheriges Training. Flash: mit Informationen, ohne Training. After-Work: mit eigener Vorerfahrung.", r: "Glossar „On Sight“, „Flash“, „After-Work“" });
 
-  add({ id: "G21", k: [1, 1, 2], c: true, q: "Ein Wettkämpfer hilft einem verletzten Konkurrenten, der in der Call Zone zusammengebrochen ist. Ist das eine unerlaubte Einmischung?",
+  add({ id: "G21", k: [1, 1, 1], c: true, q: "Ein Wettkämpfer hilft einem verletzten Konkurrenten, der in der Call Zone zusammengebrochen ist. Ist das eine unerlaubte Einmischung?",
     o: ["Nein, Hilfe für verletzte oder in Not geratene Teilnehmer gilt nicht als Einmischung", "Ja, Wettkämpfer dürfen sich grundsätzlich nicht in Angelegenheiten anderer einmischen", "Nur wenn er dabei Informationen über die Route an den Verletzten weitergibt", "Ja, er bekommt deshalb eine Verwarnung (Gelbe Karte)"],
     a: [0], e: "Wer einem verletzten oder in Not geratenen Teilnehmer hilft, mischt sich nicht unerlaubt ein.", r: "AR §5.2(A) mit Anmerkung" });
 
